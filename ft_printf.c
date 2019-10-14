@@ -1,33 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_max.c                                    :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/14 15:08:45 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/14 15:08:45 by tamarant         ###   ########.fr       */
+/*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
+/*   Updated: 2019/10/14 19:23:33 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void    ft_putnbr_max(long long int nb)
+int 	ft_printf(char *apFormat, ...)
 {
-	if (nb == LONG_MIN)
-		ft_putstr("-9223372036854775808");
-	if (nb < 0 && nb != LONG_MIN)
+	va_list ap;
+	char	*p;
+	t_pf	*pf;
+
+	va_start(ap, apFormat);
+	p = apFormat;
+
+	pf = (t_pf*)malloc(sizeof(t_pf));
+	while (*p != '\0')
 	{
-		ft_putchar('-');
-		nb = -nb;
+		if (*p == '%')
+		{
+			format_flags(p, ap, pf);
+		}
+		else
+		{
+			ft_putchar(*p);
+		}
+		p++;
 	}
-	if (nb >= 10 && nb != LONG_MIN)
-	{
-		ft_putnbr_max(nb / 10);
-		ft_putnbr_max(nb % 10);
-	}
-	else if (nb != LONG_MIN)
-	{
-		ft_putchar(nb + '0');
-	}
+	return (0);
 }

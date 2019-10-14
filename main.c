@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
+/*   Updated: 2019/10/14 19:44:20 by tamarant         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include "ft_printf.h"
 
 void 	test(char *apFormat, ...)
@@ -11,42 +24,34 @@ void 	test(char *apFormat, ...)
 	{
 		if (*p == '%')
 		{
-			++p;
-			if (*p == 's')
+			while (*p != '\0' && *p != ' ')
 			{
-				/*char *str = NULL;
-				str = va_arg(ap,char*);
-				ft_putstr(str);*/
-				string(va_arg(ap, char*));
+				++p;
+				/*if (*p == '0' && *(p + 1) > '0' && *(p + 1) <= '9')
+				{
+					++p;
+					str_format('0', ft_atoi(p));
+				}*/
+				if (*p == 's')
+					string(va_arg(ap, char*));
+				else if (*p == 'i' || *p == 'd')
+					d_i(va_arg(ap, int));
+				else if (*p == 'u')
+					u(va_arg(ap, unsigned int));
+				else if (*p == '\n')
+					ft_putchar('\n');
 			}
-			else if (*p == 'i' || *p == 'd')
-			{
-				/*int num = 0;
-				num = va_arg(ap, int);
-				ft_putchar((char)(num + 48));*/
-				d_i(va_arg(ap, int));
-			}
-			else if (*p == 'u')
-				u(va_arg(ap, unsigned int));
 		}
-		else if (*p == '\n')
-			ft_putchar('\n');
-		p++;
 	}
 
 }
 
 int 	main(void)
 {
-	int n;
-	//test("%s\n %i\n %s\n, %i\n", "Hello", 5, "cat cat", 1);
-/*	printf("%d\n", -2147483649);
-	test("%d\n", -2147483649);
-	printf("%d\n", -+1);
-	test("%d\n", -+1);*/
+	//printf("%03d\n%f\n%04.2f\n", 9, 3.5, 1.2);
+	//printf("%#f\n", 46.0);
+	printf("%05s\n", "la");
 
-	printf("%u\n", 429496729700);
-	test("%u\n", 429496729700);
-
+	ft_printf("la la %% %d");
 	return(0);
 }
