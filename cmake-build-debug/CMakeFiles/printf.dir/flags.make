@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/tamarant/Desktop/projects/printf/libft 
+C_INCLUDES = -I/Users/mac/Desktop/projects/printf/libft 
 

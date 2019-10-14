@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/tamarant/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Users/tamarant/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tamarant/Desktop/projects/printf
+CMAKE_SOURCE_DIR = /Users/mac/Desktop/projects/printf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tamarant/Desktop/projects/printf/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mac/Desktop/projects/printf/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/tamarant/Desktop/projects/printf/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Users/tamarant/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Users/tamarant/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles /Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/projects/printf/cmake-build-debug/CMakeFiles /Users/mac/Desktop/projects/printf/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/projects/printf/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ printf: cmake_check_build_system
 printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
+
+ft_putnbr_max.o: ft_putnbr_max.c.o
+
+.PHONY : ft_putnbr_max.o
+
+# target to build an object file
+ft_putnbr_max.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putnbr_max.c.o
+.PHONY : ft_putnbr_max.c.o
+
+ft_putnbr_max.i: ft_putnbr_max.c.i
+
+.PHONY : ft_putnbr_max.i
+
+# target to preprocess a source file
+ft_putnbr_max.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putnbr_max.c.i
+.PHONY : ft_putnbr_max.c.i
+
+ft_putnbr_max.s: ft_putnbr_max.c.s
+
+.PHONY : ft_putnbr_max.s
+
+# target to generate assembly for a file
+ft_putnbr_max.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putnbr_max.c.s
+.PHONY : ft_putnbr_max.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -1959,6 +1986,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/main.c.s
 .PHONY : main.c.s
 
+out_format.o: out_format.c.o
+
+.PHONY : out_format.o
+
+# target to build an object file
+out_format.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/out_format.c.o
+.PHONY : out_format.c.o
+
+out_format.i: out_format.c.i
+
+.PHONY : out_format.i
+
+# target to preprocess a source file
+out_format.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/out_format.c.i
+.PHONY : out_format.c.i
+
+out_format.s: out_format.c.s
+
+.PHONY : out_format.s
+
+# target to generate assembly for a file
+out_format.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/out_format.c.s
+.PHONY : out_format.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1968,6 +2022,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
+	@echo "... ft_putnbr_max.o"
+	@echo "... ft_putnbr_max.i"
+	@echo "... ft_putnbr_max.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2172,6 +2229,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... out_format.o"
+	@echo "... out_format.i"
+	@echo "... out_format.s"
 .PHONY : help
 
 

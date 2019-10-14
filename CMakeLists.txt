@@ -76,5 +76,8 @@ add_executable(printf
         libft/get_next_line.c
         libft/libft.h
         libft/Makefile
+        ft_printf.h
+        ft_putnbr_max.c
         main.c
+        out_format.c
         )

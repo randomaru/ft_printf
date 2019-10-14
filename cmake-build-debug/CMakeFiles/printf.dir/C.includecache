@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../libft/libft.h
+/Users/mac/Desktop/projects/printf/ft_printf.h
+stdio.h
+-
+stdarg.h
+-
+libft/libft.h
+/Users/mac/Desktop/projects/printf/libft/libft.h
+limits.h
+-
+
+/Users/mac/Desktop/projects/printf/libft/libft.h
 stdlib.h
 -
 unistd.h
@@ -16,11 +26,7 @@ string.h
 fcntl.h
 -
 
-/Users/tamarant/Desktop/projects/printf/main.c
-stdio.h
--
-stdarg.h
--
-libft.h
-/Users/tamarant/Desktop/projects/printf/libft.h
+/Users/mac/Desktop/projects/printf/main.c
+ft_printf.h
+/Users/mac/Desktop/projects/printf/ft_printf.h
 
