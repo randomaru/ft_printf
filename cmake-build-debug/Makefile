@@ -285,6 +285,33 @@ ft_putnbr_max.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putnbr_max.c.s
 .PHONY : ft_putnbr_max.c.s
 
+itoa_base.o: itoa_base.c.o
+
+.PHONY : itoa_base.o
+
+# target to build an object file
+itoa_base.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/itoa_base.c.o
+.PHONY : itoa_base.c.o
+
+itoa_base.i: itoa_base.c.i
+
+.PHONY : itoa_base.i
+
+# target to preprocess a source file
+itoa_base.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/itoa_base.c.i
+.PHONY : itoa_base.c.i
+
+itoa_base.s: itoa_base.c.s
+
+.PHONY : itoa_base.s
+
+# target to generate assembly for a file
+itoa_base.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/itoa_base.c.s
+.PHONY : itoa_base.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -2148,6 +2175,9 @@ help:
 	@echo "... ft_putnbr_max.o"
 	@echo "... ft_putnbr_max.i"
 	@echo "... ft_putnbr_max.s"
+	@echo "... itoa_base.o"
+	@echo "... itoa_base.i"
+	@echo "... itoa_base.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

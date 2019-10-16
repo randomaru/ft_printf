@@ -83,5 +83,6 @@ add_executable(printf
         flags.c
         ft_lltoa.c
         ft_llutoa.c
+        itoa_base.c
         format.c
         )

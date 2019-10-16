@@ -105,6 +105,9 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/itoa_base.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/Makefile">
 			<Option target="printf"/>
 		</Unit>

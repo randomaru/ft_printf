@@ -25,6 +25,10 @@ CMakeFiles/printf.dir/ft_putnbr_max.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
+CMakeFiles/printf.dir/itoa_base.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/itoa_base.c
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_atoi.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_atoi.c
  /Users/tamarant/Desktop/projects/printf/libft/libft.h

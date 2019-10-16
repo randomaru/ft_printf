@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/16 20:53:37 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/16 21:13:00 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 int 	main(void)
 {
-	//printf("%03d\n%f\n%04.2f\n", 9, 3.5, 1.2);
-	//printf("%#f\n", 46.0);
-	printf("pf %010d\n", 123);
+//	printf("pf %010d\n", 123);
+//	ft_printf("ft %010d\n", 123);
 
-	ft_printf("ft %010d\n", 123);
+	ft_putstr(itoa_base(233, 16));
+	ft_putchar('\n');
+
+	printf("%x\n", 233);
 	return(0);
 }

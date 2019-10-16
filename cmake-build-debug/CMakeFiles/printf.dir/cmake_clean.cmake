@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/ft_llutoa.c.o"
   "CMakeFiles/printf.dir/ft_printf.c.o"
   "CMakeFiles/printf.dir/ft_putnbr_max.c.o"
+  "CMakeFiles/printf.dir/itoa_base.c.o"
   "CMakeFiles/printf.dir/libft/ft_atoi.c.o"
   "CMakeFiles/printf.dir/libft/ft_atoi_base.c.o"
   "CMakeFiles/printf.dir/libft/ft_bzero.c.o"

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/ft_llutoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_llutoa.c.o"
   "/Users/tamarant/Desktop/projects/printf/ft_printf.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_printf.c.o"
   "/Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_putnbr_max.c.o"
+  "/Users/tamarant/Desktop/projects/printf/itoa_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/itoa_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_atoi.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_atoi_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_bzero.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_bzero.c.o"

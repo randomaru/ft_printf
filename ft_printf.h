@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/16 19:49:07 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/16 20:18:25 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ void	type(char *p, va_list ap, t_pf *pf);
 
 char			*ft_lltoa(long long int n);
 char			*ft_llutoa(unsigned long long int n);
+char			*itoa_base(int value, int base);
+
 int				format(t_pf *pf);
 
 #endif

@@ -25,6 +25,10 @@ CMakeFiles/printf.dir/ft_putnbr_max.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/ft_putnbr_max.c.o: ../ft_putnbr_max.c
 CMakeFiles/printf.dir/ft_putnbr_max.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/itoa_base.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/itoa_base.c.o: ../itoa_base.c
+CMakeFiles/printf.dir/itoa_base.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/printf.dir/libft/ft_atoi.c.o: ../libft/libft.h
 
