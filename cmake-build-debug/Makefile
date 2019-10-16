@@ -123,6 +123,33 @@ printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
+flags.o: flags.c.o
+
+.PHONY : flags.o
+
+# target to build an object file
+flags.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/flags.c.o
+.PHONY : flags.c.o
+
+flags.i: flags.c.i
+
+.PHONY : flags.i
+
+# target to preprocess a source file
+flags.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/flags.c.i
+.PHONY : flags.c.i
+
+flags.s: flags.c.s
+
+.PHONY : flags.s
+
+# target to generate assembly for a file
+flags.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/flags.c.s
+.PHONY : flags.c.s
+
 format.o: format.c.o
 
 .PHONY : format.o
@@ -149,6 +176,60 @@ format.s: format.c.s
 format.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/format.c.s
 .PHONY : format.c.s
+
+ft_lltoa.o: ft_lltoa.c.o
+
+.PHONY : ft_lltoa.o
+
+# target to build an object file
+ft_lltoa.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_lltoa.c.o
+.PHONY : ft_lltoa.c.o
+
+ft_lltoa.i: ft_lltoa.c.i
+
+.PHONY : ft_lltoa.i
+
+# target to preprocess a source file
+ft_lltoa.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_lltoa.c.i
+.PHONY : ft_lltoa.c.i
+
+ft_lltoa.s: ft_lltoa.c.s
+
+.PHONY : ft_lltoa.s
+
+# target to generate assembly for a file
+ft_lltoa.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_lltoa.c.s
+.PHONY : ft_lltoa.c.s
+
+ft_llutoa.o: ft_llutoa.c.o
+
+.PHONY : ft_llutoa.o
+
+# target to build an object file
+ft_llutoa.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_llutoa.c.o
+.PHONY : ft_llutoa.c.o
+
+ft_llutoa.i: ft_llutoa.c.i
+
+.PHONY : ft_llutoa.i
+
+# target to preprocess a source file
+ft_llutoa.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_llutoa.c.i
+.PHONY : ft_llutoa.c.i
+
+ft_llutoa.s: ft_llutoa.c.s
+
+.PHONY : ft_llutoa.s
+
+# target to generate assembly for a file
+ft_llutoa.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_llutoa.c.s
+.PHONY : ft_llutoa.c.s
 
 ft_printf.o: ft_printf.c.o
 
@@ -2040,33 +2121,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/main.c.s
 .PHONY : main.c.s
 
-out_format.o: out_format.c.o
-
-.PHONY : out_format.o
-
-# target to build an object file
-out_format.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/out_format.c.o
-.PHONY : out_format.c.o
-
-out_format.i: out_format.c.i
-
-.PHONY : out_format.i
-
-# target to preprocess a source file
-out_format.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/out_format.c.i
-.PHONY : out_format.c.i
-
-out_format.s: out_format.c.s
-
-.PHONY : out_format.s
-
-# target to generate assembly for a file
-out_format.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/out_format.c.s
-.PHONY : out_format.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2076,9 +2130,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
+	@echo "... flags.o"
+	@echo "... flags.i"
+	@echo "... flags.s"
 	@echo "... format.o"
 	@echo "... format.i"
 	@echo "... format.s"
+	@echo "... ft_lltoa.o"
+	@echo "... ft_lltoa.i"
+	@echo "... ft_lltoa.s"
+	@echo "... ft_llutoa.o"
+	@echo "... ft_llutoa.i"
+	@echo "... ft_llutoa.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
@@ -2289,9 +2352,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... out_format.o"
-	@echo "... out_format.i"
-	@echo "... out_format.s"
 .PHONY : help
 
 

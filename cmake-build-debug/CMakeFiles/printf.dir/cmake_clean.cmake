@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/printf.dir/flags.c.o"
   "CMakeFiles/printf.dir/format.c.o"
+  "CMakeFiles/printf.dir/ft_lltoa.c.o"
+  "CMakeFiles/printf.dir/ft_llutoa.c.o"
   "CMakeFiles/printf.dir/ft_printf.c.o"
   "CMakeFiles/printf.dir/ft_putnbr_max.c.o"
   "CMakeFiles/printf.dir/libft/ft_atoi.c.o"
@@ -70,7 +73,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/libft/ft_toupper.c.o"
   "CMakeFiles/printf.dir/libft/get_next_line.c.o"
   "CMakeFiles/printf.dir/main.c.o"
-  "CMakeFiles/printf.dir/out_format.c.o"
   "printf"
   "printf.pdb"
 )

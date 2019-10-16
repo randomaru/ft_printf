@@ -79,7 +79,9 @@ add_executable(printf
         ft_printf.h
         ft_putnbr_max.c
         main.c
-        out_format.c
         ft_printf.c
+        flags.c
+        ft_lltoa.c
+        ft_llutoa.c
         format.c
         )
