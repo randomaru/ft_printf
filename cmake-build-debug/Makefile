@@ -2148,6 +2148,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/main.c.s
 .PHONY : main.c.s
 
+ulltoa_base.o: ulltoa_base.c.o
+
+.PHONY : ulltoa_base.o
+
+# target to build an object file
+ulltoa_base.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ulltoa_base.c.o
+.PHONY : ulltoa_base.c.o
+
+ulltoa_base.i: ulltoa_base.c.i
+
+.PHONY : ulltoa_base.i
+
+# target to preprocess a source file
+ulltoa_base.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ulltoa_base.c.i
+.PHONY : ulltoa_base.c.i
+
+ulltoa_base.s: ulltoa_base.c.s
+
+.PHONY : ulltoa_base.s
+
+# target to generate assembly for a file
+ulltoa_base.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ulltoa_base.c.s
+.PHONY : ulltoa_base.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2382,6 +2409,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... ulltoa_base.o"
+	@echo "... ulltoa_base.i"
+	@echo "... ulltoa_base.s"
 .PHONY : help
 
 

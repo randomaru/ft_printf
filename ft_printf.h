@@ -27,15 +27,16 @@ typedef struct		s_pf
 	char 			*result;
 }					t_pf;
 
-void    ft_putnbr_max(long long int nb);
+void			ft_putnbr_max(long long int nb);
 
-int 	ft_printf(char *apFormat, ...);
-void	format_flags(char *p, va_list ap, t_pf *pf);
-void	type(char *p, va_list ap, t_pf *pf);
+int				ft_printf(char *apFormat, ...);
+void			format_flags(char *p, va_list ap, t_pf *pf);
+void			type(char *p, va_list ap, t_pf *pf);
 
 char			*ft_lltoa(long long int n);
 char			*ft_llutoa(unsigned long long int n);
 char			*itoa_base(int value, int base);
+char			*ulltoa_base(unsigned long long int value, int base);
 
 int				format(t_pf *pf);
 
