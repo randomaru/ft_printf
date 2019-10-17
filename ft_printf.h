@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/16 20:18:25 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/17 17:22:08 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ char			*ft_lltoa(long long int n);
 char			*ft_llutoa(unsigned long long int n);
 char			*itoa_base(int value, int base);
 char			*ulltoa_base(unsigned long long int value, int base);
+char 			*to_uppercase(char *str);
 
 int				format(t_pf *pf);
 

@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:41:21 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/17 17:22:08 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/17 18:00:02 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,11 @@ void	type(char *p, va_list ap, t_pf *pf)
 					pf->result = ft_llutoa(va_arg(ap, unsigned long long int));
 				if (*p == 'o')
 					pf->result = ulltoa_base(va_arg(ap, unsigned long long int), 8);
+				if (*p == 'x')
+					pf->result = ulltoa_base(va_arg(ap, unsigned long long int), 16);
+				if (*p == 'X')
+					pf->result = to_uppercase(ulltoa_base(va_arg(ap, unsigned long long int), 16));
+
 			}
 			else
 			{
@@ -71,6 +76,10 @@ void	type(char *p, va_list ap, t_pf *pf)
 					pf->result = ft_lltoa((long long int)va_arg(ap, unsigned long int));
 				if (*p == 'o')
 					pf->result = ulltoa_base((unsigned long long int)va_arg(ap, unsigned long int), 8);
+				if (*p == 'x')
+					pf->result = ulltoa_base((unsigned long long int)va_arg(ap, unsigned long int), 16);
+				if (*p == 'X')
+					pf->result = to_uppercase(ulltoa_base((unsigned long long int)va_arg(ap, unsigned long int), 16));
 			}
 		}
 		else if (pf->type[0] == 'h')
@@ -81,6 +90,10 @@ void	type(char *p, va_list ap, t_pf *pf)
 				pf->result = ft_lltoa((long long int)va_arg(ap, unsigned short int));
 			if (*p == 'o')
 				pf->result = ulltoa_base((unsigned long long int)va_arg(ap, unsigned short int), 8);
+			if (*p == 'x')
+				pf->result = ulltoa_base((unsigned long long int)va_arg(ap, unsigned short int), 16);
+			if (*p == 'X')
+				pf->result = to_uppercase(ulltoa_base((unsigned long long int)va_arg(ap, unsigned short int), 16));
 		}
 		else
 		{
@@ -90,6 +103,10 @@ void	type(char *p, va_list ap, t_pf *pf)
 				pf->result = ft_lltoa((long long int)va_arg(ap, unsigned int));
 			if (*p == 'o')
 				pf->result = ulltoa_base((unsigned long long int)va_arg(ap, unsigned int), 8);
+			if (*p == 'x')
+				pf->result = ulltoa_base((unsigned long long int)va_arg(ap, unsigned int), 16);
+			if (*p == 'X')
+				pf->result = to_uppercase(ulltoa_base((unsigned long long int)va_arg(ap, unsigned int), 16));
 		}
 
 

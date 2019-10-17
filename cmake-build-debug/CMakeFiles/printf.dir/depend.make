@@ -234,3 +234,11 @@ CMakeFiles/printf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/main.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/main.c.o: ../main.c
 
+CMakeFiles/printf.dir/to_uppercase.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/to_uppercase.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/to_uppercase.c.o: ../to_uppercase.c
+
+CMakeFiles/printf.dir/ulltoa_base.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/ulltoa_base.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/ulltoa_base.c.o: ../ulltoa_base.c
+

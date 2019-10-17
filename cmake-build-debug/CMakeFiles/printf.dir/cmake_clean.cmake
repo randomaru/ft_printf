@@ -74,6 +74,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/libft/ft_toupper.c.o"
   "CMakeFiles/printf.dir/libft/get_next_line.c.o"
   "CMakeFiles/printf.dir/main.c.o"
+  "CMakeFiles/printf.dir/to_uppercase.c.o"
   "CMakeFiles/printf.dir/ulltoa_base.c.o"
   "printf"
   "printf.pdb"

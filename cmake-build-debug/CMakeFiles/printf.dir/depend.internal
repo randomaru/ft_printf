@@ -234,3 +234,11 @@ CMakeFiles/printf.dir/main.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/main.c
+CMakeFiles/printf.dir/to_uppercase.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/to_uppercase.c
+CMakeFiles/printf.dir/ulltoa_base.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/ulltoa_base.c

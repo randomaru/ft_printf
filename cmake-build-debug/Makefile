@@ -2148,6 +2148,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/main.c.s
 .PHONY : main.c.s
 
+to_uppercase.o: to_uppercase.c.o
+
+.PHONY : to_uppercase.o
+
+# target to build an object file
+to_uppercase.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/to_uppercase.c.o
+.PHONY : to_uppercase.c.o
+
+to_uppercase.i: to_uppercase.c.i
+
+.PHONY : to_uppercase.i
+
+# target to preprocess a source file
+to_uppercase.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/to_uppercase.c.i
+.PHONY : to_uppercase.c.i
+
+to_uppercase.s: to_uppercase.c.s
+
+.PHONY : to_uppercase.s
+
+# target to generate assembly for a file
+to_uppercase.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/to_uppercase.c.s
+.PHONY : to_uppercase.c.s
+
 ulltoa_base.o: ulltoa_base.c.o
 
 .PHONY : ulltoa_base.o
@@ -2409,6 +2436,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... to_uppercase.o"
+	@echo "... to_uppercase.i"
+	@echo "... to_uppercase.s"
 	@echo "... ulltoa_base.o"
 	@echo "... ulltoa_base.i"
 	@echo "... ulltoa_base.s"

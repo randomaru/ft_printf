@@ -85,5 +85,6 @@ add_executable(printf
         ft_llutoa.c
         itoa_base.c
         ulltoa_base.c
+        to_uppercase.c
         format.c
         )
