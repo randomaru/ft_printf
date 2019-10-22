@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 17:53:56 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/22 18:01:06 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ t_pf	*new_t_pf(void)
 		return (NULL);
 	if (!(pf->type = ft_memalloc(3)))
 		return (NULL);
-	pf->flags = '1';
 	pf->width = 0;
 	pf->str_len = 0;
 	pf->slash_n = 0;
@@ -49,7 +48,7 @@ int 	ft_printf(char *apFormat, ...)
 			while (*p != ' ' && *p != '\0')
 				p++;
 			p--;*/ ///tmp
-			pf->counter += pf_format(pf, p);
+			pf->counter += pf_format(pf, p, ap);
 		}
 		else
 		{

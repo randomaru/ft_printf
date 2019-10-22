@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 19:34:34 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/22 20:29:18 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,27 @@
 
 typedef struct		s_pf
 {
-	char			flags[2];
-	int 			width;
-	int 			precision;
-	char			size[2];
-	char 			*type;
-	int 			str_len;
-	char 			*str;
-	int 			slash_n;
-	int 			counter;
-}					t_pf;
+	char					flags[2];
+	int 					width;
+	int 					precision;
+	char					size[2];
+	char 					*type;
+	int 					str_len;
+	char 					*str;
+	int 					slash_n;
+	int 					counter;
+	union					number
+	{
+		int					i;
+		long int			li;
+		long long int		lli;
+		unsigned int		ui;
+		unsigned long		uli;
+		unsigned long long	ulli;
+		short int			hi;
+		//unsigned char uc;
+	}						num;
+}							t_pf;
 
 void			ft_putnbr_max(long long int nb);
 char			*ft_lltoa(long long int n);
@@ -44,7 +55,7 @@ int				tmp_format(t_pf *pf);
 
 int					ft_printf(char *apFormat, ...);
 int 				new_str(t_pf *pf, char *p);
-int					pf_format(t_pf *pf, char *p);
+int					pf_format(t_pf *pf, char *p, va_list ap);
 
 int 				is_flags(char *p);
 void				find_flags(t_pf *pf, char **p);
