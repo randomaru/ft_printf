@@ -123,59 +123,32 @@ printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
-flags.o: flags.c.o
+check.o: check.c.o
 
-.PHONY : flags.o
-
-# target to build an object file
-flags.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/flags.c.o
-.PHONY : flags.c.o
-
-flags.i: flags.c.i
-
-.PHONY : flags.i
-
-# target to preprocess a source file
-flags.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/flags.c.i
-.PHONY : flags.c.i
-
-flags.s: flags.c.s
-
-.PHONY : flags.s
-
-# target to generate assembly for a file
-flags.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/flags.c.s
-.PHONY : flags.c.s
-
-format.o: format.c.o
-
-.PHONY : format.o
+.PHONY : check.o
 
 # target to build an object file
-format.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/format.c.o
-.PHONY : format.c.o
+check.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.o
+.PHONY : check.c.o
 
-format.i: format.c.i
+check.i: check.c.i
 
-.PHONY : format.i
+.PHONY : check.i
 
 # target to preprocess a source file
-format.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/format.c.i
-.PHONY : format.c.i
+check.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.i
+.PHONY : check.c.i
 
-format.s: format.c.s
+check.s: check.c.s
 
-.PHONY : format.s
+.PHONY : check.s
 
 # target to generate assembly for a file
-format.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/format.c.s
-.PHONY : format.c.s
+check.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.s
+.PHONY : check.c.s
 
 ft_lltoa.o: ft_lltoa.c.o
 
@@ -2148,6 +2121,87 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/main.c.s
 .PHONY : main.c.s
 
+new_str.o: new_str.c.o
+
+.PHONY : new_str.o
+
+# target to build an object file
+new_str.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/new_str.c.o
+.PHONY : new_str.c.o
+
+new_str.i: new_str.c.i
+
+.PHONY : new_str.i
+
+# target to preprocess a source file
+new_str.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/new_str.c.i
+.PHONY : new_str.c.i
+
+new_str.s: new_str.c.s
+
+.PHONY : new_str.s
+
+# target to generate assembly for a file
+new_str.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/new_str.c.s
+.PHONY : new_str.c.s
+
+tmp_flags.o: tmp_flags.c.o
+
+.PHONY : tmp_flags.o
+
+# target to build an object file
+tmp_flags.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_flags.c.o
+.PHONY : tmp_flags.c.o
+
+tmp_flags.i: tmp_flags.c.i
+
+.PHONY : tmp_flags.i
+
+# target to preprocess a source file
+tmp_flags.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_flags.c.i
+.PHONY : tmp_flags.c.i
+
+tmp_flags.s: tmp_flags.c.s
+
+.PHONY : tmp_flags.s
+
+# target to generate assembly for a file
+tmp_flags.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_flags.c.s
+.PHONY : tmp_flags.c.s
+
+tmp_format.o: tmp_format.c.o
+
+.PHONY : tmp_format.o
+
+# target to build an object file
+tmp_format.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_format.c.o
+.PHONY : tmp_format.c.o
+
+tmp_format.i: tmp_format.c.i
+
+.PHONY : tmp_format.i
+
+# target to preprocess a source file
+tmp_format.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_format.c.i
+.PHONY : tmp_format.c.i
+
+tmp_format.s: tmp_format.c.s
+
+.PHONY : tmp_format.s
+
+# target to generate assembly for a file
+tmp_format.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_format.c.s
+.PHONY : tmp_format.c.s
+
 to_uppercase.o: to_uppercase.c.o
 
 .PHONY : to_uppercase.o
@@ -2211,12 +2265,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
-	@echo "... flags.o"
-	@echo "... flags.i"
-	@echo "... flags.s"
-	@echo "... format.o"
-	@echo "... format.i"
-	@echo "... format.s"
+	@echo "... check.o"
+	@echo "... check.i"
+	@echo "... check.s"
 	@echo "... ft_lltoa.o"
 	@echo "... ft_lltoa.i"
 	@echo "... ft_lltoa.s"
@@ -2436,6 +2487,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... new_str.o"
+	@echo "... new_str.i"
+	@echo "... new_str.s"
+	@echo "... tmp_flags.o"
+	@echo "... tmp_flags.i"
+	@echo "... tmp_flags.s"
+	@echo "... tmp_format.o"
+	@echo "... tmp_format.i"
+	@echo "... tmp_format.s"
 	@echo "... to_uppercase.o"
 	@echo "... to_uppercase.i"
 	@echo "... to_uppercase.s"

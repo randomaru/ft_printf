@@ -80,11 +80,14 @@ add_executable(printf
         ft_putnbr_max.c
         main.c
         ft_printf.c
-        flags.c
+        tmp_flags.c
         ft_lltoa.c
         ft_llutoa.c
         itoa_base.c
         ulltoa_base.c
         to_uppercase.c
-        format.c
+        tmp_format.c
+
+        check.c
+        new_str.c
         )

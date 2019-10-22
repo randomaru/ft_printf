@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   check.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 17:42:23 by tamarant         ###   ########.fr       */
+/*   Created: 2019/10/18 17:40:11 by tamarant          #+#    #+#             */
+/*   Updated: 2019/10/18 17:44:54 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int 	main(void)
+int 	is_flags(char *p)
 {
-//	printf("pf %010d\n", 123);
-//	ft_printf("ft %010d\n", 123);
-
-//	ft_putstr(itoa_base(9223372036854775807, 16));
-//	ft_putchar('\n');
-//
-//	printf("%x\n", 233);
-//	printf("%lx\n", 2147483647);
-	int i = printf("ls %%\nldfl%% %% %% ");
-	int j = ft_printf("ls %%\nldfl%% %% %% ");
-
-	return(0);
+	if (*p == '#' || *p == '0' || *p == '+' || *p == '-')
+		return (1);
+	return (0);
 }
+
+int 	is_width(char *p)
+{
+	if (*p > '0' && *p < '9')
+		return (1);
+	return (0);
+}
+
+/*
+int		is_presicion(char *p)
+{
+	if (*p == '.' && )
+}
+*/

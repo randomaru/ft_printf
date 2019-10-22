@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/17 17:22:08 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/22 17:40:56 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,25 +20,29 @@
 
 typedef struct		s_pf
 {
-	char			flag;
+	char			flags;
 	int 			width;
 	int 			presicion;
+	char			size[2];
 	char 			*type;
-	char 			*result;
+	int 			str_len;
+	char 			*str;
+	int 			slash_n;
+	int 			counter;
 }					t_pf;
 
 void			ft_putnbr_max(long long int nb);
-
-int				ft_printf(char *apFormat, ...);
-void			format_flags(char *p, va_list ap, t_pf *pf);
-void			type(char *p, va_list ap, t_pf *pf);
-
 char			*ft_lltoa(long long int n);
 char			*ft_llutoa(unsigned long long int n);
 char			*itoa_base(int value, int base);
 char			*ulltoa_base(unsigned long long int value, int base);
 char 			*to_uppercase(char *str);
 
-int				format(t_pf *pf);
+void			tmp_format_flags(char *p, va_list ap, t_pf *pf);
+void			tmp_type(char *p, va_list ap, t_pf *pf);
+int				tmp_format(t_pf *pf);
+
+int					ft_printf(char *apFormat, ...);
+int 				new_str(t_pf *pf, char *p);
 
 #endif
