@@ -95,4 +95,5 @@ void				*ft_clear_table(char **tables, int i);
 int					ft_atoi_base(const char *str);
 size_t				ft_wordcount(const char *s, char c);
 size_t				ft_wordsize(const char *s, char c);
+int					number_len(int n);
 #endif

@@ -150,6 +150,33 @@ check.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.s
 .PHONY : check.c.s
 
+find.o: find.c.o
+
+.PHONY : find.o
+
+# target to build an object file
+find.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find.c.o
+.PHONY : find.c.o
+
+find.i: find.c.i
+
+.PHONY : find.i
+
+# target to preprocess a source file
+find.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find.c.i
+.PHONY : find.c.i
+
+find.s: find.c.s
+
+.PHONY : find.s
+
+# target to generate assembly for a file
+find.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find.c.s
+.PHONY : find.c.s
+
 ft_lltoa.o: ft_lltoa.c.o
 
 .PHONY : ft_lltoa.o
@@ -2094,6 +2121,33 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
+libft/number_len.o: libft/number_len.c.o
+
+.PHONY : libft/number_len.o
+
+# target to build an object file
+libft/number_len.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len.c.o
+.PHONY : libft/number_len.c.o
+
+libft/number_len.i: libft/number_len.c.i
+
+.PHONY : libft/number_len.i
+
+# target to preprocess a source file
+libft/number_len.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len.c.i
+.PHONY : libft/number_len.c.i
+
+libft/number_len.s: libft/number_len.c.s
+
+.PHONY : libft/number_len.s
+
+# target to generate assembly for a file
+libft/number_len.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len.c.s
+.PHONY : libft/number_len.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -2147,6 +2201,33 @@ new_str.s: new_str.c.s
 new_str.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/new_str.c.s
 .PHONY : new_str.c.s
+
+pf_format.o: pf_format.c.o
+
+.PHONY : pf_format.o
+
+# target to build an object file
+pf_format.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.o
+.PHONY : pf_format.c.o
+
+pf_format.i: pf_format.c.i
+
+.PHONY : pf_format.i
+
+# target to preprocess a source file
+pf_format.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.i
+.PHONY : pf_format.c.i
+
+pf_format.s: pf_format.c.s
+
+.PHONY : pf_format.s
+
+# target to generate assembly for a file
+pf_format.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.s
+.PHONY : pf_format.c.s
 
 tmp_flags.o: tmp_flags.c.o
 
@@ -2268,6 +2349,9 @@ help:
 	@echo "... check.o"
 	@echo "... check.i"
 	@echo "... check.s"
+	@echo "... find.o"
+	@echo "... find.i"
+	@echo "... find.s"
 	@echo "... ft_lltoa.o"
 	@echo "... ft_lltoa.i"
 	@echo "... ft_lltoa.s"
@@ -2484,12 +2568,18 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
+	@echo "... libft/number_len.o"
+	@echo "... libft/number_len.i"
+	@echo "... libft/number_len.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... new_str.o"
 	@echo "... new_str.i"
 	@echo "... new_str.s"
+	@echo "... pf_format.o"
+	@echo "... pf_format.i"
+	@echo "... pf_format.s"
 	@echo "... tmp_flags.o"
 	@echo "... tmp_flags.i"
 	@echo "... tmp_flags.s"

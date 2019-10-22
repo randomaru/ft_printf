@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 17:48:28 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/22 17:53:56 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ int 	ft_printf(char *apFormat, ...)
 			while (*p != ' ' && *p != '\0')
 				p++;
 			p--;*/ ///tmp
+			pf->counter += pf_format(pf, p);
 		}
 		else
 		{

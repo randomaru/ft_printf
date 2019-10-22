@@ -5,10 +5,6 @@ CMakeFiles/printf.dir/check.c.o
  /Users/tamarant/Desktop/projects/printf/check.c
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
-CMakeFiles/printf.dir/format.c.o
- /Users/tamarant/Desktop/projects/printf/format.c
- /Users/tamarant/Desktop/projects/printf/ft_printf.h
- /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/ft_lltoa.c.o
  /Users/tamarant/Desktop/projects/printf/ft_lltoa.c
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
@@ -238,10 +234,18 @@ CMakeFiles/printf.dir/new_str.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/new_str.c
+CMakeFiles/printf.dir/pf_format.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/pf_format.c
 CMakeFiles/printf.dir/tmp_flags.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/tmp_flags.c
+CMakeFiles/printf.dir/tmp_format.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/tmp_format.c
 CMakeFiles/printf.dir/to_uppercase.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h

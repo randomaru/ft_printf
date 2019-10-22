@@ -27,6 +27,7 @@ SRC = ft_putchar.c ft_putstr.c ft_strcmp.c ft_strcpy.c ft_strdup.c \
 	  ft_iterative_factorial.c ft_free.c ft_iterative_power.c \
 	  ft_strjoin_free.c ft_lstmap.c ft_countwords.c \
 	  get_next_line.c ft_clear_table.c ft_atoi_base.c \
+	  number_len.c
 
 
 OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strcpy.o ft_strdup.o \
@@ -44,6 +45,7 @@ OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strcpy.o ft_strdup.o \
 	  ft_iterative_factorial.o ft_free.o ft_iterative_power.o \
 	  ft_strjoin_free.o ft_lstmap.o  ft_countwords.o \
 	  get_next_line.o ft_clear_table.o ft_atoi_base.o  \
+	  number_len.o
 
 
 FLAGS = -Wall -Wextra -Werror

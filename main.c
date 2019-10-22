@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 17:42:23 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/22 18:06:17 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int 	main(void)
 //
 //	printf("%x\n", 233);
 //	printf("%lx\n", 2147483647);
-	int i = printf("ls %%\nldfl%% %% %% ");
-	int j = ft_printf("ls %%\nldfl%% %% %% ");
+	int i = printf("%-#10o", 16);
+	//int j = ft_printf("ls %%\nldfl%% %% %% ");
 
 	return(0);
 }

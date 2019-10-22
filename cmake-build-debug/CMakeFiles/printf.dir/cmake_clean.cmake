@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/check.c.o"
+  "CMakeFiles/printf.dir/find.c.o"
   "CMakeFiles/printf.dir/ft_lltoa.c.o"
   "CMakeFiles/printf.dir/ft_llutoa.c.o"
   "CMakeFiles/printf.dir/ft_printf.c.o"
@@ -72,8 +73,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/libft/ft_tolower.c.o"
   "CMakeFiles/printf.dir/libft/ft_toupper.c.o"
   "CMakeFiles/printf.dir/libft/get_next_line.c.o"
+  "CMakeFiles/printf.dir/libft/number_len.c.o"
   "CMakeFiles/printf.dir/main.c.o"
   "CMakeFiles/printf.dir/new_str.c.o"
+  "CMakeFiles/printf.dir/pf_format.c.o"
   "CMakeFiles/printf.dir/tmp_flags.c.o"
   "CMakeFiles/printf.dir/tmp_format.c.o"
   "CMakeFiles/printf.dir/to_uppercase.c.o"

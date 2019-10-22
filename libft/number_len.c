@@ -1,41 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check.c                                            :+:      :+:    :+:   */
+/*   number_len.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/18 17:40:11 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 19:48:52 by tamarant         ###   ########.fr       */
+/*   Created: 2019/10/22 19:26:33 by tamarant          #+#    #+#             */
+/*   Updated: 2019/10/22 19:26:33 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int 	is_flags(char *p)
+int		number_len(int n)
 {
-	if (*p == '#' || *p == '0' || *p == '+' || *p == '-')
-		return (1);
-	return (0);
-}
+	int len;
 
-int 	is_width(char *p)
-{
-	if (*p > '0' && *p < '9')
-		return (1);
-	return (0);
-}
-
-int		is_precision(char *p)
-{
-	if (*p == '.' && (*(p + 1) >= '0' && *(p + 1) <= '9'))
-		return (1);
-	return (0);
-}
-
-int 	is_size(char *p)
-{
-	if (ft_strchr("hl", *p))
-		return (1);
-	return (0);
+	len = 1;
+	while (n > 9)
+	{
+		n = n / 10;
+		len++;
+	}
+	return (len);
 }

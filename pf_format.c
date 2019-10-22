@@ -1,41 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check.c                                            :+:      :+:    :+:   */
+/*   pf_format.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/18 17:40:11 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 19:48:52 by tamarant         ###   ########.fr       */
+/*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
+/*   Updated: 2019/10/22 19:34:34 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int 	is_flags(char *p)
+int		pf_format(t_pf *pf, char *p)
 {
-	if (*p == '#' || *p == '0' || *p == '+' || *p == '-')
-		return (1);
-	return (0);
-}
-
-int 	is_width(char *p)
-{
-	if (*p > '0' && *p < '9')
-		return (1);
-	return (0);
-}
-
-int		is_precision(char *p)
-{
-	if (*p == '.' && (*(p + 1) >= '0' && *(p + 1) <= '9'))
-		return (1);
-	return (0);
-}
-
-int 	is_size(char *p)
-{
-	if (ft_strchr("hl", *p))
-		return (1);
-	return (0);
+	if (is_flags(p))
+		find_flags(pf, &p);
+	if (is_width(p))
+		find_width(pf, &p);
+	if (is_precision(p))
+		find_precision(pf, &p);
+	if (is_size(p))
+		find_size(pf, &p);
+	///теперь нужно определить тип переменной из union
 }
