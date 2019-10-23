@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 20:29:18 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/23 21:03:03 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,25 +20,27 @@
 
 typedef struct		s_pf
 {
-	char					flags[2];
+	char					*flags;
 	int 					width;
 	int 					precision;
 	char					size[2];
-	char 					*type;
+	char 					type;
 	int 					str_len;
 	char 					*str;
 	int 					slash_n;
 	int 					counter;
 	union					number
 	{
-		int					i;
-		long int			li;
-		long long int		lli;
-		unsigned int		ui;
-		unsigned long		uli;
-		unsigned long long	ulli;
-		short int			hi;
-		//unsigned char uc;
+		int					i; ///
+		long int			li; ////
+		long long int		lli; ///
+		unsigned int		ui; ///
+		unsigned long int	uli; ///
+		unsigned long long	ulli; ///
+		short int			hi; ///
+		unsigned short int	uhi; ///
+		signed char			sc; ///
+		unsigned char		uc; ////
 	}						num;
 }							t_pf;
 

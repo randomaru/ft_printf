@@ -5,6 +5,10 @@ CMakeFiles/printf.dir/check.c.o: ../check.c
 CMakeFiles/printf.dir/check.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/check.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/find.c.o: ../find.c
+CMakeFiles/printf.dir/find.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/find.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/ft_lltoa.c.o: ../ft_lltoa.c
 CMakeFiles/printf.dir/ft_lltoa.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/ft_lltoa.c.o: ../libft/libft.h
@@ -226,6 +230,9 @@ CMakeFiles/printf.dir/libft/ft_toupper.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
 CMakeFiles/printf.dir/libft/get_next_line.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/libft/number_len.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/libft/number_len.c.o: ../libft/number_len.c
+
 CMakeFiles/printf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/main.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/main.c.o: ../main.c
@@ -238,13 +245,9 @@ CMakeFiles/printf.dir/pf_format.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/pf_format.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/pf_format.c.o: ../pf_format.c
 
-CMakeFiles/printf.dir/tmp_flags.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/tmp_flags.c.o: ../libft/libft.h
-CMakeFiles/printf.dir/tmp_flags.c.o: ../tmp_flags.c
-
-CMakeFiles/printf.dir/tmp_format.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/tmp_format.c.o: ../libft/libft.h
-CMakeFiles/printf.dir/tmp_format.c.o: ../tmp_format.c
+CMakeFiles/printf.dir/str_format.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/str_format.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/str_format.c.o: ../str_format.c
 
 CMakeFiles/printf.dir/to_uppercase.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/to_uppercase.c.o: ../libft/libft.h

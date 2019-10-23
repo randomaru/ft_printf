@@ -2229,59 +2229,32 @@ pf_format.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.s
 .PHONY : pf_format.c.s
 
-tmp_flags.o: tmp_flags.c.o
+str_format.o: str_format.c.o
 
-.PHONY : tmp_flags.o
-
-# target to build an object file
-tmp_flags.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_flags.c.o
-.PHONY : tmp_flags.c.o
-
-tmp_flags.i: tmp_flags.c.i
-
-.PHONY : tmp_flags.i
-
-# target to preprocess a source file
-tmp_flags.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_flags.c.i
-.PHONY : tmp_flags.c.i
-
-tmp_flags.s: tmp_flags.c.s
-
-.PHONY : tmp_flags.s
-
-# target to generate assembly for a file
-tmp_flags.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_flags.c.s
-.PHONY : tmp_flags.c.s
-
-tmp_format.o: tmp_format.c.o
-
-.PHONY : tmp_format.o
+.PHONY : str_format.o
 
 # target to build an object file
-tmp_format.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_format.c.o
-.PHONY : tmp_format.c.o
+str_format.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/str_format.c.o
+.PHONY : str_format.c.o
 
-tmp_format.i: tmp_format.c.i
+str_format.i: str_format.c.i
 
-.PHONY : tmp_format.i
+.PHONY : str_format.i
 
 # target to preprocess a source file
-tmp_format.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_format.c.i
-.PHONY : tmp_format.c.i
+str_format.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/str_format.c.i
+.PHONY : str_format.c.i
 
-tmp_format.s: tmp_format.c.s
+str_format.s: str_format.c.s
 
-.PHONY : tmp_format.s
+.PHONY : str_format.s
 
 # target to generate assembly for a file
-tmp_format.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_format.c.s
-.PHONY : tmp_format.c.s
+str_format.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/str_format.c.s
+.PHONY : str_format.c.s
 
 to_uppercase.o: to_uppercase.c.o
 
@@ -2580,12 +2553,9 @@ help:
 	@echo "... pf_format.o"
 	@echo "... pf_format.i"
 	@echo "... pf_format.s"
-	@echo "... tmp_flags.o"
-	@echo "... tmp_flags.i"
-	@echo "... tmp_flags.s"
-	@echo "... tmp_format.o"
-	@echo "... tmp_format.i"
-	@echo "... tmp_format.s"
+	@echo "... str_format.o"
+	@echo "... str_format.i"
+	@echo "... str_format.s"
 	@echo "... to_uppercase.o"
 	@echo "... to_uppercase.i"
 	@echo "... to_uppercase.s"

@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 18:01:06 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/23 20:55:07 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_pf	*new_t_pf(void)
 
 	if (!(pf = (t_pf*)malloc(sizeof(t_pf))))
 		return (NULL);
-	if (!(pf->type = ft_memalloc(3)))
+	if (!(pf->flags = ft_memalloc(6)))
 		return (NULL);
 	pf->width = 0;
 	pf->str_len = 0;
