@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/23 20:55:07 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/24 21:04:37 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,26 @@ t_pf	*new_t_pf(void)
 		return (NULL);
 	if (!(pf->flags = ft_memalloc(6)))
 		return (NULL);
+	if (!(pf->size = ft_memalloc(3)))
+		return (NULL);
 	pf->width = 0;
+	pf->precision = 0;
+	pf->type = '\0';
 	pf->str_len = 0;
-	pf->slash_n = 0;
+	pf->str = NULL;
+	pf->percent = 0;
 	pf->counter = 0;
+	pf->num.i = 0;
 	return (pf);
+}
+
+void	free_t_pf(t_pf *pf)
+{
+	free(pf->flags);
+	pf->flags = NULL;
+	free(pf->size);
+	pf->size = NULL;
+	free(pf);
 }
 
 int 	ft_printf(char *apFormat, ...)
@@ -48,7 +63,10 @@ int 	ft_printf(char *apFormat, ...)
 			while (*p != ' ' && *p != '\0')
 				p++;
 			p--;*/ ///tmp
-			pf->counter += pf_format(pf, p, ap);
+			if (pf->counter += pf_format(pf, &p, ap) <= 0)
+				return (0);
+			while (*p != ' ' && *p != '%' && *p != '\0')
+				p++;
 		}
 		else
 		{
@@ -82,9 +100,9 @@ int 	ft_printf(char *apFormat, ...)
 			pf->str[i] = '\0';
 			ft_putstr(pf->str);*/ ///tmp
 			pf->counter += new_str(pf, p);
-			p += pf->str_len + pf->slash_n;
+			p += pf->str_len + pf->percent;
 		}
-		//p++;
 	}
+	free_t_pf(pf);
 	return (pf->counter);
 }

@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/23 21:03:03 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/24 20:47:27 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,30 +18,32 @@
 # include "libft/libft.h"
 # include <limits.h>
 
+union					number
+{
+	int					i; ///
+	long int			li; ////
+	long long int		lli; ///
+	unsigned int		ui; ///
+	unsigned long int	uli; ///
+	unsigned long long	ulli; ///
+	short int			hi; ///
+	unsigned short int	uhi; ///
+	signed char			sc; ///
+	unsigned char		uc; ////
+}						;
+
 typedef struct		s_pf
 {
 	char					*flags;
 	int 					width;
 	int 					precision;
-	char					size[2];
+	char					*size;
 	char 					type;
 	int 					str_len;
 	char 					*str;
-	int 					slash_n;
+	int 					percent;
 	int 					counter;
-	union					number
-	{
-		int					i; ///
-		long int			li; ////
-		long long int		lli; ///
-		unsigned int		ui; ///
-		unsigned long int	uli; ///
-		unsigned long long	ulli; ///
-		short int			hi; ///
-		unsigned short int	uhi; ///
-		signed char			sc; ///
-		unsigned char		uc; ////
-	}						num;
+	union number			num;
 }							t_pf;
 
 void			ft_putnbr_max(long long int nb);
@@ -57,7 +59,7 @@ int				tmp_format(t_pf *pf);
 
 int					ft_printf(char *apFormat, ...);
 int 				new_str(t_pf *pf, char *p);
-int					pf_format(t_pf *pf, char *p, va_list ap);
+int					pf_format(t_pf *pf, char **p, va_list ap);
 
 int 				is_flags(char *p);
 void				find_flags(t_pf *pf, char **p);
@@ -68,5 +70,5 @@ void				find_precision(t_pf *pf, char **p);
 int 				is_size(char *p);
 void				find_size(t_pf *pf, char **p);
 void				to_str(t_pf *pf);
-void				str_format(t_pf *pf);
+int					str_format(t_pf *pf);
 #endif

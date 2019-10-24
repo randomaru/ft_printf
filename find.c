@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 18:09:48 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/22 19:34:34 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/24 20:25:08 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,12 +51,12 @@ void	find_size(t_pf *pf, char **p)
 {
 	if ((**p == 'h' && **(p + 1) == 'h') || (**p == 'l' && **(p + 1) == 'l'))
 	{
-		**p == 'h' ? (pf->type = "hh") : (pf->type = "ll");
+		**p == 'h' ? (pf->size = "hh") : (pf->size = "ll");
 		*p += 2;
 	}
 	else if (**p == 'h' || **p == 'l' )
 	{
-		**p == 'h' ? (pf->type = "h") : (pf->type = "l");
+		**p == 'h' ? (pf->size = "h") : (pf->size = "l");
 		*p += 1;
 	}
 }
