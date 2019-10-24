@@ -67,4 +67,6 @@ int					is_precision(char *p);
 void				find_precision(t_pf *pf, char **p);
 int 				is_size(char *p);
 void				find_size(t_pf *pf, char **p);
+void				to_str(t_pf *pf);
+void				str_format(t_pf *pf);
 #endif

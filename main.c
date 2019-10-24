@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/23 20:41:14 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/24 15:24:28 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,14 @@ int 	main(void)
 //	printf("%#-5x\n", 16);
 //	printf("%-#x\n", 16);
 
-	printf("%010+d\n", 14);
-	printf("%010+-d\n", 14);
-	printf("%-+010d\n", 14);
+//	printf("%010+d\n", 14);
+//	printf("%010+-d\n", 14);
+//	printf("%-+010d\n", 14);
+//
+//	printf("%#o\n", 16);
 
-	printf("%#o\n", 16);
+	printf("%+05d\n", 15);
+	printf("%-05d\n", 15);
+
 	return(0);
 }
