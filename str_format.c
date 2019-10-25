@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 20:55:11 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/24 21:22:16 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/25 15:58:58 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,17 +79,18 @@ int		str_format(t_pf *pf)
 			if (!(tmp = ft_memalloc(width + 1)))
 				return (0); ////ERROR
 			int k = 0;
-				while (width--)
+			while (width--)
 			{
-				*tmp = '0';
-				tmp++;
+				tmp[k] = '0';
+				k++;
 			}
 			if (!(pf->str = ft_strjoin_free(tmp, pf->str, 3)))
+			///если вернется NULL, то теряется указатель на pf->str
 				return (0);
 		}
 		i++;
 	}
-//	if (tmp)
-//		free(tmp);
+	if (tmp)
+		free(tmp);
 	return (1);
 }

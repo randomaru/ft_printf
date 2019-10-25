@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/24 20:26:00 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/25 21:46:17 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,9 @@ int 	main(void)
 
 //	printf("%+05d\n", 15);
 //	printf("%-05d\n", 15);
-	ft_printf("%04d\n", 12);
+	ft_printf("%#04o", 12);
+
+//	printf("%+.7d\n", 7);
 
 	return(0);
 }

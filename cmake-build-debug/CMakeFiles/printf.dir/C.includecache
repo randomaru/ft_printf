@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/tamarant/Desktop/projects/printf/ft_printf.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
 /Users/tamarant/Desktop/projects/printf/ft_printf.h
 stdio.h
 -
@@ -26,7 +30,7 @@ string.h
 fcntl.h
 -
 
-/Users/tamarant/Desktop/projects/printf/str_format.c
+/Users/tamarant/Desktop/projects/printf/pf_format.c
 ft_printf.h
 /Users/tamarant/Desktop/projects/printf/ft_printf.h
 

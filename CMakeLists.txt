@@ -75,6 +75,8 @@ add_executable(printf
         libft/ft_toupper.c
         libft/get_next_line.c
         libft/number_len.c
+        libft/number_len_ll.c
+        libft/number_len_ull.c
         libft/libft.h
         libft/Makefile
         ft_printf.h
@@ -95,4 +97,5 @@ add_executable(printf
         pf_format.c
         find.c
         str_format.c
+        tmp_str_format.c
         )

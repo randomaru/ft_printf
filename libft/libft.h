@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 21:44:24 by tamarant          #+#    #+#             */
-/*   Updated: 2019/09/28 02:21:00 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/25 21:02:35 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,4 +96,7 @@ int					ft_atoi_base(const char *str);
 size_t				ft_wordcount(const char *s, char c);
 size_t				ft_wordsize(const char *s, char c);
 int					number_len(int n);
+int					number_len_ll(long long n);
+int					number_len_ull(unsigned long long n);
+
 #endif

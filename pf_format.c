@@ -58,9 +58,12 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		pf->type = **p;
 		number_size(pf, **p, ap);
 	}
-	to_str(pf);
-	if (!(str_format(pf)))
-		return (0);
+//	to_str(pf);
+//	if (!(str_format(pf)))
+//		return (0);
+	save_format(pf);
+	str_size(pf);
+	new_num_str(pf);
 	ft_putstr(pf->str);
 	///теперь нужно определить тип переменной из union
 	return(ft_strlen(pf->str));

@@ -233,6 +233,12 @@ CMakeFiles/printf.dir/libft/get_next_line.c.o
 CMakeFiles/printf.dir/libft/number_len.c.o
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/libft/number_len.c
+CMakeFiles/printf.dir/libft/number_len_ll.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/libft/number_len_ll.c
+CMakeFiles/printf.dir/libft/number_len_ull.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c
 CMakeFiles/printf.dir/main.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
@@ -249,6 +255,10 @@ CMakeFiles/printf.dir/str_format.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/str_format.c
+CMakeFiles/printf.dir/tmp_str_format.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/tmp_str_format.c
 CMakeFiles/printf.dir/to_uppercase.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h

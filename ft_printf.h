@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/24 20:47:27 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/10/25 20:56:38 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ union					number
 	unsigned short int	uhi; ///
 	signed char			sc; ///
 	unsigned char		uc; ////
-}						;
+};
 
 typedef struct		s_pf
 {
@@ -43,6 +43,13 @@ typedef struct		s_pf
 	char 					*str;
 	int 					percent;
 	int 					counter;
+
+	int						symbol; /// 1='0', 2=' ' totheleft; 3=' ' totheright
+	int 					symb_width;
+	int 					sign; /// 0='-', 1='+'
+	char 					*sharp;
+
+
 	union number			num;
 }							t_pf;
 
@@ -71,4 +78,10 @@ int 				is_size(char *p);
 void				find_size(t_pf *pf, char **p);
 void				to_str(t_pf *pf);
 int					str_format(t_pf *pf);
+
+int					save_format(t_pf *pf);
+int					str_size(t_pf *pf);
+int					new_num_str(t_pf *pf);
+
+
 #endif

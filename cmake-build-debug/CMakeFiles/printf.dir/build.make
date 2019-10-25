@@ -941,9 +941,35 @@ CMakeFiles/printf.dir/libft/number_len.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/number_len.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/number_len.c -o CMakeFiles/printf.dir/libft/number_len.c.s
 
+CMakeFiles/printf.dir/libft/number_len_ll.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/number_len_ll.c.o: ../libft/number_len_ll.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/printf.dir/libft/number_len_ll.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/number_len_ll.c.o   -c /Users/tamarant/Desktop/projects/printf/libft/number_len_ll.c
+
+CMakeFiles/printf.dir/libft/number_len_ll.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/number_len_ll.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/libft/number_len_ll.c > CMakeFiles/printf.dir/libft/number_len_ll.c.i
+
+CMakeFiles/printf.dir/libft/number_len_ll.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/number_len_ll.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/number_len_ll.c -o CMakeFiles/printf.dir/libft/number_len_ll.c.s
+
+CMakeFiles/printf.dir/libft/number_len_ull.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/number_len_ull.c.o: ../libft/number_len_ull.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/printf.dir/libft/number_len_ull.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/number_len_ull.c.o   -c /Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c
+
+CMakeFiles/printf.dir/libft/number_len_ull.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/number_len_ull.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c > CMakeFiles/printf.dir/libft/number_len_ull.c.i
+
+CMakeFiles/printf.dir/libft/number_len_ull.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/number_len_ull.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c -o CMakeFiles/printf.dir/libft/number_len_ull.c.s
+
 CMakeFiles/printf.dir/ft_putnbr_max.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/ft_putnbr_max.c.o: ../ft_putnbr_max.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/printf.dir/ft_putnbr_max.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/printf.dir/ft_putnbr_max.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ft_putnbr_max.c.o   -c /Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c
 
 CMakeFiles/printf.dir/ft_putnbr_max.c.i: cmake_force
@@ -956,7 +982,7 @@ CMakeFiles/printf.dir/ft_putnbr_max.c.s: cmake_force
 
 CMakeFiles/printf.dir/main.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/printf.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/printf.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/main.c.o   -c /Users/tamarant/Desktop/projects/printf/main.c
 
 CMakeFiles/printf.dir/main.c.i: cmake_force
@@ -969,7 +995,7 @@ CMakeFiles/printf.dir/main.c.s: cmake_force
 
 CMakeFiles/printf.dir/ft_printf.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/printf.dir/ft_printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/printf.dir/ft_printf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ft_printf.c.o   -c /Users/tamarant/Desktop/projects/printf/ft_printf.c
 
 CMakeFiles/printf.dir/ft_printf.c.i: cmake_force
@@ -982,7 +1008,7 @@ CMakeFiles/printf.dir/ft_printf.c.s: cmake_force
 
 CMakeFiles/printf.dir/ft_lltoa.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/ft_lltoa.c.o: ../ft_lltoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/printf.dir/ft_lltoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/printf.dir/ft_lltoa.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ft_lltoa.c.o   -c /Users/tamarant/Desktop/projects/printf/ft_lltoa.c
 
 CMakeFiles/printf.dir/ft_lltoa.c.i: cmake_force
@@ -995,7 +1021,7 @@ CMakeFiles/printf.dir/ft_lltoa.c.s: cmake_force
 
 CMakeFiles/printf.dir/ft_llutoa.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/ft_llutoa.c.o: ../ft_llutoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/printf.dir/ft_llutoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/printf.dir/ft_llutoa.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ft_llutoa.c.o   -c /Users/tamarant/Desktop/projects/printf/ft_llutoa.c
 
 CMakeFiles/printf.dir/ft_llutoa.c.i: cmake_force
@@ -1008,7 +1034,7 @@ CMakeFiles/printf.dir/ft_llutoa.c.s: cmake_force
 
 CMakeFiles/printf.dir/itoa_base.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/itoa_base.c.o: ../itoa_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/printf.dir/itoa_base.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/printf.dir/itoa_base.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/itoa_base.c.o   -c /Users/tamarant/Desktop/projects/printf/itoa_base.c
 
 CMakeFiles/printf.dir/itoa_base.c.i: cmake_force
@@ -1021,7 +1047,7 @@ CMakeFiles/printf.dir/itoa_base.c.s: cmake_force
 
 CMakeFiles/printf.dir/ulltoa_base.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/ulltoa_base.c.o: ../ulltoa_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/printf.dir/ulltoa_base.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/printf.dir/ulltoa_base.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ulltoa_base.c.o   -c /Users/tamarant/Desktop/projects/printf/ulltoa_base.c
 
 CMakeFiles/printf.dir/ulltoa_base.c.i: cmake_force
@@ -1034,7 +1060,7 @@ CMakeFiles/printf.dir/ulltoa_base.c.s: cmake_force
 
 CMakeFiles/printf.dir/to_uppercase.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/to_uppercase.c.o: ../to_uppercase.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/printf.dir/to_uppercase.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/printf.dir/to_uppercase.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/to_uppercase.c.o   -c /Users/tamarant/Desktop/projects/printf/to_uppercase.c
 
 CMakeFiles/printf.dir/to_uppercase.c.i: cmake_force
@@ -1047,7 +1073,7 @@ CMakeFiles/printf.dir/to_uppercase.c.s: cmake_force
 
 CMakeFiles/printf.dir/check.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/check.c.o: ../check.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/printf.dir/check.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/printf.dir/check.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/check.c.o   -c /Users/tamarant/Desktop/projects/printf/check.c
 
 CMakeFiles/printf.dir/check.c.i: cmake_force
@@ -1060,7 +1086,7 @@ CMakeFiles/printf.dir/check.c.s: cmake_force
 
 CMakeFiles/printf.dir/new_str.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/new_str.c.o: ../new_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/printf.dir/new_str.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/printf.dir/new_str.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/new_str.c.o   -c /Users/tamarant/Desktop/projects/printf/new_str.c
 
 CMakeFiles/printf.dir/new_str.c.i: cmake_force
@@ -1073,7 +1099,7 @@ CMakeFiles/printf.dir/new_str.c.s: cmake_force
 
 CMakeFiles/printf.dir/pf_format.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/pf_format.c.o: ../pf_format.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/printf.dir/pf_format.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/printf.dir/pf_format.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/pf_format.c.o   -c /Users/tamarant/Desktop/projects/printf/pf_format.c
 
 CMakeFiles/printf.dir/pf_format.c.i: cmake_force
@@ -1086,7 +1112,7 @@ CMakeFiles/printf.dir/pf_format.c.s: cmake_force
 
 CMakeFiles/printf.dir/find.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/find.c.o: ../find.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/printf.dir/find.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/printf.dir/find.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/find.c.o   -c /Users/tamarant/Desktop/projects/printf/find.c
 
 CMakeFiles/printf.dir/find.c.i: cmake_force
@@ -1099,7 +1125,7 @@ CMakeFiles/printf.dir/find.c.s: cmake_force
 
 CMakeFiles/printf.dir/str_format.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/str_format.c.o: ../str_format.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/printf.dir/str_format.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/printf.dir/str_format.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/str_format.c.o   -c /Users/tamarant/Desktop/projects/printf/str_format.c
 
 CMakeFiles/printf.dir/str_format.c.i: cmake_force
@@ -1109,6 +1135,19 @@ CMakeFiles/printf.dir/str_format.c.i: cmake_force
 CMakeFiles/printf.dir/str_format.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/str_format.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/str_format.c -o CMakeFiles/printf.dir/str_format.c.s
+
+CMakeFiles/printf.dir/tmp_str_format.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/tmp_str_format.c.o: ../tmp_str_format.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/printf.dir/tmp_str_format.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/tmp_str_format.c.o   -c /Users/tamarant/Desktop/projects/printf/tmp_str_format.c
+
+CMakeFiles/printf.dir/tmp_str_format.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/tmp_str_format.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/tmp_str_format.c > CMakeFiles/printf.dir/tmp_str_format.c.i
+
+CMakeFiles/printf.dir/tmp_str_format.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/tmp_str_format.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/tmp_str_format.c -o CMakeFiles/printf.dir/tmp_str_format.c.s
 
 # Object files for target printf
 printf_OBJECTS = \
@@ -1180,6 +1219,8 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/libft/ft_toupper.c.o" \
 "CMakeFiles/printf.dir/libft/get_next_line.c.o" \
 "CMakeFiles/printf.dir/libft/number_len.c.o" \
+"CMakeFiles/printf.dir/libft/number_len_ll.c.o" \
+"CMakeFiles/printf.dir/libft/number_len_ull.c.o" \
 "CMakeFiles/printf.dir/ft_putnbr_max.c.o" \
 "CMakeFiles/printf.dir/main.c.o" \
 "CMakeFiles/printf.dir/ft_printf.c.o" \
@@ -1192,7 +1233,8 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/new_str.c.o" \
 "CMakeFiles/printf.dir/pf_format.c.o" \
 "CMakeFiles/printf.dir/find.c.o" \
-"CMakeFiles/printf.dir/str_format.c.o"
+"CMakeFiles/printf.dir/str_format.c.o" \
+"CMakeFiles/printf.dir/tmp_str_format.c.o"
 
 # External object files for target printf
 printf_EXTERNAL_OBJECTS =
@@ -1265,6 +1307,8 @@ printf: CMakeFiles/printf.dir/libft/ft_tolower.c.o
 printf: CMakeFiles/printf.dir/libft/ft_toupper.c.o
 printf: CMakeFiles/printf.dir/libft/get_next_line.c.o
 printf: CMakeFiles/printf.dir/libft/number_len.c.o
+printf: CMakeFiles/printf.dir/libft/number_len_ll.c.o
+printf: CMakeFiles/printf.dir/libft/number_len_ull.c.o
 printf: CMakeFiles/printf.dir/ft_putnbr_max.c.o
 printf: CMakeFiles/printf.dir/main.c.o
 printf: CMakeFiles/printf.dir/ft_printf.c.o
@@ -1278,9 +1322,10 @@ printf: CMakeFiles/printf.dir/new_str.c.o
 printf: CMakeFiles/printf.dir/pf_format.c.o
 printf: CMakeFiles/printf.dir/find.c.o
 printf: CMakeFiles/printf.dir/str_format.c.o
+printf: CMakeFiles/printf.dir/tmp_str_format.c.o
 printf: CMakeFiles/printf.dir/build.make
 printf: CMakeFiles/printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Linking C executable printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Linking C executable printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

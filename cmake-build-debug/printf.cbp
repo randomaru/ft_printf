@@ -321,6 +321,12 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/number_len.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/number_len_ll.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/main.c">
 			<Option target="printf"/>
 		</Unit>
@@ -331,6 +337,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/str_format.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/tmp_str_format.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/to_uppercase.c">

@@ -79,10 +79,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/libft/ft_toupper.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_toupper.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/get_next_line.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/get_next_line.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/number_len.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/number_len.c.o"
+  "/Users/tamarant/Desktop/projects/printf/libft/number_len_ll.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/number_len_ll.c.o"
+  "/Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/number_len_ull.c.o"
   "/Users/tamarant/Desktop/projects/printf/main.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   "/Users/tamarant/Desktop/projects/printf/new_str.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/new_str.c.o"
   "/Users/tamarant/Desktop/projects/printf/pf_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/pf_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/str_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/str_format.c.o"
+  "/Users/tamarant/Desktop/projects/printf/tmp_str_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/tmp_str_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/to_uppercase.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/to_uppercase.c.o"
   "/Users/tamarant/Desktop/projects/printf/ulltoa_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ulltoa_base.c.o"
   )

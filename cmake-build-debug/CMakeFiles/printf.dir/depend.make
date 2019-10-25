@@ -233,6 +233,12 @@ CMakeFiles/printf.dir/libft/get_next_line.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/number_len.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/number_len.c.o: ../libft/number_len.c
 
+CMakeFiles/printf.dir/libft/number_len_ll.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/libft/number_len_ll.c.o: ../libft/number_len_ll.c
+
+CMakeFiles/printf.dir/libft/number_len_ull.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/libft/number_len_ull.c.o: ../libft/number_len_ull.c
+
 CMakeFiles/printf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/main.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/main.c.o: ../main.c
@@ -248,6 +254,10 @@ CMakeFiles/printf.dir/pf_format.c.o: ../pf_format.c
 CMakeFiles/printf.dir/str_format.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/str_format.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/str_format.c.o: ../str_format.c
+
+CMakeFiles/printf.dir/tmp_str_format.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/tmp_str_format.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/tmp_str_format.c.o: ../tmp_str_format.c
 
 CMakeFiles/printf.dir/to_uppercase.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/to_uppercase.c.o: ../libft/libft.h

@@ -2148,6 +2148,60 @@ libft/number_len.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len.c.s
 .PHONY : libft/number_len.c.s
 
+libft/number_len_ll.o: libft/number_len_ll.c.o
+
+.PHONY : libft/number_len_ll.o
+
+# target to build an object file
+libft/number_len_ll.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len_ll.c.o
+.PHONY : libft/number_len_ll.c.o
+
+libft/number_len_ll.i: libft/number_len_ll.c.i
+
+.PHONY : libft/number_len_ll.i
+
+# target to preprocess a source file
+libft/number_len_ll.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len_ll.c.i
+.PHONY : libft/number_len_ll.c.i
+
+libft/number_len_ll.s: libft/number_len_ll.c.s
+
+.PHONY : libft/number_len_ll.s
+
+# target to generate assembly for a file
+libft/number_len_ll.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len_ll.c.s
+.PHONY : libft/number_len_ll.c.s
+
+libft/number_len_ull.o: libft/number_len_ull.c.o
+
+.PHONY : libft/number_len_ull.o
+
+# target to build an object file
+libft/number_len_ull.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len_ull.c.o
+.PHONY : libft/number_len_ull.c.o
+
+libft/number_len_ull.i: libft/number_len_ull.c.i
+
+.PHONY : libft/number_len_ull.i
+
+# target to preprocess a source file
+libft/number_len_ull.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len_ull.c.i
+.PHONY : libft/number_len_ull.c.i
+
+libft/number_len_ull.s: libft/number_len_ull.c.s
+
+.PHONY : libft/number_len_ull.s
+
+# target to generate assembly for a file
+libft/number_len_ull.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len_ull.c.s
+.PHONY : libft/number_len_ull.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -2255,6 +2309,33 @@ str_format.s: str_format.c.s
 str_format.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/str_format.c.s
 .PHONY : str_format.c.s
+
+tmp_str_format.o: tmp_str_format.c.o
+
+.PHONY : tmp_str_format.o
+
+# target to build an object file
+tmp_str_format.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_str_format.c.o
+.PHONY : tmp_str_format.c.o
+
+tmp_str_format.i: tmp_str_format.c.i
+
+.PHONY : tmp_str_format.i
+
+# target to preprocess a source file
+tmp_str_format.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_str_format.c.i
+.PHONY : tmp_str_format.c.i
+
+tmp_str_format.s: tmp_str_format.c.s
+
+.PHONY : tmp_str_format.s
+
+# target to generate assembly for a file
+tmp_str_format.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_str_format.c.s
+.PHONY : tmp_str_format.c.s
 
 to_uppercase.o: to_uppercase.c.o
 
@@ -2544,6 +2625,12 @@ help:
 	@echo "... libft/number_len.o"
 	@echo "... libft/number_len.i"
 	@echo "... libft/number_len.s"
+	@echo "... libft/number_len_ll.o"
+	@echo "... libft/number_len_ll.i"
+	@echo "... libft/number_len_ll.s"
+	@echo "... libft/number_len_ull.o"
+	@echo "... libft/number_len_ull.i"
+	@echo "... libft/number_len_ull.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -2556,6 +2643,9 @@ help:
 	@echo "... str_format.o"
 	@echo "... str_format.i"
 	@echo "... str_format.s"
+	@echo "... tmp_str_format.o"
+	@echo "... tmp_str_format.i"
+	@echo "... tmp_str_format.s"
 	@echo "... to_uppercase.o"
 	@echo "... to_uppercase.i"
 	@echo "... to_uppercase.s"
