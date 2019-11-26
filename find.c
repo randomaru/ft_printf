@@ -42,7 +42,7 @@ void	find_width(t_pf *pf, char **p)
 
 void	find_precision(t_pf *pf, char **p)
 {
-	++p;
+	++(*p);
 	pf->precision = ft_atoi(*p);
 	*p += number_len(pf->precision);
 }

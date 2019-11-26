@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/printf.dir/SVETA_float.c.o"
+  "CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
   "CMakeFiles/printf.dir/check.c.o"
   "CMakeFiles/printf.dir/find.c.o"
   "CMakeFiles/printf.dir/ft_lltoa.c.o"

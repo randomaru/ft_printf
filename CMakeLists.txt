@@ -98,4 +98,7 @@ add_executable(printf
         find.c
         str_format.c
         tmp_str_format.c
+
+        SVETA_float.c
+        SVETA_pf_itoa.c
         )

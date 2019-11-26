@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/SVETA_float.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/check.c">
 			<Option target="printf"/>
 		</Unit>

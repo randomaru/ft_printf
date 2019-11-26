@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/24 18:18:14 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/26 17:38:01 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 	}
 	else
 	{
-		if (p == 'd' || p == 'i' || p == 'o' || p == 'x' || p == 'X')
+		if (p == 'd' || p == 'i')
 			pf->num.i = va_arg(ap, int);
-		else if (p == 'u')
+		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
 			pf->num.ui = va_arg(ap, unsigned int);
 	}
 }
@@ -58,13 +58,19 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		pf->type = **p;
 		number_size(pf, **p, ap);
 	}
-//	to_str(pf);
-//	if (!(str_format(pf)))
-//		return (0);
-	save_format(pf);
-	str_size(pf);
-	new_num_str(pf);
-	ft_putstr(pf->str);
-	///теперь нужно определить тип переменной из union
+	if (**p != 'f')
+	{
+		save_format(pf);
+		str_size(pf);
+		new_num_str(pf);
+		ft_putstr(pf->str);
+	}
+	if (**p == 'f')
+	{
+		pf->type = **p;
+		pf->num.d = va_arg(ap,double);
+		display_f(pf);
+	}
+
 	return(ft_strlen(pf->str));
 }

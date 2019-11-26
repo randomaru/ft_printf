@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 16:18:20 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/25 21:43:16 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/26 19:36:52 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,17 @@ int		new_num_str(t_pf *pf)
 		c = '0';
 	if (pf->symbol == 2 || pf->symbol == 3)
 		c = ' ';
-	if (ft_strchr("oxX", pf->type))
-	{
+//	if (ft_strchr("oxX", pf->type))
+//	{
 		if (pf->symbol == 1 || pf->symbol == 2)
 		{
 			while (i < pf->symb_width)
+			{
 				pf->str[i] = c;
+				i++;
+			}
 		}
-		if (pf->sharp)
+		if (ft_strchr("oxX", pf->type) && pf->sharp)
 		{
 			while (*pf->sharp)
 			{
@@ -41,18 +44,29 @@ int		new_num_str(t_pf *pf)
 				pf->sharp += 1;
 			}
 		}
-		tmp = ft_llutoa(pf->num.ulli);
+		if (ft_strchr("oxX", pf->type)) //////   ютоа_бэйс
+			//tmp = ft_llutoa(pf->num.ulli);
+//			pf->type == 'o' ? (tmp = ulltoa_base(pf->num.ulli, 8)) : (tmp = ulltoa_base(pf->num.ulli, 16));
+			tmp = pf->tmp_ox;
+		if (ft_strchr("di", pf->type))
+			tmp = ft_lltoa(pf->num.lli);
+		if (pf->type == 'u')
+			tmp = ft_llutoa(pf->num.ulli);
 		while (*tmp)
 		{
 			pf->str[i] = *tmp;
 			tmp++;
+			i++;
 		}
 		if (pf->symbol == 3)
 		{
 			while (i < pf->str_len)
+			{
 				pf->str[i] = c;
+				i++;
+			}
 		}
-	}
+	//}
 	return (pf->str_len);
 }
 
@@ -60,19 +74,30 @@ int		str_size(t_pf *pf)
 {
 	if (ft_strchr("oxX", pf->type))
 	{
-		pf->str_len = number_len_ull(pf->num.ulli);
+//		pf->str_len = number_len_ull(pf->num.ulli);
+		pf->type == 'o' ? (pf->tmp_ox = ulltoa_base(pf->num.ulli, 8)) : (pf->tmp_ox = ulltoa_base(pf->num.ulli, 16));
+		pf->str_len = ft_strlen(pf->tmp_ox);
 		if (pf->sharp)
 		{
 			(pf->type == 'o') ? (pf->str_len += 1) : (pf->str_len += 2);
 
 		}
-		if (pf->symbol > 0)
+		/*if (pf->symbol > 0)
 		{
 			if ((pf->symb_width = pf->width - pf->str_len) > 0)
 				pf->str_len += pf->symb_width;
-		}
-
+		}*/
 	}
+	if (ft_strchr("di", pf->type))
+		pf->str_len = number_len_ll(pf->num.lli);
+	if (pf->type == 'u')
+		pf->str_len =number_len_ull(pf->num.ulli);
+	if (pf->symbol > 0)
+	{
+		if ((pf->symb_width = pf->width - pf->str_len) > 0)
+			pf->str_len += pf->symb_width;
+	}
+	return (1);
 }
 
 int		save_format(t_pf *pf)
@@ -113,5 +138,7 @@ int		save_format(t_pf *pf)
 		}
 		i++;
 	}
+	if (pf->symbol == -1  && pf->width > 0)
+		pf->symbol = 2;
 	return (1);
 }

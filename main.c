@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/25 21:46:17 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/26 19:57:19 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,16 @@ int 	main(void)
 //
 //	printf("%#o\n", 16);
 
-//	printf("%+05d\n", 15);
-//	printf("%-05d\n", 15);
-	ft_printf("%#04o", 12);
+	ft_printf("%-6.5i", 48);
+	printf("\n");
+	printf("%-16.0i", 48);
+	//////ТОЧНОСТЬ !!!!!!!!
+//	ft_printf("%#04o", 12);
 
 //	printf("%+.7d\n", 7);
 
+/*	ft_printf("%.1f", 1.9);
+	printf("\n");
+	printf("%.1f", 1.9);*/
 	return(0);
 }

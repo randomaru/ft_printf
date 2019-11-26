@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/25 20:56:38 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/26 16:23:06 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,23 @@
 # include <stdarg.h>
 # include "libft/libft.h"
 # include <limits.h>
+
+typedef struct  s_format
+{
+	char        *flag;// -+ #0
+	int         min_width;
+	int         precision;
+	char        *size;
+	char        *type;
+	int         counter;
+	char        *string;
+	char        *mb_flags;
+	int         i;
+	char        *mb_size;
+	char        *mb_type;
+	va_list		arg;
+
+}               t_format;
 
 union					number
 {
@@ -30,6 +47,8 @@ union					number
 	unsigned short int	uhi; ///
 	signed char			sc; ///
 	unsigned char		uc; ////
+	double				d;
+	long double			ld;
 };
 
 typedef struct		s_pf
@@ -49,6 +68,7 @@ typedef struct		s_pf
 	int 					sign; /// 0='-', 1='+'
 	char 					*sharp;
 
+	char 					*tmp_ox;
 
 	union number			num;
 }							t_pf;
@@ -84,4 +104,10 @@ int					str_size(t_pf *pf);
 int					new_num_str(t_pf *pf);
 
 
+///SVETA
+
+int    display_f(t_pf *pf);
+char			*pf_itoa(unsigned long long n);
+static char		ft_str_of_numbers(unsigned long long nb, char *str, unsigned long long i, int sign);
+unsigned long long		ft_len_of_number(unsigned long long n);
 #endif

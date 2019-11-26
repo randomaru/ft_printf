@@ -123,6 +123,60 @@ printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
+SVETA_float.o: SVETA_float.c.o
+
+.PHONY : SVETA_float.o
+
+# target to build an object file
+SVETA_float.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_float.c.o
+.PHONY : SVETA_float.c.o
+
+SVETA_float.i: SVETA_float.c.i
+
+.PHONY : SVETA_float.i
+
+# target to preprocess a source file
+SVETA_float.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_float.c.i
+.PHONY : SVETA_float.c.i
+
+SVETA_float.s: SVETA_float.c.s
+
+.PHONY : SVETA_float.s
+
+# target to generate assembly for a file
+SVETA_float.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_float.c.s
+.PHONY : SVETA_float.c.s
+
+SVETA_pf_itoa.o: SVETA_pf_itoa.c.o
+
+.PHONY : SVETA_pf_itoa.o
+
+# target to build an object file
+SVETA_pf_itoa.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_pf_itoa.c.o
+.PHONY : SVETA_pf_itoa.c.o
+
+SVETA_pf_itoa.i: SVETA_pf_itoa.c.i
+
+.PHONY : SVETA_pf_itoa.i
+
+# target to preprocess a source file
+SVETA_pf_itoa.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_pf_itoa.c.i
+.PHONY : SVETA_pf_itoa.c.i
+
+SVETA_pf_itoa.s: SVETA_pf_itoa.c.s
+
+.PHONY : SVETA_pf_itoa.s
+
+# target to generate assembly for a file
+SVETA_pf_itoa.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_pf_itoa.c.s
+.PHONY : SVETA_pf_itoa.c.s
+
 check.o: check.c.o
 
 .PHONY : check.o
@@ -2400,6 +2454,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
+	@echo "... SVETA_float.o"
+	@echo "... SVETA_float.i"
+	@echo "... SVETA_float.s"
+	@echo "... SVETA_pf_itoa.o"
+	@echo "... SVETA_pf_itoa.i"
+	@echo "... SVETA_pf_itoa.s"
 	@echo "... check.o"
 	@echo "... check.i"
 	@echo "... check.s"

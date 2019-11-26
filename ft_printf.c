@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/10/25 21:46:40 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/26 19:50:23 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_pf	*new_t_pf(void)
 	if (!(pf->size = ft_memalloc(3)))
 		return (NULL);
 	pf->width = 0;
-	pf->precision = 0;
+	pf->precision = -1; ////
 	pf->type = '\0';
 	pf->str_len = 0;
 	pf->str = NULL;
