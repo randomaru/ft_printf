@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/26 16:23:06 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/27 17:52:04 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ typedef struct		s_pf
 	char					*flags;
 	int 					width;
 	int 					precision;
+	int						prec_width;
 	char					*size;
 	char 					type;
 	int 					str_len;
@@ -69,7 +70,7 @@ typedef struct		s_pf
 	char 					*sharp;
 
 	char 					*tmp_ox;
-
+	int						num_len;
 	union number			num;
 }							t_pf;
 

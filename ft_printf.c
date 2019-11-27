@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/26 19:50:23 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/27 16:55:07 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ t_pf	*new_t_pf(void)
 	pf->symb_width = 0;
 	pf->sign = -1;
 	pf->sharp = NULL;
+
+	pf->prec_width = 0;
 	return (pf);
 }
 
