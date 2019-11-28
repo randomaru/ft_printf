@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 16:18:20 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/27 19:33:03 by mac              ###   ########.fr       */
+/*   Updated: 2019/11/28 17:06:01 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ int		new_num_str(t_pf *pf)
 
 int		str_size(t_pf *pf)
 {
+	int	sharp_len = 0;
 	if (ft_strchr("oxX", pf->type))
 	{
 		pf->type == 'o' ? (pf->tmp_ox = ulltoa_base(pf->num.ulli, 8)) : (pf->tmp_ox = ulltoa_base(pf->num.ulli, 16));
@@ -98,9 +99,11 @@ int		str_size(t_pf *pf)
 		pf->num_len = number_len_ull(pf->num.ulli);
 		pf->str_len += pf->num_len;
 	}
-	if (pf->symbol > 0)
+	if (pf->symbol > 0 || pf->precision > 0)
 	{
-		if ((pf->prec_width = pf->precision - pf->num_len) > 0 && (pf->symb_width = pf->width - pf->str_len - pf->prec_width) > 0)
+		if (pf->type == 'o')
+			sharp_len = 1;
+		if ((pf->prec_width = pf->precision - pf->num_len - sharp_len) > 0 && (pf->symb_width = pf->width - pf->str_len - pf->prec_width) > 0)
 			pf->str_len += pf->symb_width + pf->prec_width;
 		else if ((pf->symb_width = pf->width - pf->str_len) > 0)
 			pf->str_len += pf->symb_width;

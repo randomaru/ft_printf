@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/27 16:55:07 by mac              ###   ########.fr       */
+/*   Updated: 2019/11/28 17:30:12 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 	{
 		pf->type = **p;
 		number_size(pf, **p, ap);
+		*p += 1;
 	}
 	if (**p != 'f')
 	{
@@ -71,6 +72,6 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		pf->num.d = va_arg(ap,double);
 		display_f(pf);
 	}
-
-	return(ft_strlen(pf->str));
+	pf->counter += ft_strlen(pf->str);
+	return(1);
 }

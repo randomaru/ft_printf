@@ -86,7 +86,7 @@ void			tmp_type(char *p, va_list ap, t_pf *pf);
 int				tmp_format(t_pf *pf);
 
 int					ft_printf(char *apFormat, ...);
-int 				new_str(t_pf *pf, char *p);
+int 				new_str(t_pf *pf, char **p);
 int					pf_format(t_pf *pf, char **p, va_list ap);
 
 int 				is_flags(char *p);
