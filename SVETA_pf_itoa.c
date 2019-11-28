@@ -1,4 +1,4 @@
-#include "libft.h"
+//#include "libft.h"
 #include "ft_printf.h"
 unsigned long long		ft_len_of_number(unsigned long long n)
 {
@@ -39,17 +39,6 @@ char			*pf_itoa(unsigned long long n)
 
     sign = 0;
     out = NULL;
-    if (n == -9223372036854775808)
-    {
-        out = ft_strnew(ft_len_of_number(n) + 1);
-        ft_strcpy(out, "-9223372036854775808");
-        return (out);
-    }
-    if (n && n < 0)
-    {
-        n = (n * (-1));
-        sign = 1;
-    }
     len = ft_len_of_number(n) + sign;
     out = ft_strnew(len);
     if (!out)

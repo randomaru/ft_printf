@@ -6,7 +6,7 @@
 #    By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/09 18:10:20 by tamarant          #+#    #+#              #
-#    Updated: 2019/11/27 16:55:07 by mac              ###   ########.fr        #
+#    Updated: 2019/11/28 21:09:43 by tamarant         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,26 +27,11 @@ SRC = ft_putchar.c ft_putstr.c ft_strcmp.c ft_strcpy.c ft_strdup.c \
 	  ft_iterative_factorial.c ft_free.c ft_iterative_power.c \
 	  ft_strjoin_free.c ft_lstmap.c ft_countwords.c \
 	  get_next_line.c ft_clear_table.c ft_atoi_base.c \
-	  number_len_ll.c
+	  number_len_ll.c number_len.c number_len_ull.c \
+	  ft_llutoa.c ft_lltoa.c ulltoa_base.c itoa_base.c
 
 
-OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strcpy.o ft_strdup.o \
-	  ft_strlen.o ft_isalpha.o ft_isdigit.o ft_atoi.o ft_strncpy.o \
-	  ft_strncmp.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o \
-	  ft_tolower.o ft_strclr.o ft_striter.o ft_striteri.o ft_strmap.o \
-	  ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o ft_strjoin.o \
-	  ft_strtrim.o ft_putendl.o ft_putnbr.o ft_itoa.o ft_strnew.o \
-	  ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
-	  ft_memchr.o ft_memcmp.o ft_memalloc.o ft_memdel.o ft_strdel.o \
-	  ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o \
-	  ft_strcat.o ft_strncat.o ft_strchr.o ft_strrchr.o ft_strstr.o\
-	  ft_strnstr.o ft_strlcat.o ft_strsplit.o ft_sqrt.o \
-	  ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o \
-	  ft_iterative_factorial.o ft_free.o ft_iterative_power.o \
-	  ft_strjoin_free.o ft_lstmap.o  ft_countwords.o \
-	  get_next_line.o ft_clear_table.o ft_atoi_base.o  \
-	  number_len_ll.o
-
+OBJ = $(SRC:.c=.o)
 
 FLAGS = -Wall -Wextra -Werror
 

@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/27 17:52:04 by mac              ###   ########.fr       */
+/*   Updated: 2019/11/28 20:39:47 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,22 +18,22 @@
 # include "libft/libft.h"
 # include <limits.h>
 
-typedef struct  s_format
-{
-	char        *flag;// -+ #0
-	int         min_width;
-	int         precision;
-	char        *size;
-	char        *type;
-	int         counter;
-	char        *string;
-	char        *mb_flags;
-	int         i;
-	char        *mb_size;
-	char        *mb_type;
-	va_list		arg;
-
-}               t_format;
+//typedef struct  s_format
+//{
+//	char        *flag;// -+ #0
+//	int         min_width;
+//	int         precision;
+//	char        *size;
+//	char        *type;
+//	int         counter;
+//	char        *string;
+//	char        *mb_flags;
+//	//int         i;
+//	char        *mb_size;
+//	char        *mb_type;
+//	va_list		arg;
+//
+//}               t_format;
 
 union					number
 {
@@ -75,17 +75,16 @@ typedef struct		s_pf
 }							t_pf;
 
 void			ft_putnbr_max(long long int nb);
-char			*ft_lltoa(long long int n);
-char			*ft_llutoa(unsigned long long int n);
-char			*itoa_base(int value, int base);
-char			*ulltoa_base(unsigned long long int value, int base);
-char 			*to_uppercase(char *str);
+//char			*itoa_base(int value, int base);
+//char 			*to_uppercase(char *str);
+//
+//void			tmp_format_flags(char *p, va_list ap, t_pf *pf);
+//void			tmp_type(char *p, va_list ap, t_pf *pf);
+//int				tmp_format(t_pf *pf);
+//void				to_str(t_pf *pf);
+//int					str_format(t_pf *pf);
 
-void			tmp_format_flags(char *p, va_list ap, t_pf *pf);
-void			tmp_type(char *p, va_list ap, t_pf *pf);
-int				tmp_format(t_pf *pf);
-
-int					ft_printf(char *apFormat, ...);
+int					ft_printf(char *format, ...);
 int 				new_str(t_pf *pf, char **p);
 int					pf_format(t_pf *pf, char **p, va_list ap);
 
@@ -97,8 +96,7 @@ int					is_precision(char *p);
 void				find_precision(t_pf *pf, char **p);
 int 				is_size(char *p);
 void				find_size(t_pf *pf, char **p);
-void				to_str(t_pf *pf);
-int					str_format(t_pf *pf);
+
 
 int					save_format(t_pf *pf);
 int					str_size(t_pf *pf);
@@ -107,8 +105,7 @@ int					new_num_str(t_pf *pf);
 
 ///SVETA
 
-int    display_f(t_pf *pf);
-char			*pf_itoa(unsigned long long n);
-static char		ft_str_of_numbers(unsigned long long nb, char *str, unsigned long long i, int sign);
-unsigned long long		ft_len_of_number(unsigned long long n);
+int    				display_f(t_pf *pf);
+char				*pf_itoa(unsigned long long n);
+unsigned long long	ft_len_of_number(unsigned long long n);
 #endif

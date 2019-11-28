@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   itoa_base.c                                        :+:      :+:    :+:   */
+/*   ulltoa_base.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/16 21:06:37 by tamarant          #+#    #+#             */
+/*   Created: 2019/10/17 17:16:00 by tamarant          #+#    #+#             */
 /*   Updated: 2019/11/27 16:55:07 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-static int		conv_ex(int nb)
+static unsigned long long int		conv_ex(unsigned long long int nb)
 {
 	if (nb >= 10)
 		return (nb - 10 + 'a');
@@ -20,11 +20,11 @@ static int		conv_ex(int nb)
 		return (nb + '0');
 }
 
-char	*itoa_base(int value, int base)
+char								*ulltoa_base(unsigned long long int value, int base)
 {
-	int					i;
-	char				*str;
-	int				tmp;
+	int						i;
+	char					*str;
+	unsigned long long int	tmp;
 
 	i = 0;
 	tmp = value;

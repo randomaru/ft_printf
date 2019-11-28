@@ -967,9 +967,48 @@ CMakeFiles/printf.dir/libft/number_len_ull.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/number_len_ull.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c -o CMakeFiles/printf.dir/libft/number_len_ull.c.s
 
+CMakeFiles/printf.dir/libft/ft_llutoa.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/ft_llutoa.c.o: ../libft/ft_llutoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/printf.dir/libft/ft_llutoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/ft_llutoa.c.o   -c /Users/tamarant/Desktop/projects/printf/libft/ft_llutoa.c
+
+CMakeFiles/printf.dir/libft/ft_llutoa.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/ft_llutoa.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/libft/ft_llutoa.c > CMakeFiles/printf.dir/libft/ft_llutoa.c.i
+
+CMakeFiles/printf.dir/libft/ft_llutoa.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/ft_llutoa.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/ft_llutoa.c -o CMakeFiles/printf.dir/libft/ft_llutoa.c.s
+
+CMakeFiles/printf.dir/libft/ft_lltoa.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/ft_lltoa.c.o: ../libft/ft_lltoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/printf.dir/libft/ft_lltoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/ft_lltoa.c.o   -c /Users/tamarant/Desktop/projects/printf/libft/ft_lltoa.c
+
+CMakeFiles/printf.dir/libft/ft_lltoa.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/ft_lltoa.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/libft/ft_lltoa.c > CMakeFiles/printf.dir/libft/ft_lltoa.c.i
+
+CMakeFiles/printf.dir/libft/ft_lltoa.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/ft_lltoa.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/ft_lltoa.c -o CMakeFiles/printf.dir/libft/ft_lltoa.c.s
+
+CMakeFiles/printf.dir/libft/ulltoa_base.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/ulltoa_base.c.o: ../libft/ulltoa_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/printf.dir/libft/ulltoa_base.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/ulltoa_base.c.o   -c /Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c
+
+CMakeFiles/printf.dir/libft/ulltoa_base.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/ulltoa_base.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c > CMakeFiles/printf.dir/libft/ulltoa_base.c.i
+
+CMakeFiles/printf.dir/libft/ulltoa_base.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/ulltoa_base.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c -o CMakeFiles/printf.dir/libft/ulltoa_base.c.s
+
 CMakeFiles/printf.dir/ft_putnbr_max.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/ft_putnbr_max.c.o: ../ft_putnbr_max.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/printf.dir/ft_putnbr_max.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/printf.dir/ft_putnbr_max.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ft_putnbr_max.c.o   -c /Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c
 
 CMakeFiles/printf.dir/ft_putnbr_max.c.i: cmake_force
@@ -982,7 +1021,7 @@ CMakeFiles/printf.dir/ft_putnbr_max.c.s: cmake_force
 
 CMakeFiles/printf.dir/main.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/printf.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/printf.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/main.c.o   -c /Users/tamarant/Desktop/projects/printf/main.c
 
 CMakeFiles/printf.dir/main.c.i: cmake_force
@@ -995,7 +1034,7 @@ CMakeFiles/printf.dir/main.c.s: cmake_force
 
 CMakeFiles/printf.dir/ft_printf.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/printf.dir/ft_printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/printf.dir/ft_printf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ft_printf.c.o   -c /Users/tamarant/Desktop/projects/printf/ft_printf.c
 
 CMakeFiles/printf.dir/ft_printf.c.i: cmake_force
@@ -1006,57 +1045,18 @@ CMakeFiles/printf.dir/ft_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/ft_printf.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/ft_printf.c -o CMakeFiles/printf.dir/ft_printf.c.s
 
-CMakeFiles/printf.dir/ft_lltoa.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/ft_lltoa.c.o: ../ft_lltoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/printf.dir/ft_lltoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ft_lltoa.c.o   -c /Users/tamarant/Desktop/projects/printf/ft_lltoa.c
+CMakeFiles/printf.dir/libft/itoa_base.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/itoa_base.c.o: ../libft/itoa_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/printf.dir/libft/itoa_base.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/itoa_base.c.o   -c /Users/tamarant/Desktop/projects/printf/libft/itoa_base.c
 
-CMakeFiles/printf.dir/ft_lltoa.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/ft_lltoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/ft_lltoa.c > CMakeFiles/printf.dir/ft_lltoa.c.i
+CMakeFiles/printf.dir/libft/itoa_base.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/itoa_base.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/libft/itoa_base.c > CMakeFiles/printf.dir/libft/itoa_base.c.i
 
-CMakeFiles/printf.dir/ft_lltoa.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/ft_lltoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/ft_lltoa.c -o CMakeFiles/printf.dir/ft_lltoa.c.s
-
-CMakeFiles/printf.dir/ft_llutoa.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/ft_llutoa.c.o: ../ft_llutoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/printf.dir/ft_llutoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ft_llutoa.c.o   -c /Users/tamarant/Desktop/projects/printf/ft_llutoa.c
-
-CMakeFiles/printf.dir/ft_llutoa.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/ft_llutoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/ft_llutoa.c > CMakeFiles/printf.dir/ft_llutoa.c.i
-
-CMakeFiles/printf.dir/ft_llutoa.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/ft_llutoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/ft_llutoa.c -o CMakeFiles/printf.dir/ft_llutoa.c.s
-
-CMakeFiles/printf.dir/itoa_base.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/itoa_base.c.o: ../itoa_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/printf.dir/itoa_base.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/itoa_base.c.o   -c /Users/tamarant/Desktop/projects/printf/itoa_base.c
-
-CMakeFiles/printf.dir/itoa_base.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/itoa_base.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/itoa_base.c > CMakeFiles/printf.dir/itoa_base.c.i
-
-CMakeFiles/printf.dir/itoa_base.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/itoa_base.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/itoa_base.c -o CMakeFiles/printf.dir/itoa_base.c.s
-
-CMakeFiles/printf.dir/ulltoa_base.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/ulltoa_base.c.o: ../ulltoa_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/printf.dir/ulltoa_base.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ulltoa_base.c.o   -c /Users/tamarant/Desktop/projects/printf/ulltoa_base.c
-
-CMakeFiles/printf.dir/ulltoa_base.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/ulltoa_base.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/ulltoa_base.c > CMakeFiles/printf.dir/ulltoa_base.c.i
-
-CMakeFiles/printf.dir/ulltoa_base.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/ulltoa_base.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/ulltoa_base.c -o CMakeFiles/printf.dir/ulltoa_base.c.s
+CMakeFiles/printf.dir/libft/itoa_base.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/itoa_base.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/itoa_base.c -o CMakeFiles/printf.dir/libft/itoa_base.c.s
 
 CMakeFiles/printf.dir/to_uppercase.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/to_uppercase.c.o: ../to_uppercase.c
@@ -1149,22 +1149,9 @@ CMakeFiles/printf.dir/tmp_str_format.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/tmp_str_format.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/tmp_str_format.c -o CMakeFiles/printf.dir/tmp_str_format.c.s
 
-CMakeFiles/printf.dir/SVETA_float.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/SVETA_float.c.o: ../SVETA_float.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/printf.dir/SVETA_float.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/SVETA_float.c.o   -c /Users/tamarant/Desktop/projects/printf/SVETA_float.c
-
-CMakeFiles/printf.dir/SVETA_float.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/SVETA_float.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/SVETA_float.c > CMakeFiles/printf.dir/SVETA_float.c.i
-
-CMakeFiles/printf.dir/SVETA_float.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/SVETA_float.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/SVETA_float.c -o CMakeFiles/printf.dir/SVETA_float.c.s
-
 CMakeFiles/printf.dir/SVETA_pf_itoa.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/SVETA_pf_itoa.c.o: ../SVETA_pf_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/SVETA_pf_itoa.c.o   -c /Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c
 
 CMakeFiles/printf.dir/SVETA_pf_itoa.c.i: cmake_force
@@ -1174,6 +1161,19 @@ CMakeFiles/printf.dir/SVETA_pf_itoa.c.i: cmake_force
 CMakeFiles/printf.dir/SVETA_pf_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/SVETA_pf_itoa.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c -o CMakeFiles/printf.dir/SVETA_pf_itoa.c.s
+
+CMakeFiles/printf.dir/SVETA_display_f.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/SVETA_display_f.c.o: ../SVETA_display_f.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/printf.dir/SVETA_display_f.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/SVETA_display_f.c.o   -c /Users/tamarant/Desktop/projects/printf/SVETA_display_f.c
+
+CMakeFiles/printf.dir/SVETA_display_f.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/SVETA_display_f.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/SVETA_display_f.c > CMakeFiles/printf.dir/SVETA_display_f.c.i
+
+CMakeFiles/printf.dir/SVETA_display_f.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/SVETA_display_f.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/SVETA_display_f.c -o CMakeFiles/printf.dir/SVETA_display_f.c.s
 
 # Object files for target printf
 printf_OBJECTS = \
@@ -1247,13 +1247,13 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/libft/number_len.c.o" \
 "CMakeFiles/printf.dir/libft/number_len_ll.c.o" \
 "CMakeFiles/printf.dir/libft/number_len_ull.c.o" \
+"CMakeFiles/printf.dir/libft/ft_llutoa.c.o" \
+"CMakeFiles/printf.dir/libft/ft_lltoa.c.o" \
+"CMakeFiles/printf.dir/libft/ulltoa_base.c.o" \
 "CMakeFiles/printf.dir/ft_putnbr_max.c.o" \
 "CMakeFiles/printf.dir/main.c.o" \
 "CMakeFiles/printf.dir/ft_printf.c.o" \
-"CMakeFiles/printf.dir/ft_lltoa.c.o" \
-"CMakeFiles/printf.dir/ft_llutoa.c.o" \
-"CMakeFiles/printf.dir/itoa_base.c.o" \
-"CMakeFiles/printf.dir/ulltoa_base.c.o" \
+"CMakeFiles/printf.dir/libft/itoa_base.c.o" \
 "CMakeFiles/printf.dir/to_uppercase.c.o" \
 "CMakeFiles/printf.dir/check.c.o" \
 "CMakeFiles/printf.dir/new_str.c.o" \
@@ -1261,8 +1261,8 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/find.c.o" \
 "CMakeFiles/printf.dir/str_format.c.o" \
 "CMakeFiles/printf.dir/tmp_str_format.c.o" \
-"CMakeFiles/printf.dir/SVETA_float.c.o" \
-"CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
+"CMakeFiles/printf.dir/SVETA_pf_itoa.c.o" \
+"CMakeFiles/printf.dir/SVETA_display_f.c.o"
 
 # External object files for target printf
 printf_EXTERNAL_OBJECTS =
@@ -1337,13 +1337,13 @@ printf: CMakeFiles/printf.dir/libft/get_next_line.c.o
 printf: CMakeFiles/printf.dir/libft/number_len.c.o
 printf: CMakeFiles/printf.dir/libft/number_len_ll.c.o
 printf: CMakeFiles/printf.dir/libft/number_len_ull.c.o
+printf: CMakeFiles/printf.dir/libft/ft_llutoa.c.o
+printf: CMakeFiles/printf.dir/libft/ft_lltoa.c.o
+printf: CMakeFiles/printf.dir/libft/ulltoa_base.c.o
 printf: CMakeFiles/printf.dir/ft_putnbr_max.c.o
 printf: CMakeFiles/printf.dir/main.c.o
 printf: CMakeFiles/printf.dir/ft_printf.c.o
-printf: CMakeFiles/printf.dir/ft_lltoa.c.o
-printf: CMakeFiles/printf.dir/ft_llutoa.c.o
-printf: CMakeFiles/printf.dir/itoa_base.c.o
-printf: CMakeFiles/printf.dir/ulltoa_base.c.o
+printf: CMakeFiles/printf.dir/libft/itoa_base.c.o
 printf: CMakeFiles/printf.dir/to_uppercase.c.o
 printf: CMakeFiles/printf.dir/check.c.o
 printf: CMakeFiles/printf.dir/new_str.c.o
@@ -1351,8 +1351,8 @@ printf: CMakeFiles/printf.dir/pf_format.c.o
 printf: CMakeFiles/printf.dir/find.c.o
 printf: CMakeFiles/printf.dir/str_format.c.o
 printf: CMakeFiles/printf.dir/tmp_str_format.c.o
-printf: CMakeFiles/printf.dir/SVETA_float.c.o
 printf: CMakeFiles/printf.dir/SVETA_pf_itoa.c.o
+printf: CMakeFiles/printf.dir/SVETA_display_f.c.o
 printf: CMakeFiles/printf.dir/build.make
 printf: CMakeFiles/printf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Linking C executable printf"

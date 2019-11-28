@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 19:24:16 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/28 20:38:13 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,15 +71,14 @@ void	free_t_pf(t_pf *pf)
 	free(pf);
 }
 
-int 	ft_printf(char *apFormat, ...)
+int 	ft_printf(char *format, ...)
 {
 	va_list ap;
 	char	*p;
 	t_pf	*pf;
-	int 	i = 0;
-
-	va_start(ap, apFormat);
-	p = apFormat;
+	
+	va_start(ap, format);
+	p = format;
 
 	pf = new_t_pf();
 	while (*p != '\0')
@@ -98,5 +97,6 @@ int 	ft_printf(char *apFormat, ...)
 		}
 	}
 	free_t_pf(pf);
+	va_end(ap);
 	return (pf->counter);
 }

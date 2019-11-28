@@ -6,11 +6,11 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 19:45:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/27 16:55:07 by mac              ###   ########.fr       */
+/*   Updated: 2019/11/28 20:58:54 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 static int		nbr_len(unsigned long long int n)
 {
@@ -44,13 +44,8 @@ char			*ft_llutoa(unsigned long long int n)
 	char	*res;
 
 	neg = 0;
-	if (n >= 0 && n <= 18446744073709551615)
+	if (n <= 18446744073709551615U)
 	{
-		if (n < 0)
-		{
-			neg = 1;
-			n *= -1;
-		}
 		len = nbr_len(n) + neg;
 		if (!(res = (char*)malloc(sizeof(char) * len + 1)))
 			return (NULL);

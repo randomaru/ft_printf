@@ -6,6 +6,30 @@
 
 #IncludeRegexTransform: 
 
+/Users/tamarant/Desktop/projects/printf/SVETA_display_f.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/check.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/find.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/ft_lltoa.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/ft_llutoa.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
 /Users/tamarant/Desktop/projects/printf/ft_printf.c
 ft_printf.h
 /Users/tamarant/Desktop/projects/printf/ft_printf.h
@@ -20,6 +44,14 @@ libft/libft.h
 limits.h
 -
 
+/Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/itoa_base.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
 /Users/tamarant/Desktop/projects/printf/libft/libft.h
 stdlib.h
 -
@@ -30,7 +62,31 @@ string.h
 fcntl.h
 -
 
+/Users/tamarant/Desktop/projects/printf/main.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/new_str.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
 /Users/tamarant/Desktop/projects/printf/pf_format.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/str_format.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/tmp_str_format.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/to_uppercase.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/ulltoa_base.c
 ft_printf.h
 /Users/tamarant/Desktop/projects/printf/ft_printf.h
 

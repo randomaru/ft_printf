@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/SVETA_float.c">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/SVETA_display_f.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c">
@@ -96,12 +96,6 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/find.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_lltoa.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_llutoa.c">
-			<Option target="printf"/>
-		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_printf.c">
 			<Option target="printf"/>
 		</Unit>
@@ -109,9 +103,6 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/itoa_base.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/Makefile">
@@ -160,6 +151,12 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_itoa.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_lltoa.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_llutoa.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_lstadd.c">
@@ -321,6 +318,9 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/get_next_line.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/itoa_base.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/libft.h">
 			<Option target="printf"/>
 		</Unit>
@@ -331,6 +331,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/main.c">
@@ -349,9 +352,6 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/to_uppercase.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/ulltoa_base.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/CMakeLists.txt">

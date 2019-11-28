@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 21:44:24 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/27 16:55:07 by mac              ###   ########.fr       */
+/*   Updated: 2019/11/28 21:09:43 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,5 +98,9 @@ size_t				ft_wordsize(const char *s, char c);
 int					number_len(int n);
 int					number_len_ll(long long n);
 int					number_len_ull(unsigned long long n);
+char				*ft_llutoa(unsigned long long int n);
+char				*ft_lltoa(long long int n);
+char				*ulltoa_base(unsigned long long int value, int base);
+char				*itoa_base(int value, int base);
 
 #endif

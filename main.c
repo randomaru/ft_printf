@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 19:23:10 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/28 20:05:20 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,18 +37,17 @@ int 	main(void)
 //
 //	printf("%#o\n", 16);
 
-	int n = ft_printf("%#-10.4o%i\n", 15, 12);
-//	printf("\n");
-	int b = printf("%#-10.4o%i\n", 15, 12);
-
-	printf("%i\n%i", n, b);
-	//////ТОЧНОСТЬ !!!!!!!!
+//	int n = ft_printf("%#-10.4o%i\n", 15, 12);
+////	printf("\n");
+//	int b = printf("%#-10.4o%i\n", 15, 12);
+//
+//	printf("%i\n%i", n, b);
+//	//////ТОЧНОСТЬ !!!!!!!!
 //	ft_printf("%#04o", 12);
 
 //	printf("%+.7d\n", 7);
 
-/*	ft_printf("%.1f", 1.9);
-	printf("\n");
-	printf("%.1f", 1.9);*/
+	ft_printf("%.10i \n", 1);
+	printf("%.10i", 1);
 	return(0);
 }

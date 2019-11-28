@@ -4,15 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/tamarant/Desktop/projects/printf/SVETA_float.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/SVETA_float.c.o"
+  "/Users/tamarant/Desktop/projects/printf/SVETA_display_f.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/SVETA_display_f.c.o"
   "/Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
   "/Users/tamarant/Desktop/projects/printf/check.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/check.c.o"
   "/Users/tamarant/Desktop/projects/printf/find.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/find.c.o"
-  "/Users/tamarant/Desktop/projects/printf/ft_lltoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_lltoa.c.o"
-  "/Users/tamarant/Desktop/projects/printf/ft_llutoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_llutoa.c.o"
   "/Users/tamarant/Desktop/projects/printf/ft_printf.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_printf.c.o"
   "/Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_putnbr_max.c.o"
-  "/Users/tamarant/Desktop/projects/printf/itoa_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/itoa_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_atoi.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_atoi_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_bzero.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_bzero.c.o"
@@ -27,6 +24,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/libft/ft_iterative_factorial.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_iterative_factorial.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_iterative_power.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_iterative_power.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_itoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_itoa.c.o"
+  "/Users/tamarant/Desktop/projects/printf/libft/ft_lltoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_lltoa.c.o"
+  "/Users/tamarant/Desktop/projects/printf/libft/ft_llutoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_llutoa.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_lstadd.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_lstadd.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_lstdel.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_lstdel.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_lstdelone.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_lstdelone.c.o"
@@ -80,16 +79,17 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/libft/ft_tolower.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_tolower.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_toupper.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_toupper.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/get_next_line.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/get_next_line.c.o"
+  "/Users/tamarant/Desktop/projects/printf/libft/itoa_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/itoa_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/number_len.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/number_len.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/number_len_ll.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/number_len_ll.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/number_len_ull.c.o"
+  "/Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ulltoa_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/main.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   "/Users/tamarant/Desktop/projects/printf/new_str.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/new_str.c.o"
   "/Users/tamarant/Desktop/projects/printf/pf_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/pf_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/str_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/str_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/tmp_str_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/tmp_str_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/to_uppercase.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/to_uppercase.c.o"
-  "/Users/tamarant/Desktop/projects/printf/ulltoa_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ulltoa_base.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

@@ -123,32 +123,32 @@ printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
-SVETA_float.o: SVETA_float.c.o
+SVETA_display_f.o: SVETA_display_f.c.o
 
-.PHONY : SVETA_float.o
+.PHONY : SVETA_display_f.o
 
 # target to build an object file
-SVETA_float.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_float.c.o
-.PHONY : SVETA_float.c.o
+SVETA_display_f.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_display_f.c.o
+.PHONY : SVETA_display_f.c.o
 
-SVETA_float.i: SVETA_float.c.i
+SVETA_display_f.i: SVETA_display_f.c.i
 
-.PHONY : SVETA_float.i
+.PHONY : SVETA_display_f.i
 
 # target to preprocess a source file
-SVETA_float.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_float.c.i
-.PHONY : SVETA_float.c.i
+SVETA_display_f.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_display_f.c.i
+.PHONY : SVETA_display_f.c.i
 
-SVETA_float.s: SVETA_float.c.s
+SVETA_display_f.s: SVETA_display_f.c.s
 
-.PHONY : SVETA_float.s
+.PHONY : SVETA_display_f.s
 
 # target to generate assembly for a file
-SVETA_float.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_float.c.s
-.PHONY : SVETA_float.c.s
+SVETA_display_f.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_display_f.c.s
+.PHONY : SVETA_display_f.c.s
 
 SVETA_pf_itoa.o: SVETA_pf_itoa.c.o
 
@@ -231,60 +231,6 @@ find.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find.c.s
 .PHONY : find.c.s
 
-ft_lltoa.o: ft_lltoa.c.o
-
-.PHONY : ft_lltoa.o
-
-# target to build an object file
-ft_lltoa.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_lltoa.c.o
-.PHONY : ft_lltoa.c.o
-
-ft_lltoa.i: ft_lltoa.c.i
-
-.PHONY : ft_lltoa.i
-
-# target to preprocess a source file
-ft_lltoa.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_lltoa.c.i
-.PHONY : ft_lltoa.c.i
-
-ft_lltoa.s: ft_lltoa.c.s
-
-.PHONY : ft_lltoa.s
-
-# target to generate assembly for a file
-ft_lltoa.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_lltoa.c.s
-.PHONY : ft_lltoa.c.s
-
-ft_llutoa.o: ft_llutoa.c.o
-
-.PHONY : ft_llutoa.o
-
-# target to build an object file
-ft_llutoa.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_llutoa.c.o
-.PHONY : ft_llutoa.c.o
-
-ft_llutoa.i: ft_llutoa.c.i
-
-.PHONY : ft_llutoa.i
-
-# target to preprocess a source file
-ft_llutoa.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_llutoa.c.i
-.PHONY : ft_llutoa.c.i
-
-ft_llutoa.s: ft_llutoa.c.s
-
-.PHONY : ft_llutoa.s
-
-# target to generate assembly for a file
-ft_llutoa.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_llutoa.c.s
-.PHONY : ft_llutoa.c.s
-
 ft_printf.o: ft_printf.c.o
 
 .PHONY : ft_printf.o
@@ -338,33 +284,6 @@ ft_putnbr_max.s: ft_putnbr_max.c.s
 ft_putnbr_max.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putnbr_max.c.s
 .PHONY : ft_putnbr_max.c.s
-
-itoa_base.o: itoa_base.c.o
-
-.PHONY : itoa_base.o
-
-# target to build an object file
-itoa_base.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/itoa_base.c.o
-.PHONY : itoa_base.c.o
-
-itoa_base.i: itoa_base.c.i
-
-.PHONY : itoa_base.i
-
-# target to preprocess a source file
-itoa_base.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/itoa_base.c.i
-.PHONY : itoa_base.c.i
-
-itoa_base.s: itoa_base.c.s
-
-.PHONY : itoa_base.s
-
-# target to generate assembly for a file
-itoa_base.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/itoa_base.c.s
-.PHONY : itoa_base.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -743,6 +662,60 @@ libft/ft_itoa.s: libft/ft_itoa.c.s
 libft/ft_itoa.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa.c.s
 .PHONY : libft/ft_itoa.c.s
+
+libft/ft_lltoa.o: libft/ft_lltoa.c.o
+
+.PHONY : libft/ft_lltoa.o
+
+# target to build an object file
+libft/ft_lltoa.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_lltoa.c.o
+.PHONY : libft/ft_lltoa.c.o
+
+libft/ft_lltoa.i: libft/ft_lltoa.c.i
+
+.PHONY : libft/ft_lltoa.i
+
+# target to preprocess a source file
+libft/ft_lltoa.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_lltoa.c.i
+.PHONY : libft/ft_lltoa.c.i
+
+libft/ft_lltoa.s: libft/ft_lltoa.c.s
+
+.PHONY : libft/ft_lltoa.s
+
+# target to generate assembly for a file
+libft/ft_lltoa.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_lltoa.c.s
+.PHONY : libft/ft_lltoa.c.s
+
+libft/ft_llutoa.o: libft/ft_llutoa.c.o
+
+.PHONY : libft/ft_llutoa.o
+
+# target to build an object file
+libft/ft_llutoa.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_llutoa.c.o
+.PHONY : libft/ft_llutoa.c.o
+
+libft/ft_llutoa.i: libft/ft_llutoa.c.i
+
+.PHONY : libft/ft_llutoa.i
+
+# target to preprocess a source file
+libft/ft_llutoa.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_llutoa.c.i
+.PHONY : libft/ft_llutoa.c.i
+
+libft/ft_llutoa.s: libft/ft_llutoa.c.s
+
+.PHONY : libft/ft_llutoa.s
+
+# target to generate assembly for a file
+libft/ft_llutoa.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_llutoa.c.s
+.PHONY : libft/ft_llutoa.c.s
 
 libft/ft_lstadd.o: libft/ft_lstadd.c.o
 
@@ -2175,6 +2148,33 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
+libft/itoa_base.o: libft/itoa_base.c.o
+
+.PHONY : libft/itoa_base.o
+
+# target to build an object file
+libft/itoa_base.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/itoa_base.c.o
+.PHONY : libft/itoa_base.c.o
+
+libft/itoa_base.i: libft/itoa_base.c.i
+
+.PHONY : libft/itoa_base.i
+
+# target to preprocess a source file
+libft/itoa_base.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/itoa_base.c.i
+.PHONY : libft/itoa_base.c.i
+
+libft/itoa_base.s: libft/itoa_base.c.s
+
+.PHONY : libft/itoa_base.s
+
+# target to generate assembly for a file
+libft/itoa_base.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/itoa_base.c.s
+.PHONY : libft/itoa_base.c.s
+
 libft/number_len.o: libft/number_len.c.o
 
 .PHONY : libft/number_len.o
@@ -2255,6 +2255,33 @@ libft/number_len_ull.s: libft/number_len_ull.c.s
 libft/number_len_ull.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len_ull.c.s
 .PHONY : libft/number_len_ull.c.s
+
+libft/ulltoa_base.o: libft/ulltoa_base.c.o
+
+.PHONY : libft/ulltoa_base.o
+
+# target to build an object file
+libft/ulltoa_base.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ulltoa_base.c.o
+.PHONY : libft/ulltoa_base.c.o
+
+libft/ulltoa_base.i: libft/ulltoa_base.c.i
+
+.PHONY : libft/ulltoa_base.i
+
+# target to preprocess a source file
+libft/ulltoa_base.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ulltoa_base.c.i
+.PHONY : libft/ulltoa_base.c.i
+
+libft/ulltoa_base.s: libft/ulltoa_base.c.s
+
+.PHONY : libft/ulltoa_base.s
+
+# target to generate assembly for a file
+libft/ulltoa_base.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ulltoa_base.c.s
+.PHONY : libft/ulltoa_base.c.s
 
 main.o: main.c.o
 
@@ -2418,33 +2445,6 @@ to_uppercase.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/to_uppercase.c.s
 .PHONY : to_uppercase.c.s
 
-ulltoa_base.o: ulltoa_base.c.o
-
-.PHONY : ulltoa_base.o
-
-# target to build an object file
-ulltoa_base.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ulltoa_base.c.o
-.PHONY : ulltoa_base.c.o
-
-ulltoa_base.i: ulltoa_base.c.i
-
-.PHONY : ulltoa_base.i
-
-# target to preprocess a source file
-ulltoa_base.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ulltoa_base.c.i
-.PHONY : ulltoa_base.c.i
-
-ulltoa_base.s: ulltoa_base.c.s
-
-.PHONY : ulltoa_base.s
-
-# target to generate assembly for a file
-ulltoa_base.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ulltoa_base.c.s
-.PHONY : ulltoa_base.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2454,9 +2454,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
-	@echo "... SVETA_float.o"
-	@echo "... SVETA_float.i"
-	@echo "... SVETA_float.s"
+	@echo "... SVETA_display_f.o"
+	@echo "... SVETA_display_f.i"
+	@echo "... SVETA_display_f.s"
 	@echo "... SVETA_pf_itoa.o"
 	@echo "... SVETA_pf_itoa.i"
 	@echo "... SVETA_pf_itoa.s"
@@ -2466,21 +2466,12 @@ help:
 	@echo "... find.o"
 	@echo "... find.i"
 	@echo "... find.s"
-	@echo "... ft_lltoa.o"
-	@echo "... ft_lltoa.i"
-	@echo "... ft_lltoa.s"
-	@echo "... ft_llutoa.o"
-	@echo "... ft_llutoa.i"
-	@echo "... ft_llutoa.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
 	@echo "... ft_putnbr_max.o"
 	@echo "... ft_putnbr_max.i"
 	@echo "... ft_putnbr_max.s"
-	@echo "... itoa_base.o"
-	@echo "... itoa_base.i"
-	@echo "... itoa_base.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2523,6 +2514,12 @@ help:
 	@echo "... libft/ft_itoa.o"
 	@echo "... libft/ft_itoa.i"
 	@echo "... libft/ft_itoa.s"
+	@echo "... libft/ft_lltoa.o"
+	@echo "... libft/ft_lltoa.i"
+	@echo "... libft/ft_lltoa.s"
+	@echo "... libft/ft_llutoa.o"
+	@echo "... libft/ft_llutoa.i"
+	@echo "... libft/ft_llutoa.s"
 	@echo "... libft/ft_lstadd.o"
 	@echo "... libft/ft_lstadd.i"
 	@echo "... libft/ft_lstadd.s"
@@ -2682,6 +2679,9 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
+	@echo "... libft/itoa_base.o"
+	@echo "... libft/itoa_base.i"
+	@echo "... libft/itoa_base.s"
 	@echo "... libft/number_len.o"
 	@echo "... libft/number_len.i"
 	@echo "... libft/number_len.s"
@@ -2691,6 +2691,9 @@ help:
 	@echo "... libft/number_len_ull.o"
 	@echo "... libft/number_len_ull.i"
 	@echo "... libft/number_len_ull.s"
+	@echo "... libft/ulltoa_base.o"
+	@echo "... libft/ulltoa_base.i"
+	@echo "... libft/ulltoa_base.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -2709,9 +2712,6 @@ help:
 	@echo "... to_uppercase.o"
 	@echo "... to_uppercase.i"
 	@echo "... to_uppercase.s"
-	@echo "... ulltoa_base.o"
-	@echo "... ulltoa_base.i"
-	@echo "... ulltoa_base.s"
 .PHONY : help
 
 

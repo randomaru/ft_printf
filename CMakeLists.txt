@@ -77,6 +77,10 @@ add_executable(printf
         libft/number_len.c
         libft/number_len_ll.c
         libft/number_len_ull.c
+        libft/ft_llutoa.c
+        libft/ft_lltoa.c
+        libft/ulltoa_base.c
+
         libft/libft.h
         libft/Makefile
         ft_printf.h
@@ -85,10 +89,7 @@ add_executable(printf
         ft_printf.c
 #        tmp_flags.c
 #        tmp_format.c
-        ft_lltoa.c
-        ft_llutoa.c
-        itoa_base.c
-        ulltoa_base.c
+        libft/itoa_base.c
         to_uppercase.c
 
 
@@ -99,6 +100,8 @@ add_executable(printf
         str_format.c
         tmp_str_format.c
 
-        SVETA_float.c
+
+#        SVETA_float.c
         SVETA_pf_itoa.c
+        SVETA_display_f.c
         )

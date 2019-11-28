@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 static int		nbr_len(long long int n)
 {
@@ -57,7 +57,5 @@ char			*ft_lltoa(long long int n)
 		ft_str_int(res, n, len, neg);
 		return (res);
 	}
-	if (n == -9223372036854775808)
-		return (ft_strdup("-9223372036854775808"));
 	return (NULL);
 }
