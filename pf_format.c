@@ -64,7 +64,8 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		save_format(pf);
 		if (str_size(pf) == -1)
 			return (-1);
-		new_num_str(pf);
+		if (new_num_str(pf) == -1)
+			return (-1);
 		ft_putstr(pf->str);
 	}
 	if (**p == 'f')

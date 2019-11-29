@@ -7,7 +7,7 @@ char       *add_null(t_pf *pf, char *scnd)
 	i = 0;
 	while (*(scnd + i) != '\0')
 		i++;
-	while (i < pf->precision)
+	while (i < (unsigned int)pf->precision)
 	{
 		*(scnd + i) = 48;
 		i += 1;
@@ -48,7 +48,6 @@ char    *get_decimal(double num, unsigned long long first, unsigned long long *s
     char    *scnd = NULL;
     unsigned long long i;
     char *ch;
-    double nado = 10 * (num - first);
 
 //    while ((int)nado > 0)
 //    {

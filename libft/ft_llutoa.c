@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 19:45:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 20:58:54 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/29 18:45:13 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,31 +25,32 @@ static int		nbr_len(unsigned long long int n)
 	return (len);
 }
 
-static char		ft_str_int(char *s, unsigned long long int n, int len, int neg)
-{
-	while (len--)
-	{
-		s[len] = (n % 10) + 48;
-		n = n / 10;
-	}
-	if (neg)
-		s[0] = '-';
-	return ((char)s);
-}
+//static char		ft_str_int(char *s, unsigned long long int n, int len)
+//{
+//	while (len--)
+//	{
+//		s[len] = (n % 10) + 48;
+//		n = n / 10;
+//	}
+//	return ((char)s);
+//}
 
 char			*ft_llutoa(unsigned long long int n)
 {
 	int		len;
-	int		neg;
 	char	*res;
 
-	neg = 0;
 	if (n <= 18446744073709551615U)
 	{
-		len = nbr_len(n) + neg;
-		if (!(res = (char*)malloc(sizeof(char) * len + 1)))
+		len = nbr_len(n);
+		if (!(res = ft_memalloc(len + 1)))
 			return (NULL);
-		ft_str_int(res, n, len, neg);
+//		ft_str_int(res, n, len);
+		while (--len > -1)
+		{
+			res[len] = (n % 10) + 48;
+			n = n / 10;
+		}
 		return (res);
 	}
 	return (NULL);

@@ -52,7 +52,7 @@ char			*ft_itoa(int n)
 			n *= -1;
 		}
 		len = ft_len_itoa(n) + neg;
-		if (!(res = ft_strnew(len)))
+		if (!(res = ft_memalloc(len + 1)))
 			return (NULL);
 		ft_str_int(res, n, len, neg);
 		return (res);

@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/29 17:21:25 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/29 21:22:00 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,14 @@ void	set_null(t_pf *pf)
 	free(pf->str);
 	pf->str = NULL;
 	pf->percent = 0;
+	pf->num_len = 0;
 	pf->num.i = 0;
 
 	pf->symbol = -1;
 	pf->symb_width = 0;
 	pf->sign = -1;
 	pf->sharp = NULL;
+	//pf->num.i = 0;
 
 	pf->prec_width = 0;
 }
@@ -57,7 +59,6 @@ t_pf	*new_t_pf(void)
 	pf->symb_width = 0;
 	pf->sign = -1;
 	pf->sharp = NULL;
-
 	pf->prec_width = 0;
 	return (pf);
 }
@@ -69,10 +70,29 @@ void	free_t_pf(t_pf *pf)
 	if (pf->size)
 		free(pf->size);
 	pf->size = NULL;
-	free(pf->tmp_ox);
+	if (pf->tmp_ox)
+		free(pf->tmp_ox);
 	pf->tmp_ox = NULL;
 	if (pf->str)
 		free(pf->str);
+	if (pf->sharp)
+		free(pf->sharp);
+	pf->size = NULL;
+	pf->width = 0;
+	pf->precision = -1; ////
+	pf->type = '\0';
+	pf->str_len = 0;
+	pf->str = NULL;
+	pf->percent = 0;
+	pf->counter = 0;
+	pf->num.i = 0;
+	pf->tmp_ox = NULL;
+	pf->symbol = -1;
+	pf->symb_width = 0;
+	pf->sign = -1;
+	pf->sharp = NULL;
+	pf->prec_width = 0;
+	free(pf);
 }
 
 int 	ft_printf(char *format, ...)
@@ -93,6 +113,7 @@ int 	ft_printf(char *format, ...)
 			if (pf_format(pf, &p, ap) == -1)
 			{
 				free_t_pf(pf);
+//				free(pf);
 				va_end(ap);
 				return (-1);
 			}
@@ -107,7 +128,7 @@ int 	ft_printf(char *format, ...)
 	}
 	sum = pf->counter;
 	free_t_pf(pf);
-	free(pf);
+	pf = NULL;
 	va_end(ap);
 	return (sum);
 }

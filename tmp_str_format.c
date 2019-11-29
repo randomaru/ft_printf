@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 16:18:20 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/29 14:49:14 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/29 21:35:03 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ int		new_num_str(t_pf *pf)
 	char c;
 	char *tmp = NULL; ////отредачить str_join
 	int i;
+	int k;
 
+	k = 0;
 	i = 0;
 	c = 't';
 	if (!(pf->str = ft_memalloc(pf->str_len + 1)))
@@ -44,11 +46,17 @@ int		new_num_str(t_pf *pf)
 		}
 	}
 	if (ft_strchr("oxX", pf->type)) //////   ютоа_бэйс
-		tmp = pf->tmp_ox;
+		tmp = ft_strdup(pf->tmp_ox);
 	if (ft_strchr("di", pf->type))
-		tmp = ft_lltoa(pf->num.lli);
+		if (!(tmp = ft_lltoa(pf->num.lli)))
+			return (-1);
 	if (pf->type == 'u')
-		tmp = ft_llutoa(pf->num.ulli);
+	{
+		(ft_strchr(pf->size, 'h')) ? (tmp = ft_itoa(pf->num.i)) :
+		(tmp = ft_llutoa(pf->num.ulli));
+		if (!(tmp))
+			return (-1);
+	}
 	if (pf->prec_width > 0)
 	{
 		pf->prec_width += i;
@@ -58,12 +66,13 @@ int		new_num_str(t_pf *pf)
 			i++;
 		}
 	}
-	while (*tmp)
+	while (tmp[k] != '\0')
 	{
-		pf->str[i] = *tmp;
-		tmp++;
+		pf->str[i] = tmp[k];
+		k++;
 		i++;
 	}
+	free(tmp);
 	if (pf->symbol == 3)
 	{
 		while (i < pf->str_len)
@@ -99,7 +108,8 @@ int		str_size(t_pf *pf)
 	}
 	if (pf->type == 'u')
 	{
-		pf->num_len = number_len_ull(pf->num.ulli);
+		(ft_strchr(pf->size, 'h')) ? (pf->num_len = number_len(pf->num.i)) :
+		(pf->num_len = number_len_ull(pf->num.ulli));
 		pf->str_len += pf->num_len;
 	}
 	if (pf->symbol > 0 || pf->precision > 0)
@@ -111,6 +121,8 @@ int		str_size(t_pf *pf)
 			pf->str_len += pf->symb_width + pf->prec_width;
 		else if ((pf->symb_width = pf->width - pf->str_len) > 0)
 			pf->str_len += pf->symb_width;
+		else if (pf->prec_width > 0)
+			pf->str_len += pf->prec_width;
 	}
 	return (1);
 }
@@ -145,12 +157,12 @@ int		save_format(t_pf *pf)
 		}
 		if (pf->flags[i] == '#' && ft_strchr("oxX", pf->type))
 		{
-			if (pf->type == 'o')
-				pf->sharp = "0";
+			if (pf->type == 'o' && pf->num.ulli != 0)
+				pf->sharp = ft_strdup("0");
 			else if (pf->type == 'x')
-				pf->sharp = "0x";
+				pf->sharp = ft_strdup("0x");
 			else if (pf->type == 'X')
-				pf->sharp = "0X";
+				pf->sharp = ft_strdup("0X");
 		}
 		i++;
 	}
