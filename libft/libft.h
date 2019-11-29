@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <fcntl.h>
+#include <limits.h>
 # define BUFF_SIZE 10000
 # define MAX_FD 12000
 
@@ -102,5 +103,6 @@ char				*ft_llutoa(unsigned long long int n);
 char				*ft_lltoa(long long int n);
 char				*ulltoa_base(unsigned long long int value, int base);
 char				*itoa_base(int value, int base);
-
+char 				*to_uppercase(char *str);
+void    			ft_putnbr_max(long long int nb);
 #endif

@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 18:09:48 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/27 16:55:07 by mac              ###   ########.fr       */
+/*   Updated: 2019/11/29 17:01:26 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,14 +49,14 @@ void	find_precision(t_pf *pf, char **p)
 
 void	find_size(t_pf *pf, char **p)
 {
-	if ((**p == 'h' && **(p + 1) == 'h') || (**p == 'l' && **(p + 1) == 'l'))
+	if ((**p == 'h' && *(*p + 1) == 'h') || (**p == 'l' && *(*p + 1) == 'l'))
 	{
-		**p == 'h' ? (pf->size = "hh") : (pf->size = "ll");
+		**p == 'h' ? (pf->size = ft_strdup("hh")) : (pf->size = ft_strdup("ll"));
 		*p += 2;
 	}
 	else if (**p == 'h' || **p == 'l' )
 	{
-		**p == 'h' ? (pf->size = "h") : (pf->size = "l");
+		**p == 'h' ? (pf->size = ft_strdup("h")) : (pf->size = ft_strdup("l"));
 		*p += 1;
 	}
 }

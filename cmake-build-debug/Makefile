@@ -258,33 +258,6 @@ ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.s
 .PHONY : ft_printf.c.s
 
-ft_putnbr_max.o: ft_putnbr_max.c.o
-
-.PHONY : ft_putnbr_max.o
-
-# target to build an object file
-ft_putnbr_max.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putnbr_max.c.o
-.PHONY : ft_putnbr_max.c.o
-
-ft_putnbr_max.i: ft_putnbr_max.c.i
-
-.PHONY : ft_putnbr_max.i
-
-# target to preprocess a source file
-ft_putnbr_max.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putnbr_max.c.i
-.PHONY : ft_putnbr_max.c.i
-
-ft_putnbr_max.s: ft_putnbr_max.c.s
-
-.PHONY : ft_putnbr_max.s
-
-# target to generate assembly for a file
-ft_putnbr_max.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putnbr_max.c.s
-.PHONY : ft_putnbr_max.c.s
-
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -1256,6 +1229,33 @@ libft/ft_putnbr_fd.s: libft/ft_putnbr_fd.c.s
 libft/ft_putnbr_fd.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_putnbr_fd.c.s
 .PHONY : libft/ft_putnbr_fd.c.s
+
+libft/ft_putnbr_max.o: libft/ft_putnbr_max.c.o
+
+.PHONY : libft/ft_putnbr_max.o
+
+# target to build an object file
+libft/ft_putnbr_max.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o
+.PHONY : libft/ft_putnbr_max.c.o
+
+libft/ft_putnbr_max.i: libft/ft_putnbr_max.c.i
+
+.PHONY : libft/ft_putnbr_max.i
+
+# target to preprocess a source file
+libft/ft_putnbr_max.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_putnbr_max.c.i
+.PHONY : libft/ft_putnbr_max.c.i
+
+libft/ft_putnbr_max.s: libft/ft_putnbr_max.c.s
+
+.PHONY : libft/ft_putnbr_max.s
+
+# target to generate assembly for a file
+libft/ft_putnbr_max.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_putnbr_max.c.s
+.PHONY : libft/ft_putnbr_max.c.s
 
 libft/ft_putstr.o: libft/ft_putstr.c.o
 
@@ -2256,6 +2256,33 @@ libft/number_len_ull.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/number_len_ull.c.s
 .PHONY : libft/number_len_ull.c.s
 
+libft/to_uppercase.o: libft/to_uppercase.c.o
+
+.PHONY : libft/to_uppercase.o
+
+# target to build an object file
+libft/to_uppercase.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/to_uppercase.c.o
+.PHONY : libft/to_uppercase.c.o
+
+libft/to_uppercase.i: libft/to_uppercase.c.i
+
+.PHONY : libft/to_uppercase.i
+
+# target to preprocess a source file
+libft/to_uppercase.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/to_uppercase.c.i
+.PHONY : libft/to_uppercase.c.i
+
+libft/to_uppercase.s: libft/to_uppercase.c.s
+
+.PHONY : libft/to_uppercase.s
+
+# target to generate assembly for a file
+libft/to_uppercase.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/to_uppercase.c.s
+.PHONY : libft/to_uppercase.c.s
+
 libft/ulltoa_base.o: libft/ulltoa_base.c.o
 
 .PHONY : libft/ulltoa_base.o
@@ -2418,33 +2445,6 @@ tmp_str_format.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_str_format.c.s
 .PHONY : tmp_str_format.c.s
 
-to_uppercase.o: to_uppercase.c.o
-
-.PHONY : to_uppercase.o
-
-# target to build an object file
-to_uppercase.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/to_uppercase.c.o
-.PHONY : to_uppercase.c.o
-
-to_uppercase.i: to_uppercase.c.i
-
-.PHONY : to_uppercase.i
-
-# target to preprocess a source file
-to_uppercase.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/to_uppercase.c.i
-.PHONY : to_uppercase.c.i
-
-to_uppercase.s: to_uppercase.c.s
-
-.PHONY : to_uppercase.s
-
-# target to generate assembly for a file
-to_uppercase.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/to_uppercase.c.s
-.PHONY : to_uppercase.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2469,9 +2469,6 @@ help:
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
-	@echo "... ft_putnbr_max.o"
-	@echo "... ft_putnbr_max.i"
-	@echo "... ft_putnbr_max.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2580,6 +2577,9 @@ help:
 	@echo "... libft/ft_putnbr_fd.o"
 	@echo "... libft/ft_putnbr_fd.i"
 	@echo "... libft/ft_putnbr_fd.s"
+	@echo "... libft/ft_putnbr_max.o"
+	@echo "... libft/ft_putnbr_max.i"
+	@echo "... libft/ft_putnbr_max.s"
 	@echo "... libft/ft_putstr.o"
 	@echo "... libft/ft_putstr.i"
 	@echo "... libft/ft_putstr.s"
@@ -2691,6 +2691,9 @@ help:
 	@echo "... libft/number_len_ull.o"
 	@echo "... libft/number_len_ull.i"
 	@echo "... libft/number_len_ull.s"
+	@echo "... libft/to_uppercase.o"
+	@echo "... libft/to_uppercase.i"
+	@echo "... libft/to_uppercase.s"
 	@echo "... libft/ulltoa_base.o"
 	@echo "... libft/ulltoa_base.i"
 	@echo "... libft/ulltoa_base.s"
@@ -2709,9 +2712,6 @@ help:
 	@echo "... tmp_str_format.o"
 	@echo "... tmp_str_format.i"
 	@echo "... tmp_str_format.s"
-	@echo "... to_uppercase.o"
-	@echo "... to_uppercase.i"
-	@echo "... to_uppercase.s"
 .PHONY : help
 
 

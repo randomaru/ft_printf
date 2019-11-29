@@ -17,25 +17,9 @@ CMakeFiles/printf.dir/find.c.o
  /Users/tamarant/Desktop/projects/printf/find.c
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
-CMakeFiles/printf.dir/ft_lltoa.c.o
- /Users/tamarant/Desktop/projects/printf/ft_lltoa.c
- /Users/tamarant/Desktop/projects/printf/ft_printf.h
- /Users/tamarant/Desktop/projects/printf/libft/libft.h
-CMakeFiles/printf.dir/ft_llutoa.c.o
- /Users/tamarant/Desktop/projects/printf/ft_llutoa.c
- /Users/tamarant/Desktop/projects/printf/ft_printf.h
- /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/ft_printf.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.c
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
- /Users/tamarant/Desktop/projects/printf/libft/libft.h
-CMakeFiles/printf.dir/ft_putnbr_max.c.o
- /Users/tamarant/Desktop/projects/printf/ft_printf.h
- /Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c
- /Users/tamarant/Desktop/projects/printf/libft/libft.h
-CMakeFiles/printf.dir/itoa_base.c.o
- /Users/tamarant/Desktop/projects/printf/ft_printf.h
- /Users/tamarant/Desktop/projects/printf/itoa_base.c
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_atoi.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_atoi.c
@@ -78,6 +62,12 @@ CMakeFiles/printf.dir/libft/ft_iterative_power.c.o
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_itoa.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_itoa.c
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_lltoa.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/ft_lltoa.c
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_llutoa.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/ft_llutoa.c
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_lstadd.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_lstadd.c
@@ -138,6 +128,9 @@ CMakeFiles/printf.dir/libft/ft_putnbr.c.o
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_putnbr_fd.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_putnbr_fd.c
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/ft_putnbr_max.c
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_putstr.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_putstr.c
@@ -238,6 +231,9 @@ CMakeFiles/printf.dir/libft/ft_toupper.c.o
 CMakeFiles/printf.dir/libft/get_next_line.c.o
  /Users/tamarant/Desktop/projects/printf/libft/get_next_line.c
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
+CMakeFiles/printf.dir/libft/itoa_base.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/itoa_base.c
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/number_len.c.o
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/libft/number_len.c
@@ -247,6 +243,12 @@ CMakeFiles/printf.dir/libft/number_len_ll.c.o
 CMakeFiles/printf.dir/libft/number_len_ull.c.o
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c
+CMakeFiles/printf.dir/libft/to_uppercase.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/libft/to_uppercase.c
+CMakeFiles/printf.dir/libft/ulltoa_base.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c
 CMakeFiles/printf.dir/main.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
@@ -267,11 +269,3 @@ CMakeFiles/printf.dir/tmp_str_format.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/tmp_str_format.c
-CMakeFiles/printf.dir/to_uppercase.c.o
- /Users/tamarant/Desktop/projects/printf/ft_printf.h
- /Users/tamarant/Desktop/projects/printf/libft/libft.h
- /Users/tamarant/Desktop/projects/printf/to_uppercase.c
-CMakeFiles/printf.dir/ulltoa_base.c.o
- /Users/tamarant/Desktop/projects/printf/ft_printf.h
- /Users/tamarant/Desktop/projects/printf/libft/libft.h
- /Users/tamarant/Desktop/projects/printf/ulltoa_base.c

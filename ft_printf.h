@@ -18,23 +18,6 @@
 # include "libft/libft.h"
 # include <limits.h>
 
-//typedef struct  s_format
-//{
-//	char        *flag;// -+ #0
-//	int         min_width;
-//	int         precision;
-//	char        *size;
-//	char        *type;
-//	int         counter;
-//	char        *string;
-//	char        *mb_flags;
-//	//int         i;
-//	char        *mb_size;
-//	char        *mb_type;
-//	va_list		arg;
-//
-//}               t_format;
-
 union					number
 {
 	int					i; ///
@@ -74,15 +57,6 @@ typedef struct		s_pf
 	union number			num;
 }							t_pf;
 
-void			ft_putnbr_max(long long int nb);
-//char			*itoa_base(int value, int base);
-//char 			*to_uppercase(char *str);
-//
-//void			tmp_format_flags(char *p, va_list ap, t_pf *pf);
-//void			tmp_type(char *p, va_list ap, t_pf *pf);
-//int				tmp_format(t_pf *pf);
-//void				to_str(t_pf *pf);
-//int					str_format(t_pf *pf);
 
 int					ft_printf(char *format, ...);
 int 				new_str(t_pf *pf, char **p);
@@ -108,4 +82,5 @@ int					new_num_str(t_pf *pf);
 int    				display_f(t_pf *pf);
 char				*pf_itoa(unsigned long long n);
 unsigned long long	ft_len_of_number(unsigned long long n);
+
 #endif

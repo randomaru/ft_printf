@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 20:05:20 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/29 16:57:18 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,9 @@
 
 int 	main(void)
 {
-//	printf("pf %010d\n", 123);
-//	ft_printf("ft %010d\n", 123);
 
-//	ft_putstr(itoa_base(9223372036854775807, 16));
-//	ft_putchar('\n');
-//
-//	printf("%x\n", 233);
-//	printf("%lx\n", 2147483647);
-	//int i = printf("%-#10o", 16);
-	//int j = ft_printf("ls %%\nldfl%% %% %% ");
-
-	//printf("%+-010d", 14);
-
-
-//	printf("%#-5x\n", 16);
-//	printf("%-#x\n", 16);
-
-//	printf("%010+d\n", 14);
-//	printf("%010+-d\n", 14);
-//	printf("%-+010d\n", 14);
-//
-//	printf("%#o\n", 16);
-
-//	int n = ft_printf("%#-10.4o%i\n", 15, 12);
-////	printf("\n");
-//	int b = printf("%#-10.4o%i\n", 15, 12);
-//
-//	printf("%i\n%i", n, b);
-//	//////ТОЧНОСТЬ !!!!!!!!
-//	ft_printf("%#04o", 12);
-
-//	printf("%+.7d\n", 7);
-
-	ft_printf("%.10i \n", 1);
-	printf("%.10i", 1);
+	ft_printf("this %o number", 17);
+	printf("\n");
+	printf("this %o number", 17);
 	return(0);
 }

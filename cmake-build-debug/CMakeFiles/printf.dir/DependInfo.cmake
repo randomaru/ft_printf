@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/check.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/check.c.o"
   "/Users/tamarant/Desktop/projects/printf/find.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/find.c.o"
   "/Users/tamarant/Desktop/projects/printf/ft_printf.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_printf.c.o"
-  "/Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_putnbr_max.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_atoi.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_atoi_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_bzero.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_bzero.c.o"
@@ -46,6 +45,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/libft/ft_putendl_fd.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putendl_fd.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_putnbr.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putnbr.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_putnbr_fd.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putnbr_fd.c.o"
+  "/Users/tamarant/Desktop/projects/printf/libft/ft_putnbr_max.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_putstr.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putstr.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_putstr_fd.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putstr_fd.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_sqrt.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_sqrt.c.o"
@@ -83,13 +83,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/libft/number_len.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/number_len.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/number_len_ll.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/number_len_ll.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/number_len_ull.c.o"
+  "/Users/tamarant/Desktop/projects/printf/libft/to_uppercase.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/to_uppercase.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ulltoa_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/main.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   "/Users/tamarant/Desktop/projects/printf/new_str.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/new_str.c.o"
   "/Users/tamarant/Desktop/projects/printf/pf_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/pf_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/str_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/str_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/tmp_str_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/tmp_str_format.c.o"
-  "/Users/tamarant/Desktop/projects/printf/to_uppercase.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/to_uppercase.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

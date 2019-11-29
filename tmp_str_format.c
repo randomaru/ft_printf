@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 16:18:20 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 17:06:01 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/29 14:49:14 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,10 @@ int		str_size(t_pf *pf)
 	int	sharp_len = 0;
 	if (ft_strchr("oxX", pf->type))
 	{
-		pf->type == 'o' ? (pf->tmp_ox = ulltoa_base(pf->num.ulli, 8)) : (pf->tmp_ox = ulltoa_base(pf->num.ulli, 16));
+		pf->type == 'o' ? (pf->tmp_ox = ulltoa_base(pf->num.ulli, 8)) :
+									(pf->tmp_ox = ulltoa_base(pf->num.ulli, 16));
+		if (pf->tmp_ox == NULL)
+			return (-1);
 		pf->num_len = ft_strlen(pf->tmp_ox);
 		pf->str_len += pf->num_len;
 		if (pf->sharp)
@@ -101,9 +104,10 @@ int		str_size(t_pf *pf)
 	}
 	if (pf->symbol > 0 || pf->precision > 0)
 	{
-		if (pf->type == 'o')
+		if (pf->type == 'o' && pf->sharp)
 			sharp_len = 1;
-		if ((pf->prec_width = pf->precision - pf->num_len - sharp_len) > 0 && (pf->symb_width = pf->width - pf->str_len - pf->prec_width) > 0)
+		if ((pf->prec_width = pf->precision - pf->num_len - sharp_len) > 0 &&
+								(pf->symb_width = pf->width - pf->str_len - pf->prec_width) > 0)
 			pf->str_len += pf->symb_width + pf->prec_width;
 		else if ((pf->symb_width = pf->width - pf->str_len) > 0)
 			pf->str_len += pf->symb_width;
@@ -116,7 +120,8 @@ int		save_format(t_pf *pf)
 	int i = 0;
 	while (pf->flags[i] != '\0')
 	{
-		if (((pf->flags[i] == '0' || pf->flags[i] == ' ') && (pf->width > 0 && !(ft_strchr(pf->flags, '-'))))
+		if (((pf->flags[i] == '0' || pf->flags[i] == ' ') &&
+					(pf->width > 0 && !(ft_strchr(pf->flags, '-'))))
 			|| (pf->width > 0 && !(ft_strchr(pf->flags, '-'))))
 		{
 			if (pf->flags[i] == '0')

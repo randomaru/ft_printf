@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 20:38:13 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/29 17:21:25 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 void	set_null(t_pf *pf)
 {
 	ft_bzero(pf->flags, 6);
-	ft_bzero(pf->size, 3);
-
+	if (pf->size)
+		free(pf->size);
+	pf->size = NULL;
 	pf->width = 0;
 	pf->precision = -1; ////
 	pf->type = '\0';
@@ -42,8 +43,7 @@ t_pf	*new_t_pf(void)
 		return (NULL);
 	if (!(pf->flags = ft_memalloc(6)))
 		return (NULL);
-	if (!(pf->size = ft_memalloc(3)))
-		return (NULL);
+	pf->size = NULL;
 	pf->width = 0;
 	pf->precision = -1; ////
 	pf->type = '\0';
@@ -52,7 +52,7 @@ t_pf	*new_t_pf(void)
 	pf->percent = 0;
 	pf->counter = 0;
 	pf->num.i = 0;
-
+	pf->tmp_ox = NULL;
 	pf->symbol = -1;
 	pf->symb_width = 0;
 	pf->sign = -1;
@@ -66,9 +66,13 @@ void	free_t_pf(t_pf *pf)
 {
 	free(pf->flags);
 	pf->flags = NULL;
-	free(pf->size);
+	if (pf->size)
+		free(pf->size);
 	pf->size = NULL;
-	free(pf);
+	free(pf->tmp_ox);
+	pf->tmp_ox = NULL;
+	if (pf->str)
+		free(pf->str);
 }
 
 int 	ft_printf(char *format, ...)
@@ -76,17 +80,22 @@ int 	ft_printf(char *format, ...)
 	va_list ap;
 	char	*p;
 	t_pf	*pf;
+	int 	sum;
 	
 	va_start(ap, format);
 	p = format;
-
-	pf = new_t_pf();
+	if (!(pf = new_t_pf()))
+		return (0);
 	while (*p != '\0')
 	{
 		if (*p == '%')
 		{
-			if (pf_format(pf, &p, ap) == 0)
-				return (0);
+			if (pf_format(pf, &p, ap) == -1)
+			{
+				free_t_pf(pf);
+				va_end(ap);
+				return (-1);
+			}
 			set_null(pf);
 		}
 		else
@@ -96,7 +105,9 @@ int 	ft_printf(char *format, ...)
 			set_null(pf);
 		}
 	}
+	sum = pf->counter;
 	free_t_pf(pf);
+	free(pf);
 	va_end(ap);
-	return (pf->counter);
+	return (sum);
 }

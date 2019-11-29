@@ -84,13 +84,13 @@ add_executable(printf
         libft/libft.h
         libft/Makefile
         ft_printf.h
-        ft_putnbr_max.c
+        libft/ft_putnbr_max.c
         main.c
         ft_printf.c
 #        tmp_flags.c
 #        tmp_format.c
         libft/itoa_base.c
-        to_uppercase.c
+        libft/to_uppercase.c
 
 
         check.c

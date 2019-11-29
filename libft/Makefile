@@ -28,7 +28,8 @@ SRC = ft_putchar.c ft_putstr.c ft_strcmp.c ft_strcpy.c ft_strdup.c \
 	  ft_strjoin_free.c ft_lstmap.c ft_countwords.c \
 	  get_next_line.c ft_clear_table.c ft_atoi_base.c \
 	  number_len_ll.c number_len.c number_len_ull.c \
-	  ft_llutoa.c ft_lltoa.c ulltoa_base.c itoa_base.c
+	  ft_llutoa.c ft_lltoa.c ulltoa_base.c itoa_base.c ft_putnbr_max.c \
+	  to_uppercase.c \
 
 
 OBJ = $(SRC:.c=.o)

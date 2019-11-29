@@ -1006,18 +1006,18 @@ CMakeFiles/printf.dir/libft/ulltoa_base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/ulltoa_base.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c -o CMakeFiles/printf.dir/libft/ulltoa_base.c.s
 
-CMakeFiles/printf.dir/ft_putnbr_max.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/ft_putnbr_max.c.o: ../ft_putnbr_max.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/printf.dir/ft_putnbr_max.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/ft_putnbr_max.c.o   -c /Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c
+CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o: ../libft/ft_putnbr_max.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o   -c /Users/tamarant/Desktop/projects/printf/libft/ft_putnbr_max.c
 
-CMakeFiles/printf.dir/ft_putnbr_max.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/ft_putnbr_max.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c > CMakeFiles/printf.dir/ft_putnbr_max.c.i
+CMakeFiles/printf.dir/libft/ft_putnbr_max.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/ft_putnbr_max.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/libft/ft_putnbr_max.c > CMakeFiles/printf.dir/libft/ft_putnbr_max.c.i
 
-CMakeFiles/printf.dir/ft_putnbr_max.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/ft_putnbr_max.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c -o CMakeFiles/printf.dir/ft_putnbr_max.c.s
+CMakeFiles/printf.dir/libft/ft_putnbr_max.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/ft_putnbr_max.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/ft_putnbr_max.c -o CMakeFiles/printf.dir/libft/ft_putnbr_max.c.s
 
 CMakeFiles/printf.dir/main.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/main.c.o: ../main.c
@@ -1058,18 +1058,18 @@ CMakeFiles/printf.dir/libft/itoa_base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/itoa_base.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/itoa_base.c -o CMakeFiles/printf.dir/libft/itoa_base.c.s
 
-CMakeFiles/printf.dir/to_uppercase.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/to_uppercase.c.o: ../to_uppercase.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/printf.dir/to_uppercase.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/to_uppercase.c.o   -c /Users/tamarant/Desktop/projects/printf/to_uppercase.c
+CMakeFiles/printf.dir/libft/to_uppercase.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/to_uppercase.c.o: ../libft/to_uppercase.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/printf.dir/libft/to_uppercase.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/to_uppercase.c.o   -c /Users/tamarant/Desktop/projects/printf/libft/to_uppercase.c
 
-CMakeFiles/printf.dir/to_uppercase.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/to_uppercase.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/to_uppercase.c > CMakeFiles/printf.dir/to_uppercase.c.i
+CMakeFiles/printf.dir/libft/to_uppercase.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/to_uppercase.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/libft/to_uppercase.c > CMakeFiles/printf.dir/libft/to_uppercase.c.i
 
-CMakeFiles/printf.dir/to_uppercase.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/to_uppercase.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/to_uppercase.c -o CMakeFiles/printf.dir/to_uppercase.c.s
+CMakeFiles/printf.dir/libft/to_uppercase.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/to_uppercase.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/libft/to_uppercase.c -o CMakeFiles/printf.dir/libft/to_uppercase.c.s
 
 CMakeFiles/printf.dir/check.c.o: CMakeFiles/printf.dir/flags.make
 CMakeFiles/printf.dir/check.c.o: ../check.c
@@ -1250,11 +1250,11 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/libft/ft_llutoa.c.o" \
 "CMakeFiles/printf.dir/libft/ft_lltoa.c.o" \
 "CMakeFiles/printf.dir/libft/ulltoa_base.c.o" \
-"CMakeFiles/printf.dir/ft_putnbr_max.c.o" \
+"CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o" \
 "CMakeFiles/printf.dir/main.c.o" \
 "CMakeFiles/printf.dir/ft_printf.c.o" \
 "CMakeFiles/printf.dir/libft/itoa_base.c.o" \
-"CMakeFiles/printf.dir/to_uppercase.c.o" \
+"CMakeFiles/printf.dir/libft/to_uppercase.c.o" \
 "CMakeFiles/printf.dir/check.c.o" \
 "CMakeFiles/printf.dir/new_str.c.o" \
 "CMakeFiles/printf.dir/pf_format.c.o" \
@@ -1340,11 +1340,11 @@ printf: CMakeFiles/printf.dir/libft/number_len_ull.c.o
 printf: CMakeFiles/printf.dir/libft/ft_llutoa.c.o
 printf: CMakeFiles/printf.dir/libft/ft_lltoa.c.o
 printf: CMakeFiles/printf.dir/libft/ulltoa_base.c.o
-printf: CMakeFiles/printf.dir/ft_putnbr_max.c.o
+printf: CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o
 printf: CMakeFiles/printf.dir/main.c.o
 printf: CMakeFiles/printf.dir/ft_printf.c.o
 printf: CMakeFiles/printf.dir/libft/itoa_base.c.o
-printf: CMakeFiles/printf.dir/to_uppercase.c.o
+printf: CMakeFiles/printf.dir/libft/to_uppercase.c.o
 printf: CMakeFiles/printf.dir/check.c.o
 printf: CMakeFiles/printf.dir/new_str.c.o
 printf: CMakeFiles/printf.dir/pf_format.c.o

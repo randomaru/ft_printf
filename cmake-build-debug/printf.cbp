@@ -102,9 +102,6 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_printf.h">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_putnbr_max.c">
-			<Option target="printf"/>
-		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/Makefile">
 			<Option target="printf"/>
 		</Unit>
@@ -217,6 +214,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_putnbr_fd.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_putnbr_max.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_putstr.c">
@@ -333,6 +333,9 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/number_len_ull.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/to_uppercase.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c">
 			<Option target="printf"/>
 		</Unit>
@@ -349,9 +352,6 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/tmp_str_format.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/to_uppercase.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/CMakeLists.txt">

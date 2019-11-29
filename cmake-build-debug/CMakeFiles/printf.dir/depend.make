@@ -17,25 +17,9 @@ CMakeFiles/printf.dir/find.c.o: ../find.c
 CMakeFiles/printf.dir/find.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/find.c.o: ../libft/libft.h
 
-CMakeFiles/printf.dir/ft_lltoa.c.o: ../ft_lltoa.c
-CMakeFiles/printf.dir/ft_lltoa.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/ft_lltoa.c.o: ../libft/libft.h
-
-CMakeFiles/printf.dir/ft_llutoa.c.o: ../ft_llutoa.c
-CMakeFiles/printf.dir/ft_llutoa.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/ft_llutoa.c.o: ../libft/libft.h
-
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/ft_printf.c.o: ../libft/libft.h
-
-CMakeFiles/printf.dir/ft_putnbr_max.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/ft_putnbr_max.c.o: ../ft_putnbr_max.c
-CMakeFiles/printf.dir/ft_putnbr_max.c.o: ../libft/libft.h
-
-CMakeFiles/printf.dir/itoa_base.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/itoa_base.c.o: ../itoa_base.c
-CMakeFiles/printf.dir/itoa_base.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/printf.dir/libft/ft_atoi.c.o: ../libft/libft.h
@@ -78,6 +62,12 @@ CMakeFiles/printf.dir/libft/ft_iterative_power.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
 CMakeFiles/printf.dir/libft/ft_itoa.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/libft/ft_lltoa.c.o: ../libft/ft_lltoa.c
+CMakeFiles/printf.dir/libft/ft_lltoa.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/libft/ft_llutoa.c.o: ../libft/ft_llutoa.c
+CMakeFiles/printf.dir/libft/ft_llutoa.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_lstadd.c.o: ../libft/ft_lstadd.c
 CMakeFiles/printf.dir/libft/ft_lstadd.c.o: ../libft/libft.h
@@ -138,6 +128,9 @@ CMakeFiles/printf.dir/libft/ft_putnbr.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_putnbr_fd.c.o: ../libft/ft_putnbr_fd.c
 CMakeFiles/printf.dir/libft/ft_putnbr_fd.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o: ../libft/ft_putnbr_max.c
+CMakeFiles/printf.dir/libft/ft_putnbr_max.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
 CMakeFiles/printf.dir/libft/ft_putstr.c.o: ../libft/libft.h
@@ -238,6 +231,9 @@ CMakeFiles/printf.dir/libft/ft_toupper.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
 CMakeFiles/printf.dir/libft/get_next_line.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/libft/itoa_base.c.o: ../libft/itoa_base.c
+CMakeFiles/printf.dir/libft/itoa_base.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/libft/number_len.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/number_len.c.o: ../libft/number_len.c
 
@@ -246,6 +242,12 @@ CMakeFiles/printf.dir/libft/number_len_ll.c.o: ../libft/number_len_ll.c
 
 CMakeFiles/printf.dir/libft/number_len_ull.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/number_len_ull.c.o: ../libft/number_len_ull.c
+
+CMakeFiles/printf.dir/libft/to_uppercase.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/libft/to_uppercase.c.o: ../libft/to_uppercase.c
+
+CMakeFiles/printf.dir/libft/ulltoa_base.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/libft/ulltoa_base.c.o: ../libft/ulltoa_base.c
 
 CMakeFiles/printf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/main.c.o: ../libft/libft.h
@@ -266,12 +268,4 @@ CMakeFiles/printf.dir/str_format.c.o: ../str_format.c
 CMakeFiles/printf.dir/tmp_str_format.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/tmp_str_format.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/tmp_str_format.c.o: ../tmp_str_format.c
-
-CMakeFiles/printf.dir/to_uppercase.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/to_uppercase.c.o: ../libft/libft.h
-CMakeFiles/printf.dir/to_uppercase.c.o: ../to_uppercase.c
-
-CMakeFiles/printf.dir/ulltoa_base.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/ulltoa_base.c.o: ../libft/libft.h
-CMakeFiles/printf.dir/ulltoa_base.c.o: ../ulltoa_base.c
 

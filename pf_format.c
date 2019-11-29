@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 19:58:24 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/11/29 14:49:14 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void		number_size(t_pf *pf, char p, va_list ap)
 {
 	///ft_strcmp вернет 0 если строки идентичны
-	if (!(ft_strcmp(pf->size, "ll")) || !(ft_strcmp(pf->size, "hh")))
+	if (pf->size && (!(ft_strcmp(pf->size, "ll")) || !(ft_strcmp(pf->size, "hh"))))
 	{
 		if (p == 'd' || p == 'i')
 			!(ft_strcmp(pf->size, "hh")) ? (pf->num.sc = (signed char)va_arg(ap, int)) ////
@@ -24,13 +24,13 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 			!(ft_strcmp(pf->size, "hh")) ? (pf->num.uc = (unsigned char)va_arg(ap, int)) //////
 									  : (pf->num.ulli = va_arg(ap, unsigned long long int));
 	}
-	else if (!(ft_strcmp(pf->size, "l")) || !(ft_strcmp(pf->size, "h")))
+	else if (pf->size && (!(ft_strcmp(pf->size, "l")) || !(ft_strcmp(pf->size, "h"))))
 	{
 		if (p == 'd' || p == 'i')
 			!(ft_strcmp(pf->size, "h")) ? (pf->num.hi = (short int)va_arg(ap, int)) /////
 										 : (pf->num.li = va_arg(ap, long int));
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
-			!(ft_strcmp(pf->size, "h")) ? (pf->num.uhi = (unsigned short int)va_arg(ap, unsigned int)) //////
+			!(ft_strcmp(pf->size, "h")) ? (pf->num.uhi = (unsigned short int)va_arg(ap, int)) //////
 										 : (pf->num.uli = va_arg(ap, unsigned long int));
 	}
 	else
@@ -62,7 +62,8 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 	if (**p != 'f')
 	{
 		save_format(pf);
-		str_size(pf);
+		if (str_size(pf) == -1)
+			return (-1);
 		new_num_str(pf);
 		ft_putstr(pf->str);
 	}
