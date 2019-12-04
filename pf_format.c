@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/29 14:49:14 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/02 22:29:52 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 	else
 	{
 		if (p == 'd' || p == 'i')
-			pf->num.i = va_arg(ap, int);
+			pf->num.lli = va_arg(ap, int);
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
 			pf->num.ui = va_arg(ap, unsigned int);
 	}
@@ -49,7 +49,7 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		find_flags(pf, &*p);
 	if (is_width(*p))
 		find_width(pf, &*p);
-	if (is_precision(*p))
+	if (is_precision(&*p, pf))
 		find_precision(pf, &*p);
 	if (is_size(*p))
 		find_size(pf, &*p);
@@ -67,6 +67,7 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		if (new_num_str(pf) == -1)
 			return (-1);
 		ft_putstr(pf->str);
+//		printf("%s", pf->str);
 	}
 	if (**p == 'f')
 	{

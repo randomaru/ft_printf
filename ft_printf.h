@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 20:39:47 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/02 18:53:31 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ typedef struct		s_pf
 	char 					*tmp_ox;
 	int						num_len;
 	union number			num;
+
+	int 					dot;
 }							t_pf;
 
 
@@ -66,7 +68,7 @@ int 				is_flags(char *p);
 void				find_flags(t_pf *pf, char **p);
 int 				is_width(char *p);
 void				find_width(t_pf *pf, char **p);
-int					is_precision(char *p);
+int is_precision(char **p, t_pf *pf);
 void				find_precision(t_pf *pf, char **p);
 int 				is_size(char *p);
 void				find_size(t_pf *pf, char **p);

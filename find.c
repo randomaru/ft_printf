@@ -17,7 +17,7 @@ void	find_flags(t_pf *pf, char **p)
 	int i;
 
 	i = 0;
-	while (ft_strchr("-+ #0", **p) && i < 2)
+	while (ft_strchr("-+ #0", **p) )
 	{
 		if (**p == '-')
 			pf->flags[i] = '-';

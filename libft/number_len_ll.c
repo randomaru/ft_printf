@@ -17,6 +17,11 @@ int		number_len_ll(long long n)
 	int len;
 
 	len = 1;
+	if (n < 0)
+	{
+		len++;
+		n *= -1;
+	}
 	while (n > 9)
 	{
 		n = n / 10;

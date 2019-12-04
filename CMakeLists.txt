@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.14)
 project(printf)
 
 set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Werror -g")
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Werror -g")
 include_directories(libft)
 
 add_executable(printf

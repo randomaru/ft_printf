@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 17:40:11 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/27 16:55:07 by mac              ###   ########.fr       */
+/*   Updated: 2019/12/02 19:04:28 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,18 @@ int 	is_width(char *p)
 	return (0);
 }
 
-int		is_precision(char *p)
+int is_precision(char **p, t_pf *pf)
 {
-	if (*p == '.' && (*(p + 1) >= '0' && *(p + 1) <= '9'))
+	if (**p == '.' && (*(*p + 1) >= '0' && *(*p + 1) <= '9'))
+	{
+		pf->dot = 1;
 		return (1);
+	}
+	else if (**p == '.')
+	{
+		pf->dot = 1;
+		*p += 1;
+	}
 	return (0);
 }
 

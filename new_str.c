@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:26:18 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 17:49:33 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/02 22:27:50 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,6 @@ int 	new_str(t_pf *pf, char **p)
 	}
 	pf->str[i] = '\0';
 	ft_putstr(pf->str);
+//	printf("%s", pf->str);
 	return (pf->str_len);
 }

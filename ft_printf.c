@@ -60,6 +60,7 @@ t_pf	*new_t_pf(void)
 	pf->sign = -1;
 	pf->sharp = NULL;
 	pf->prec_width = 0;
+	pf->dot = 0;
 	return (pf);
 }
 
@@ -92,6 +93,7 @@ void	free_t_pf(t_pf *pf)
 	pf->sign = -1;
 	pf->sharp = NULL;
 	pf->prec_width = 0;
+	pf->dot = 0;
 	free(pf);
 }
 
