@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/05 17:23:56 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/05 20:28:04 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ int 	main(void)
 	static unsigned long  		ulmax = 9223372036854775807;
 
 
-    ft_printf("%37llu", 522337203685470ull);
+    ft_printf("%+5.0i", 0);
 	printf("\n");
-	printf("%37llu", 522337203685470ull);
+	printf("%+5.0i", 0);
 
 
 

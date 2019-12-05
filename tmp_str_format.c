@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 16:18:20 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/05 17:32:30 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/05 20:31:55 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,21 @@ int		new_num_str(t_pf *pf)
 			i++;
 		}
 	}
+	if (pf->plus && ft_strchr("dif", pf->type) && !pf->minus)
+	{
+		pf->str[i] = '+';
+		i++;
+	}
+	if (pf->minus)
+	{
+		pf->str[i] = '-';
+		i++;
+	}
+	if (pf->space && !pf->minus && !pf->plus)
+	{
+		pf->str[i] = ' ';
+		i++;
+	}
 	if (ft_strchr("oxX", pf->type) && pf->sharp)
 	{
 		while (*pf->sharp)
@@ -56,17 +71,19 @@ int		new_num_str(t_pf *pf)
 	}
 	if (ft_strchr("oxX", pf->type)) //////   ютоа_бэйс
 		tmp = ft_strdup(pf->tmp_ox);
-	if (pf->type == 'o' && ((pf->precision <= 0 && pf->dot) || pf->sharp) && !ft_strcmp(pf->tmp_ox, "0"))
-	{
-		tmp = NULL;
-	}
-	if (ft_strchr("xX", pf->type) && ((pf->precision <= 0 && pf->dot)) && !ft_strcmp(pf->tmp_ox, "0"))
-	{
-		tmp = NULL;
-	}
+//	if (pf->type == 'o' && ((pf->precision <= 0 && pf->dot) || pf->sharp) && !ft_strcmp(pf->tmp_ox, "0"))
+//	{
+//		tmp = NULL;
+//	}
+//	if (ft_strchr("xX", pf->type) && ((pf->precision <= 0 && pf->dot)) && !ft_strcmp(pf->tmp_ox, "0"))
+//	{
+//		tmp = NULL;
+//	}
 	if (ft_strchr("di", pf->type))
 		if (!(tmp = ft_lltoa(pf->num.lli)))
 			return (-1);
+	if ((pf->precision <= 0 && pf->dot) && pf->num.lli == 0)
+		tmp = NULL;
 	if (pf->type == 'u')
 	{
 		if (pf->num.ulli == 0 && (pf->precision <= 0 && pf->dot))
@@ -91,7 +108,8 @@ int		new_num_str(t_pf *pf)
 			k++;
 			i++;
 		}
-		free(tmp);}
+		//free(tmp);
+	}
 
 	if (pf->symbol == 3)
 	{
@@ -132,8 +150,13 @@ int		str_size(t_pf *pf)
 	}
 	if (ft_strchr("di", pf->type))
 	{
-		pf->num_len = number_len_ll(pf->num.lli);
-		pf->str_len += pf->num_len;
+		if (pf->num.lli == 0 && pf->precision <= 0 && pf->dot)
+			pf->num_len = 0;
+		else
+			pf->num_len = number_len_ll(pf->num.lli);
+		pf->str_len += pf->num_len + pf->plus + pf->minus;
+		if (!pf->plus && !pf->minus)
+			pf->str_len += pf->space;
 	}
 	if (pf->type == 'u')
 	{
@@ -141,12 +164,15 @@ int		str_size(t_pf *pf)
 			pf->num_len = 0;
 		else
 		{
-//			(pf->size && ft_strchr(pf->size, 'h')) ? (pf->num_len = number_len(pf->num.i)) :
-//			(pf->num_len = number_len_ull(pf->num.ulli));
 			pf->num_len = number_len_ull(pf->num.ulli);
-			pf->str_len += pf->num_len;
+			pf->str_len += pf->num_len + pf->minus + pf->plus;
 		}
 	}
+//	if (pf->symbol == 2 && pf->width == 0)
+//	{
+//		pf->width = pf->str_len + 1;
+//
+//	}
 	if (pf->symbol > 0 || pf->precision > 0)
 	{
 		if (pf->type == 'o' && pf->sharp)
@@ -165,6 +191,13 @@ int		str_size(t_pf *pf)
 int		save_format(t_pf *pf)
 {
 	int i = 0;
+	if (ft_strchr(pf->flags, '+') && ft_strchr("dif", pf->type) && pf->num.lli >= 0)
+		pf->plus = 1;
+	if (ft_strchr("dif", pf->type) && pf->num.lli < 0)
+	{
+		pf->num.lli *= -1;
+		pf->minus = 1;
+	}
 	while (pf->flags[i] != '\0')
 	{
 		if (((pf->flags[i] == '0' || pf->flags[i] == ' ') &&
@@ -178,18 +211,10 @@ int		save_format(t_pf *pf)
 		}
 		if (pf->flags[i] == '-' && pf->width > 0)
 			pf->symbol = 3;
-		if (pf->flags[i] == '+' && ft_strchr("diu", pf->type))
-		{
-			if (ft_strchr("di", pf->type))
-			{
-				if (pf->num.lli >= 0)
-					pf->sign = 1;
-				else
-					pf->sign = 0;
-			}
-			else
-				pf->sign = 1;
-		}
+//		if (pf->flags[i] == ' ' && pf->width == 0 && pf->minus == 0 && pf->plus == 0)
+//			pf->symbol = 2;
+		if (pf->flags[i] == ' ')
+			pf->space = 1;
 		if (pf->flags[i] == '#' && ft_strchr("oxX", pf->type))
 		{
 			if (pf->type == 'o' )//&& pf->num.ulli != 0)

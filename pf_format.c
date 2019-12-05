@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/05 17:26:54 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/05 19:40:16 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 	if (pf->size && (!(ft_strcmp(pf->size, "ll")) || !(ft_strcmp(pf->size, "hh"))))
 	{
 		if (p == 'd' || p == 'i')
-			!(ft_strcmp(pf->size, "hh")) ? (pf->num.sc = (signed char)va_arg(ap, int)) ////
+			!(ft_strcmp(pf->size, "hh")) ? (pf->num.lli = (long long int)((signed char)va_arg(ap, int))) ////
 										: (pf->num.lli = va_arg(ap, long long int));
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
 			!(ft_strcmp(pf->size, "hh")) ? (pf->num.ulli = (unsigned long long)((unsigned char)va_arg(ap, int))) //////
@@ -27,7 +27,7 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 	else if (pf->size && (!(ft_strcmp(pf->size, "l")) || !(ft_strcmp(pf->size, "h"))))
 	{
 		if (p == 'd' || p == 'i')
-			!(ft_strcmp(pf->size, "h")) ? (pf->num.hi = (short int)va_arg(ap, int)) /////
+			!(ft_strcmp(pf->size, "h")) ? (pf->num.lli = (long long int)((short int)va_arg(ap, int))) /////
 										 : (pf->num.li = va_arg(ap, long int));
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
 			!(ft_strcmp(pf->size, "h")) ? (pf->num.ulli = (unsigned long long)((unsigned short int)va_arg(ap, int))) //////

@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/tamarant/Desktop/projects/printf/libft/ft_ulltoa.c
-libft.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+stdio.h
+-
+stdarg.h
+-
+libft/libft.h
 /Users/tamarant/Desktop/projects/printf/libft/libft.h
+limits.h
+-
 
 /Users/tamarant/Desktop/projects/printf/libft/libft.h
 stdlib.h
@@ -21,4 +27,12 @@ fcntl.h
 -
 limits.h
 -
+
+/Users/tamarant/Desktop/projects/printf/main.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
+
+/Users/tamarant/Desktop/projects/printf/tmp_str_format.c
+ft_printf.h
+/Users/tamarant/Desktop/projects/printf/ft_printf.h
 

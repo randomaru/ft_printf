@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/02 18:53:31 by mac              ###   ########.fr       */
+/*   Updated: 2019/12/05 17:51:54 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,9 @@ typedef struct		s_pf
 	union number			num;
 
 	int 					dot;
+	int						plus;
+	int 					minus;
+	int						space;
 	unsigned long long		try;
 }							t_pf;
 

@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/29 21:22:00 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/05 17:51:54 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,11 @@ void	set_null(t_pf *pf)
 	//pf->num.i = 0;
 
 	pf->prec_width = 0;
+	pf->dot = 0;
+	pf->plus = 0;
+	pf->minus = 0;
+	pf->space = 0;
+
 }
 
 t_pf	*new_t_pf(void)
@@ -61,6 +66,10 @@ t_pf	*new_t_pf(void)
 	pf->sharp = NULL;
 	pf->prec_width = 0;
 	pf->dot = 0;
+	pf->plus = 0;
+	pf->minus = 0;
+	pf->space = 0;
+
 	return (pf);
 }
 
@@ -94,6 +103,9 @@ void	free_t_pf(t_pf *pf)
 	pf->sharp = NULL;
 	pf->prec_width = 0;
 	pf->dot = 0;
+	pf->plus = 0;
+	pf->minus = 0;
+	pf->space = 0;
 	free(pf);
 }
 
