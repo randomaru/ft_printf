@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Users/tamarant/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Users/tamarant/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mac/Desktop/projects/printf
+CMAKE_SOURCE_DIR = /Users/tamarant/Desktop/projects/printf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mac/Desktop/projects/printf/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/tamarant/Desktop/projects/printf/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/mac/Desktop/projects/printf/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/tamarant/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/tamarant/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/projects/printf/cmake-build-debug/CMakeFiles /Users/mac/Desktop/projects/printf/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles /Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/projects/printf/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2121,6 +2121,33 @@ libft/ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
+libft/ft_ulltoa.o: libft/ft_ulltoa.c.o
+
+.PHONY : libft/ft_ulltoa.o
+
+# target to build an object file
+libft/ft_ulltoa.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_ulltoa.c.o
+.PHONY : libft/ft_ulltoa.c.o
+
+libft/ft_ulltoa.i: libft/ft_ulltoa.c.i
+
+.PHONY : libft/ft_ulltoa.i
+
+# target to preprocess a source file
+libft/ft_ulltoa.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_ulltoa.c.i
+.PHONY : libft/ft_ulltoa.c.i
+
+libft/ft_ulltoa.s: libft/ft_ulltoa.c.s
+
+.PHONY : libft/ft_ulltoa.s
+
+# target to generate assembly for a file
+libft/ft_ulltoa.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_ulltoa.c.s
+.PHONY : libft/ft_ulltoa.c.s
+
 libft/get_next_line.o: libft/get_next_line.c.o
 
 .PHONY : libft/get_next_line.o
@@ -2676,6 +2703,9 @@ help:
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"
+	@echo "... libft/ft_ulltoa.o"
+	@echo "... libft/ft_ulltoa.i"
+	@echo "... libft/ft_ulltoa.s"
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"

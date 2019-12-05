@@ -57,6 +57,7 @@ typedef struct		s_pf
 	union number			num;
 
 	int 					dot;
+	unsigned long long		try;
 }							t_pf;
 
 

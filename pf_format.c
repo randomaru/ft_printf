@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/02 22:29:52 by mac              ###   ########.fr       */
+/*   Updated: 2019/12/05 17:26:54 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 			!(ft_strcmp(pf->size, "hh")) ? (pf->num.sc = (signed char)va_arg(ap, int)) ////
 										: (pf->num.lli = va_arg(ap, long long int));
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
-			!(ft_strcmp(pf->size, "hh")) ? (pf->num.uc = (unsigned char)va_arg(ap, int)) //////
-									  : (pf->num.ulli = va_arg(ap, unsigned long long int));
+			!(ft_strcmp(pf->size, "hh")) ? (pf->num.ulli = (unsigned long long)((unsigned char)va_arg(ap, int))) //////
+									  : (pf->num.ulli = va_arg(ap, unsigned long long));
 	}
 	else if (pf->size && (!(ft_strcmp(pf->size, "l")) || !(ft_strcmp(pf->size, "h"))))
 	{
@@ -30,15 +30,15 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 			!(ft_strcmp(pf->size, "h")) ? (pf->num.hi = (short int)va_arg(ap, int)) /////
 										 : (pf->num.li = va_arg(ap, long int));
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
-			!(ft_strcmp(pf->size, "h")) ? (pf->num.uhi = (unsigned short int)va_arg(ap, int)) //////
-										 : (pf->num.uli = va_arg(ap, unsigned long int));
+			!(ft_strcmp(pf->size, "h")) ? (pf->num.ulli = (unsigned long long)((unsigned short int)va_arg(ap, int))) //////
+										 : (pf->num.ulli = (unsigned long long)va_arg(ap, unsigned long int));
 	}
 	else
 	{
 		if (p == 'd' || p == 'i')
-			pf->num.lli = va_arg(ap, int);
-		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
-			pf->num.ui = va_arg(ap, unsigned int);
+			pf->num.lli = (long long int)va_arg(ap, int);
+		else if (p == 'u' || p == 'x' || p == 'X' || p == 'o' )
+			pf->num.ulli = (unsigned long long)va_arg(ap, unsigned int);
 	}
 }
 

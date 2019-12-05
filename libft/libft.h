@@ -105,4 +105,5 @@ char				*ulltoa_base(unsigned long long int value, int base);
 char				*itoa_base(int value, int base);
 char 				*to_uppercase(char *str);
 void    			ft_putnbr_max(long long int nb);
+char				*ft_ulltoa(unsigned long long int n);
 #endif
