@@ -13,9 +13,17 @@ CMakeFiles/printf.dir/check.c.o: ../check.c
 CMakeFiles/printf.dir/check.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/check.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/fill_final_str.c.o: ../fill_final_str.c
+CMakeFiles/printf.dir/fill_final_str.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/fill_final_str.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/find.c.o: ../find.c
 CMakeFiles/printf.dir/find.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/find.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/find_str_size.c.o: ../find_str_size.c
+CMakeFiles/printf.dir/find_str_size.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/find_str_size.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.h
@@ -260,15 +268,11 @@ CMakeFiles/printf.dir/new_str.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/new_str.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/new_str.c.o: ../new_str.c
 
+CMakeFiles/printf.dir/parse_format.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/parse_format.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/parse_format.c.o: ../parse_format.c
+
 CMakeFiles/printf.dir/pf_format.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/pf_format.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/pf_format.c.o: ../pf_format.c
-
-CMakeFiles/printf.dir/str_format.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/str_format.c.o: ../libft/libft.h
-CMakeFiles/printf.dir/str_format.c.o: ../str_format.c
-
-CMakeFiles/printf.dir/tmp_str_format.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/tmp_str_format.c.o: ../libft/libft.h
-CMakeFiles/printf.dir/tmp_str_format.c.o: ../tmp_str_format.c
 

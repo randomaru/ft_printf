@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/05 20:28:04 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/06 19:19:00 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,19 @@ int 	main(void)
 	static unsigned long  		ulmax = 9223372036854775807;
 
 
-    ft_printf("%+5.0i", 0);
+/*    ft_printf("%%%"); /// -> %0
 	printf("\n");
-	printf("%+5.0i", 0);
+	printf("%%%"); /// -> %*/
 
+/*	ft_printf("% u", 5);
+	printf("\n");
+	printf("% u", 5); /// ' ' undefined behaviour with u*/
 
+	ft_printf("%.0x", 0);
+	printf("\n");
+	printf("%.0x", 0);
 
-/*
-	ft_printf("%hhu", 100);
+/*	ft_printf("%hhu", 100);
 	printf("\n");
 	printf("%hhu", (unsigned char)100);
 	printf("\n");
@@ -64,9 +69,8 @@ int 	main(void)
 
 	ft_printf("%.5o", 21);
 	printf("\n");
-	printf("%.5o", 21);
+	printf("%.5o", 21);*/
 
-*/
 
 /*
 	ft_printf("this %.6i number", -267);

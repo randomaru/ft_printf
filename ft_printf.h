@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/05 17:51:54 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/06 17:31:53 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,15 +72,15 @@ int 				is_flags(char *p);
 void				find_flags(t_pf *pf, char **p);
 int 				is_width(char *p);
 void				find_width(t_pf *pf, char **p);
-int is_precision(char **p, t_pf *pf);
+int					is_precision(char **p, t_pf *pf);
 void				find_precision(t_pf *pf, char **p);
 int 				is_size(char *p);
 void				find_size(t_pf *pf, char **p);
 
 
 int					save_format(t_pf *pf);
-int					str_size(t_pf *pf);
-int					new_num_str(t_pf *pf);
+int					find_str_size(t_pf *pf);
+int					fill_final_str(t_pf *pf);
 
 
 ///SVETA

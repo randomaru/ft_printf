@@ -50,6 +50,5 @@ int 	new_str(t_pf *pf, char **p)
 	}
 	pf->str[i] = '\0';
 	ft_putstr(pf->str);
-//	printf("%s", pf->str);
 	return (pf->str_len);
 }

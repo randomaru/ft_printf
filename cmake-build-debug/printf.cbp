@@ -93,7 +93,13 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/check.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/fill_final_str.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/find.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/find_str_size.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_printf.c">
@@ -348,13 +354,10 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/new_str.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/parse_format.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/pf_format.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/str_format.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/tmp_str_format.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/CMakeLists.txt">

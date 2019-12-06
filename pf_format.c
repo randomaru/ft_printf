@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/05 19:40:16 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/06 18:02:48 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,11 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 	if (**p != 'f')
 	{
 		save_format(pf);
-		if (str_size(pf) == -1)
+		if (find_str_size(pf) == -1)
 			return (-1);
-		if (new_num_str(pf) == -1)
+		if (fill_final_str(pf) == -1)
 			return (-1);
 		ft_putstr(pf->str);
-//		printf("%s", pf->str);
 	}
 	if (**p == 'f')
 	{

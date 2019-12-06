@@ -7,7 +7,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/SVETA_display_f.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/SVETA_display_f.c.o"
   "/Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
   "/Users/tamarant/Desktop/projects/printf/check.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/check.c.o"
+  "/Users/tamarant/Desktop/projects/printf/fill_final_str.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/fill_final_str.c.o"
   "/Users/tamarant/Desktop/projects/printf/find.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/find.c.o"
+  "/Users/tamarant/Desktop/projects/printf/find_str_size.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/find_str_size.c.o"
   "/Users/tamarant/Desktop/projects/printf/ft_printf.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_printf.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_atoi.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi.c.o"
   "/Users/tamarant/Desktop/projects/printf/libft/ft_atoi_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi_base.c.o"
@@ -88,9 +90,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ulltoa_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/main.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   "/Users/tamarant/Desktop/projects/printf/new_str.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/new_str.c.o"
+  "/Users/tamarant/Desktop/projects/printf/parse_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/parse_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/pf_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/pf_format.c.o"
-  "/Users/tamarant/Desktop/projects/printf/str_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/str_format.c.o"
-  "/Users/tamarant/Desktop/projects/printf/tmp_str_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/tmp_str_format.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

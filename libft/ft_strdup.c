@@ -6,7 +6,7 @@
 /*   By: tamarant <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 19:00:03 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/27 16:55:08 by mac              ###   ########.fr       */
+/*   Updated: 2019/12/06 19:36:27 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,12 @@ char	*ft_strdup(const char *s1)
 	int		len;
 
 	len = 0;
+	if (!s1)
+		return (NULL);
 	while (s1[len] != '\0')
 		len++;
 	if (!(cop = (char*)malloc(sizeof(*s1) * (len + 1))))
-		return (0);
+		return (NULL);
 	len = 0;
 	while (s1[len] != '\0')
 	{

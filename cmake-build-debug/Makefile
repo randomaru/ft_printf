@@ -204,6 +204,33 @@ check.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.s
 .PHONY : check.c.s
 
+fill_final_str.o: fill_final_str.c.o
+
+.PHONY : fill_final_str.o
+
+# target to build an object file
+fill_final_str.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final_str.c.o
+.PHONY : fill_final_str.c.o
+
+fill_final_str.i: fill_final_str.c.i
+
+.PHONY : fill_final_str.i
+
+# target to preprocess a source file
+fill_final_str.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final_str.c.i
+.PHONY : fill_final_str.c.i
+
+fill_final_str.s: fill_final_str.c.s
+
+.PHONY : fill_final_str.s
+
+# target to generate assembly for a file
+fill_final_str.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final_str.c.s
+.PHONY : fill_final_str.c.s
+
 find.o: find.c.o
 
 .PHONY : find.o
@@ -230,6 +257,33 @@ find.s: find.c.s
 find.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find.c.s
 .PHONY : find.c.s
+
+find_str_size.o: find_str_size.c.o
+
+.PHONY : find_str_size.o
+
+# target to build an object file
+find_str_size.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find_str_size.c.o
+.PHONY : find_str_size.c.o
+
+find_str_size.i: find_str_size.c.i
+
+.PHONY : find_str_size.i
+
+# target to preprocess a source file
+find_str_size.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find_str_size.c.i
+.PHONY : find_str_size.c.i
+
+find_str_size.s: find_str_size.c.s
+
+.PHONY : find_str_size.s
+
+# target to generate assembly for a file
+find_str_size.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find_str_size.c.s
+.PHONY : find_str_size.c.s
 
 ft_printf.o: ft_printf.c.o
 
@@ -2391,6 +2445,33 @@ new_str.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/new_str.c.s
 .PHONY : new_str.c.s
 
+parse_format.o: parse_format.c.o
+
+.PHONY : parse_format.o
+
+# target to build an object file
+parse_format.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_format.c.o
+.PHONY : parse_format.c.o
+
+parse_format.i: parse_format.c.i
+
+.PHONY : parse_format.i
+
+# target to preprocess a source file
+parse_format.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_format.c.i
+.PHONY : parse_format.c.i
+
+parse_format.s: parse_format.c.s
+
+.PHONY : parse_format.s
+
+# target to generate assembly for a file
+parse_format.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_format.c.s
+.PHONY : parse_format.c.s
+
 pf_format.o: pf_format.c.o
 
 .PHONY : pf_format.o
@@ -2418,60 +2499,6 @@ pf_format.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.s
 .PHONY : pf_format.c.s
 
-str_format.o: str_format.c.o
-
-.PHONY : str_format.o
-
-# target to build an object file
-str_format.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/str_format.c.o
-.PHONY : str_format.c.o
-
-str_format.i: str_format.c.i
-
-.PHONY : str_format.i
-
-# target to preprocess a source file
-str_format.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/str_format.c.i
-.PHONY : str_format.c.i
-
-str_format.s: str_format.c.s
-
-.PHONY : str_format.s
-
-# target to generate assembly for a file
-str_format.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/str_format.c.s
-.PHONY : str_format.c.s
-
-tmp_str_format.o: tmp_str_format.c.o
-
-.PHONY : tmp_str_format.o
-
-# target to build an object file
-tmp_str_format.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_str_format.c.o
-.PHONY : tmp_str_format.c.o
-
-tmp_str_format.i: tmp_str_format.c.i
-
-.PHONY : tmp_str_format.i
-
-# target to preprocess a source file
-tmp_str_format.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_str_format.c.i
-.PHONY : tmp_str_format.c.i
-
-tmp_str_format.s: tmp_str_format.c.s
-
-.PHONY : tmp_str_format.s
-
-# target to generate assembly for a file
-tmp_str_format.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/tmp_str_format.c.s
-.PHONY : tmp_str_format.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2490,9 +2517,15 @@ help:
 	@echo "... check.o"
 	@echo "... check.i"
 	@echo "... check.s"
+	@echo "... fill_final_str.o"
+	@echo "... fill_final_str.i"
+	@echo "... fill_final_str.s"
 	@echo "... find.o"
 	@echo "... find.i"
 	@echo "... find.s"
+	@echo "... find_str_size.o"
+	@echo "... find_str_size.i"
+	@echo "... find_str_size.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
@@ -2733,15 +2766,12 @@ help:
 	@echo "... new_str.o"
 	@echo "... new_str.i"
 	@echo "... new_str.s"
+	@echo "... parse_format.o"
+	@echo "... parse_format.i"
+	@echo "... parse_format.s"
 	@echo "... pf_format.o"
 	@echo "... pf_format.i"
 	@echo "... pf_format.s"
-	@echo "... str_format.o"
-	@echo "... str_format.i"
-	@echo "... str_format.s"
-	@echo "... tmp_str_format.o"
-	@echo "... tmp_str_format.i"
-	@echo "... tmp_str_format.s"
 .PHONY : help
 
 
