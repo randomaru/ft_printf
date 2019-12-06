@@ -1,19 +1,36 @@
+
+
 #include "ft_printf.h"
 
-char       *add_null(t_pf *pf, char *scnd)
+t_float	*new_t_float(void)
+{
+    t_float *floatty;
+
+    if (!(floatty = (t_float*)malloc(sizeof(t_float))))
+        return (NULL);
+    floatty->first = 0;
+    floatty->second = 0;
+    floatty->scnd = NULL;
+    floatty->frst= NULL;
+    floatty->znak = 0;
+    return (floatty);
+}
+
+char       *add_null(t_pf *pf, t_float *floatty, int what)
 {
 	unsigned int i;
 
 	i = 0;
-	while (*(scnd + i) != '\0')
-		i++;
+	if (what == 1)
+	    while (*(floatty->scnd + i) != '\0')
+		    i++;
 	while (i < (unsigned int)pf->precision)
 	{
-		*(scnd + i) = 48;
+		*(floatty->scnd + i) = 48;
 		i += 1;
 	}
-	*(scnd + i) = '\0';
-	return (scnd);
+	*(floatty->scnd + i) = '\0';
+	return (floatty->scnd);
 }
 
 unsigned long long	ft_pow(unsigned long long n, unsigned long long pow)
@@ -21,108 +38,112 @@ unsigned long long	ft_pow(unsigned long long n, unsigned long long pow)
     return (pow ? n * ft_pow(n, pow - 1) : 1);
 }
 
-char    *get_integer(double num, unsigned long long *first)
+char    *get_integer(long double num, t_float *floatty)
 {
-    char    *frst;
-
-    frst = NULL;
-    *first = (unsigned long long)num;
-    ///frst = ft_memalloc(ft_len_of_number(*first));
-    frst = pf_itoa(*first);
-    return (frst);
+    floatty->first = (unsigned long long)num;
+    floatty->frst = pf_itoa(floatty->first);
+    return (floatty->frst);
 }
 
-char     *okrugl(double num, unsigned long long first, unsigned long long i, char *scnd)
+char     *okrugl(long double num, unsigned long long i, t_float *floatty, int prec)
 {
-    if ((num) < 0.1 && num != 0)
+    if ((num) < 0.1 && num != 0 && i < prec)
     {
-        *(scnd + i) = '0';
+        *((floatty->scnd) + i) = '0';
         i += 1;
-        okrugl(num * 10, first, i, scnd);
+        okrugl(num * 10, i, floatty, prec--);
     }
-    return (scnd);
+    return (floatty->scnd);
 }
 
-char    *get_decimal(double num, unsigned long long first, unsigned long long *second, t_pf *pf)
+void    fill_char_from_int(unsigned long long what, char *where)
 {
-    char    *scnd = NULL;
+    int i;
+
+    i = ft_len_of_number(what);
+    *(where + i) = '\0';
+    i -= 1;
+    while (what && i >= 0)
+    {
+        *(where + i) = ((what % 10) + 48);
+        i--;
+        what = what / 10;
+    }
+}
+
+char    *get_decimal(long double num, t_pf *pf, t_float *floatty)
+{
     unsigned long long i;
     char *ch;
 
-//    while ((int)nado > 0)
-//    {
-//        if (((int)nado % 10 == 0))
-//            break;
-//        frm->len_decimal++;
-//        nado *= 10;
-//    }
     i = 0;
-    if (!(scnd = ft_memalloc(pf->precision))) /// необходимо выделить память для случая с функцией okrugl
+    if (!(floatty->scnd = ft_memalloc(pf->precision + 1))) /// +\0
         return (NULL);
-    ((pf->precision == 19) ? (*second = (num - first) * ft_pow(10, pf->precision))
-						   : (*second = (num - first) * ft_pow(10, pf->precision + 1)));
- // комментарий под мэйном
-    if ((num - first < 0.1) && pf->precision > 1) //&& frm->precision > 4) // не всегда срабатывает
-        scnd = okrugl(num - first, first, i, scnd);
-    if (pf->precision + 1 == 1)
-        scnd = pf_itoa(*second);
-    else
-    {
-        if (pf->precision == 19)
-            *second = (*second % 10 > 4) ? (*second + 1) : (*second);
-      /* else if (*second % 99 == 0) // некорректно
-            *second = (*second / 10);*/
-        else
-            *second = (*second % 10 > 4) ? (*second/10 + 1) : (*second/10); // когда происходит некорректное разкругление(?!), то остаток от деления на 10 = 9.
-          /* if (frm->precision == 1 && *second == 10)
-                *second = 9;*/
-           /*if (ft_len_of_number(scnd) > 0 && !*second)
-               return (scnd);*/
-        ch = pf_itoa(*second);
-        scnd = ft_strjoin(scnd, ch);
-        free(ch);
-        return (scnd);
+    ((pf->precision == 19) ? (floatty->second = (unsigned long long) ((num - floatty->first) *
+                                                                      ft_pow(10, pf->precision)))
+                           : (floatty->second = (unsigned long long) ((num - floatty->first) *
+                                                                      ft_pow(10, pf->precision + 1))));
+    // комментарий под мэйном
+    if ((num - floatty->first < 0.1) && pf->precision > 1) {//&& frm->precision > 4) // не всегда срабатывает
+        floatty->scnd = okrugl((double) (num - floatty->first), i, floatty, pf->precision);
     }
-    return (scnd);
-    // Необходимо потестить, потому что есть инфа в интернете что надо +1 когда %10 > 4
-    // Да, походу необходимо когда > 4, сейчас потестила на примере ("%.2f", 123.99); здесь получается дробная часть = 9899999.. и когда я подгоняю под точность то остается 98
-    // почему именно 4?? Потому что идет округление
-    // на примере ("%.1f", 123.99); некорректный вывод 123.10, возможно исправится когда я пропишу округление
+    if (pf->precision + 1 == 1) // 0
+        fill_char_from_int(floatty->second, floatty->scnd);
+    else {
+        if (pf->precision == 19)
+            floatty->second = (floatty->second % 10 > 4) ? (floatty->second + 1) : (floatty->second);
+        else
+            floatty->second = (floatty->second % 10 > 4) ? (floatty->second / 10 + 1) : (floatty->second / 10);
+       if (floatty->second == 0)
+            return (floatty->scnd);
+        ch = ft_memalloc(ft_len_of_number(floatty->second + 1)); // для \0
+        fill_char_from_int(floatty->second, ch);
+        if (ft_strlen(floatty->scnd) + 1 == pf->precision && ft_len_of_number(floatty->second) > 1)
+            floatty->scnd = pf_strcpy(floatty->scnd, ch, (int)(ft_strlen(floatty->scnd) - ft_len_of_number(floatty->second) + 1)); /////мы добавили тут приведение к инту
+        else if (ft_strlen(floatty->scnd) == pf->precision)
+            *(floatty->scnd + ft_strlen(floatty->scnd) - 1) = *ft_strcpy((floatty->scnd + ft_strlen(floatty->scnd) - 1), ch);
+        else
+           floatty->scnd = pf_strcpy(floatty->scnd, ch, ft_strlen(floatty->scnd));
+        free(ch);
+        return (floatty->scnd);
+    }
+    return (floatty->scnd);
 }
 
-char    *put_in_str(t_pf *pf, char *frst, char *scnd, int znak, unsigned long long first, unsigned int i)
+char    *put_in_str(t_pf *pf, unsigned int i, t_float *floatty, long double num)
 {
     char    *res;
 
-    if (!(res = ft_memalloc((ft_strlen(frst)) + (ft_strlen(scnd)) + 1
-							+ (((pf->precision == 0) && (*pf->flags != '#')) ? 0 : 1) + ((znak == 1) ? 1 : 0))))
+    if (!(res = ft_memalloc((ft_strlen(floatty->frst)) + ((floatty->scnd == NULL) ? 0 : (ft_strlen(floatty->scnd) + 1))
+							+ (((*pf->flags == '#') && pf->precision == 0) ? -1 : 0) + ((floatty->znak == 1) ? 1 : 0) + 1))) /// мб неверно выделяеся память
         return (NULL);
     if (pf->precision == 0) // прописать вывод когда без дробной части с округлением!
     {
-        ((*scnd > 52) ? (first += 1) && (frst = pf_itoa(first)) : 0);
-        ((znak == 1) ? *res = '-' : 0);
-        while (*frst != '\0')
-            *(res + i++) = *frst++;
+        if (*(floatty->scnd) == 53)
+            (((floatty->first) % 2 == 0) ? 0 : ((floatty->first += 1) && (floatty->frst = pf_itoa(floatty->first))));
+        else
+            ((*(floatty->scnd) > 52) ? (floatty->first += 1) && (floatty->frst = pf_itoa(floatty->first)) : 0);
+        ((floatty->znak == 1) ? *res = '-' : 0);
+        while (*(floatty->frst) != '\0') {
+            *(res + i++) = *(floatty->frst++);///
+        }
         ((*pf->flags == '#') ? (*(res + i) = '.') && (i += 1) : 0);
     }
     else
     {
-        if (pf->precision == 1 && (*(scnd + 1) == '0'))// && frm->len_decimal > 1)///
+        if ((pf->precision == 1 && (*(floatty->scnd + 1) == '0')) || ((num - floatty->first) > 0.9 && (*(floatty->scnd + 1) == '0')))// && frm->len_decimal > 1)///
         {
-            first += 1;
-            frst = pf_itoa(first);
-            *scnd = '0';
-            scnd = ft_memalloc(pf->precision + 1);
-            *scnd = '0';
+            floatty->first += 1;
+            fill_char_from_int(floatty->first, floatty->frst);
+            floatty->scnd = add_null(pf, floatty, 0);
         }
-            //((*scnd == '10') ? (first += 1) && (frst = pf_itoa(first)) && (*scnd = '0') : 0);
-        ((znak == 1) ? *res = '-' : 0);
-        while (*frst != '\0')
-            *(res + i++) = *frst++;
+        ((floatty->znak == 1) ? *res = '-' : 0);
+        while (*(floatty->frst) != '\0')
+            *(res + i++) = *(floatty->frst++);
         *(res + i) = '.';
         i++;
-        while (*scnd != '\0')
-            *(res + i++) = *scnd++;
+        while (*(floatty->scnd) != '\0')
+            *(res + i++) = *(floatty->scnd++);
     }
     *(res + i) = '\0';
     return (res);
@@ -130,30 +151,36 @@ char    *put_in_str(t_pf *pf, char *frst, char *scnd, int znak, unsigned long lo
 
 int    display_f(t_pf *pf)
 {
-    double num;
-    unsigned long long first;
-    unsigned long long second;
+    long double num;
     char *res;
     unsigned int i;
-    int znak;
+    t_float *floatty;
 
-    znak = 0;
     i = 0;
-    first = 0;
-    second = 0;
-//    num = (double)va_arg(pf->arg, double);
-	num = (double)pf->num.d;
-    znak = (num < 0 ? 1 : 0);
-    ((znak == 1) ? ((num = - num) && (i = 1)) : 0);
-    ((pf->precision == -1) ? (pf->precision = 6) : 0);
-    char *frst = get_integer(num, &first);
-    char *scnd = get_decimal(num, first, &second, pf);
-    (((int)ft_strlen(scnd) < pf->precision) ? (scnd = add_null(pf, scnd)) : 0); // случай когда дробная часть меньше чем точность. Пример ("%.4f", 12.2);
-    res = put_in_str(pf, frst, scnd, znak, first, i);
-    ft_putstr(res);
-    pf->str = res;
-//    free(res);
-    free(frst);
-    free(scnd);
+   /* if (*(pf->size) == 'L')
+        num = (long double)pf->num.ld;
+    else*/
+
+	    num = (long double)pf->num.d;
+
+    /*if ((1.0 / 0.0) == num || (-1.0 / 0.0) == num)
+    {
+       res = (pf->type == 'F' ? "INF" : "inf");
+    }
+    else if (num != num)
+        res = (pf->type == 'F' ? "NAN" : "nan");
+    else {*/
+        if (!(floatty = new_t_float()))
+            return (0);
+        floatty->znak = (num < 0 ? 1 : 0);
+        ((floatty->znak == 1) ? ((num = -num) && (i = 1)) : 0);
+        ((pf->precision == -1) ? (pf->precision = 6) : 0);
+        floatty->frst = get_integer(num, floatty);
+        floatty->scnd = get_decimal(num, pf, floatty);
+        if (floatty->scnd != NULL)
+            (((int) ft_strlen(floatty->scnd) < pf->precision) ? (floatty->scnd = add_null(pf, floatty, 1)) : 0); // случай когда дробная часть меньше чем точность. Пример ("%.4f", 12.2);
+        res = put_in_str(pf, i, floatty, num);
+        //ft_putstr(res);
+        pf->str = res;
     return (i - 1);
 }

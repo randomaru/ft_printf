@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 19:19:00 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/06 21:43:18 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int 	main(void)
 	printf("\n");
 	printf("% u", 5); /// ' ' undefined behaviour with u*/
 
-	ft_printf("%.0x", 0);
+	ft_printf("%-5.0f", 7.3);
 	printf("\n");
-	printf("%.0x", 0);
+	printf("%-5.0f", 7.3);
 
 /*	ft_printf("%hhu", 100);
 	printf("\n");

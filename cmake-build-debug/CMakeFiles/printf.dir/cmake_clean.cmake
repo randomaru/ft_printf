@@ -85,8 +85,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/libft/ulltoa_base.c.o"
   "CMakeFiles/printf.dir/main.c.o"
   "CMakeFiles/printf.dir/new_str.c.o"
+  "CMakeFiles/printf.dir/parse_char.c.o"
   "CMakeFiles/printf.dir/parse_format.c.o"
   "CMakeFiles/printf.dir/pf_format.c.o"
+  "CMakeFiles/printf.dir/pf_strcpy.c.o"
   "printf"
   "printf.pdb"
 )

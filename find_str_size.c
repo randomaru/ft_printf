@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:35:41 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 18:29:23 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/06 20:38:26 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,21 @@ static void	find_symb_prec_width(t_pf *pf, int sharp_len)
 {
 	if (pf->type == 'o' && pf->sharp)
 		sharp_len = 1;
-	if ((pf->prec_width = pf->precision - pf->num_len - sharp_len) > 0 &&
-		(pf->symb_width = pf->width - pf->str_len - pf->prec_width) > 0)
-		pf->str_len += pf->symb_width + pf->prec_width;
-	else if ((pf->symb_width = pf->width - pf->str_len) > 0)
-		pf->str_len += pf->symb_width;
-	else if (pf->prec_width > 0)
-		pf->str_len += pf->prec_width;
+	if (pf->type == 'f')
+	{
+		if ((pf->symb_width = pf->width - pf->str_len ) > 0)
+			pf->str_len += pf->symb_width;
+	}
+	else
+	{
+		if ((pf->prec_width = pf->precision - pf->num_len - sharp_len) > 0 &&
+			(pf->symb_width = pf->width - pf->str_len - pf->prec_width) > 0)
+			pf->str_len += pf->symb_width + pf->prec_width;
+		else if ((pf->symb_width = pf->width - pf->str_len) > 0)
+			pf->str_len += pf->symb_width;
+		else if (pf->prec_width > 0)
+			pf->str_len += pf->prec_width;
+	}
 }
 
 int		find_str_size(t_pf *pf)
@@ -67,6 +75,19 @@ int		find_str_size(t_pf *pf)
 			pf->str_len += pf->num_len;
 		}
 	}
+	if (pf->type == 'f')
+	{
+		pf->num_len = ft_strlen(pf->str);
+		pf->str_len += pf->num_len;
+	}
+/*	if (pf->type == 's')
+	{
+		if (pf->num.lli == 0 && pf->precision <= 0 && pf->dot)
+			pf->num_len = 0;
+		else
+			pf->num_len = ft_strlen(pf->num.str);
+		pf->str_len += pf->num_len;
+	}*/ ///scp
 	if (pf->symbol > 0 || pf->precision > 0)
 		find_symb_prec_width(pf, sharp_len);
 	return (1);

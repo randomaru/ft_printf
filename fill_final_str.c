@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:58:21 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 19:23:43 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/06 19:39:40 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,12 @@ static char		*find_tmp(t_pf *pf)
 {
 	char *tmp;
 	tmp = NULL;
+	if (pf->type == 'f')
+	{
+		tmp = ft_strdup(pf->str);
+		free(pf->str);
+		pf->str = NULL;
+	}
 	if (ft_strchr("oxX", pf->type))
 		tmp = ft_strdup(pf->tmp_ox);
 	if (ft_strchr("di", pf->type))

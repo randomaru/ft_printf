@@ -14,12 +14,25 @@
 
 static void	find_sign(t_pf *pf)
 {
-	if (ft_strchr(pf->flags, '+') && ft_strchr("dif", pf->type) && pf->num.lli >= 0)
-		pf->plus = 1;
-	if (ft_strchr("dif", pf->type) && pf->num.lli < 0)
+	if (pf->type == 'f')
 	{
-		pf->num.lli *= -1;
-		pf->minus = 1;
+		if (ft_strchr(pf->flags, '+') && pf->num.ld >= 0)
+			pf->plus = 1;
+		if (pf->num.ld < 0)
+		{
+			pf->num.ld *= -1;
+			pf->minus = 1;
+		}
+	}
+	else
+	{
+		if (ft_strchr(pf->flags, '+') && ft_strchr("di", pf->type) && pf->num.lli >= 0)
+			pf->plus = 1;
+		if (ft_strchr("dif", pf->type) && pf->num.lli < 0)
+		{
+			pf->num.lli *= -1;
+			pf->minus = 1;
+		}
 	}
 }
 

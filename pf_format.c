@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 18:02:48 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/06 21:43:18 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 		if (p == 'd' || p == 'i')
 			!(ft_strcmp(pf->size, "h")) ? (pf->num.lli = (long long int)((short int)va_arg(ap, int))) /////
 										 : (pf->num.li = va_arg(ap, long int));
+		else if (p == 'f')
+			pf->num.ld = va_arg(ap, long double);
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
 			!(ft_strcmp(pf->size, "h")) ? (pf->num.ulli = (unsigned long long)((unsigned short int)va_arg(ap, int))) //////
 										 : (pf->num.ulli = (unsigned long long)va_arg(ap, unsigned long int));
@@ -39,7 +41,17 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 			pf->num.lli = (long long int)va_arg(ap, int);
 		else if (p == 'u' || p == 'x' || p == 'X' || p == 'o' )
 			pf->num.ulli = (unsigned long long)va_arg(ap, unsigned int);
+		else if (p == 'f')
+			pf->num.ld = (long double)va_arg(ap, double);
 	}
+}
+
+static void		char_size(t_pf *pf, char p, va_list ap)
+{
+	if (p == 's')
+		pf->num.str = va_arg(ap, char*);
+	else if (p == 'c')
+		pf->num.c = (char)va_arg(ap, int);
 }
 
 int				pf_format(t_pf *pf, char **p, va_list ap)
@@ -53,13 +65,19 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		find_precision(pf, &*p);
 	if (is_size(*p))
 		find_size(pf, &*p);
-	if (ft_strchr("diouxX", **p))
+	if (ft_strchr("fdiouxX", **p))
 	{
 		pf->type = **p;
 		number_size(pf, **p, ap);
 		*p += 1;
 	}
-	if (**p != 'f')
+/*	if (ft_strchr("scp", **p))
+	{
+		pf->type = **p;
+		char_size(pf, **p, ap);
+		*p += 1;
+	}*/ ///scp
+	if (pf->type != 'f')
 	{
 		save_format(pf);
 		if (find_str_size(pf) == -1)
@@ -68,12 +86,18 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 			return (-1);
 		ft_putstr(pf->str);
 	}
-	if (**p == 'f')
+	if (pf->type == 'f')
 	{
 		pf->type = **p;
-		pf->num.d = va_arg(ap,double);
 		display_f(pf);
 		*p += 1;
+		save_format(pf);
+		if (find_str_size(pf) == -1)
+			return (-1);
+		if (fill_final_str(pf) == -1)
+			return (-1);
+		ft_putstr(pf->str);
+
 	}
 	pf->counter += ft_strlen(pf->str);
 	return(1);

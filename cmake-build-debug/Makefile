@@ -2445,6 +2445,33 @@ new_str.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/new_str.c.s
 .PHONY : new_str.c.s
 
+parse_char.o: parse_char.c.o
+
+.PHONY : parse_char.o
+
+# target to build an object file
+parse_char.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_char.c.o
+.PHONY : parse_char.c.o
+
+parse_char.i: parse_char.c.i
+
+.PHONY : parse_char.i
+
+# target to preprocess a source file
+parse_char.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_char.c.i
+.PHONY : parse_char.c.i
+
+parse_char.s: parse_char.c.s
+
+.PHONY : parse_char.s
+
+# target to generate assembly for a file
+parse_char.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_char.c.s
+.PHONY : parse_char.c.s
+
 parse_format.o: parse_format.c.o
 
 .PHONY : parse_format.o
@@ -2498,6 +2525,33 @@ pf_format.s: pf_format.c.s
 pf_format.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.s
 .PHONY : pf_format.c.s
+
+pf_strcpy.o: pf_strcpy.c.o
+
+.PHONY : pf_strcpy.o
+
+# target to build an object file
+pf_strcpy.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_strcpy.c.o
+.PHONY : pf_strcpy.c.o
+
+pf_strcpy.i: pf_strcpy.c.i
+
+.PHONY : pf_strcpy.i
+
+# target to preprocess a source file
+pf_strcpy.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_strcpy.c.i
+.PHONY : pf_strcpy.c.i
+
+pf_strcpy.s: pf_strcpy.c.s
+
+.PHONY : pf_strcpy.s
+
+# target to generate assembly for a file
+pf_strcpy.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_strcpy.c.s
+.PHONY : pf_strcpy.c.s
 
 # Help Target
 help:
@@ -2766,12 +2820,18 @@ help:
 	@echo "... new_str.o"
 	@echo "... new_str.i"
 	@echo "... new_str.s"
+	@echo "... parse_char.o"
+	@echo "... parse_char.i"
+	@echo "... parse_char.s"
 	@echo "... parse_format.o"
 	@echo "... parse_format.i"
 	@echo "... parse_format.s"
 	@echo "... pf_format.o"
 	@echo "... pf_format.i"
 	@echo "... pf_format.s"
+	@echo "... pf_strcpy.o"
+	@echo "... pf_strcpy.i"
+	@echo "... pf_strcpy.s"
 .PHONY : help
 
 

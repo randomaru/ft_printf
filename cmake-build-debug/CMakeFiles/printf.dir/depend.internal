@@ -268,6 +268,10 @@ CMakeFiles/printf.dir/new_str.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/new_str.c
+CMakeFiles/printf.dir/parse_char.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/parse_char.c
 CMakeFiles/printf.dir/parse_format.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
@@ -276,3 +280,7 @@ CMakeFiles/printf.dir/pf_format.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/pf_format.c
+CMakeFiles/printf.dir/pf_strcpy.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/pf_strcpy.c

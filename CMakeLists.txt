@@ -81,6 +81,7 @@ add_executable(printf
         libft/ft_lltoa.c
         libft/ulltoa_base.c
         libft/ft_ulltoa.c
+        pf_strcpy.c
         libft/libft.h
         libft/Makefile
         ft_printf.h
@@ -100,6 +101,7 @@ add_executable(printf
         fill_final_str.c
         parse_format.c
         find_str_size.c
+        parse_char.c
 
 
 #        SVETA_float.c

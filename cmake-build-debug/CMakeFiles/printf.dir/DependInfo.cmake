@@ -90,8 +90,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/libft/ulltoa_base.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ulltoa_base.c.o"
   "/Users/tamarant/Desktop/projects/printf/main.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   "/Users/tamarant/Desktop/projects/printf/new_str.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/new_str.c.o"
+  "/Users/tamarant/Desktop/projects/printf/parse_char.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/parse_char.c.o"
   "/Users/tamarant/Desktop/projects/printf/parse_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/parse_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/pf_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/pf_format.c.o"
+  "/Users/tamarant/Desktop/projects/printf/pf_strcpy.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/pf_strcpy.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

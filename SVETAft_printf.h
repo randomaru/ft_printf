@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 20:12:11 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/06 17:59:06 by fboggs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,6 @@
 # include <stdarg.h>
 # include "libft/libft.h"
 # include <limits.h>
-
-typedef struct 			s_float
-{
-	unsigned long long      first;
-	unsigned long long      second;
-	char                    *scnd;
-	char                    *frst;
-	int                     znak;
-}							t_float;
 
 union					number
 {
@@ -41,9 +32,6 @@ union					number
 	unsigned char		uc; ////
 	double				d;
 	long double			ld;
-	char 				c;
-	char 				*str;
-	void				*p;
 };
 
 typedef struct		s_pf
@@ -67,13 +55,25 @@ typedef struct		s_pf
 	char 					*tmp_ox;
 	int						num_len;
 	union number			num;
-
-	int 					dot;
-	int						plus;
-	int 					minus;
-	int						space;
-	unsigned long long		try;
 }							t_pf;
+
+/// svetik
+typedef struct  s_float
+{
+    unsigned long long      first;
+    unsigned long long      second;
+    char                    *scnd;
+    char                    *frst;
+    int                     znak;
+}               t_float;
+
+/*typedef struct  s_float
+{
+    int                     point;
+    char                    *res;
+    int                     znak;
+    unsigned long int       len;
+}               t_float;*/
 
 
 int					ft_printf(char *format, ...);
@@ -84,15 +84,15 @@ int 				is_flags(char *p);
 void				find_flags(t_pf *pf, char **p);
 int 				is_width(char *p);
 void				find_width(t_pf *pf, char **p);
-int					is_precision(char **p, t_pf *pf);
+int					is_precision(char *p);
 void				find_precision(t_pf *pf, char **p);
 int 				is_size(char *p);
 void				find_size(t_pf *pf, char **p);
 
 
 int					save_format(t_pf *pf);
-int					find_str_size(t_pf *pf);
-int					fill_final_str(t_pf *pf);
+int					str_size(t_pf *pf);
+int					new_num_str(t_pf *pf);
 
 
 ///SVETA
@@ -100,7 +100,8 @@ int					fill_final_str(t_pf *pf);
 int    				display_f(t_pf *pf);
 char				*pf_itoa(unsigned long long n);
 unsigned long long	ft_len_of_number(unsigned long long n);
-
-char				*pf_strcpy(char *dst, const char *src, int j);
+t_float	*new_t_float(void);
+char     *okrugl(long double num, unsigned long long i, t_float *floatty, int prec);
+char	*pf_strcpy(char *dst, const char *src, int j);
 
 #endif

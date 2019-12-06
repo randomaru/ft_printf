@@ -268,6 +268,10 @@ CMakeFiles/printf.dir/new_str.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/new_str.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/new_str.c.o: ../new_str.c
 
+CMakeFiles/printf.dir/parse_char.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/parse_char.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/parse_char.c.o: ../parse_char.c
+
 CMakeFiles/printf.dir/parse_format.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/parse_format.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/parse_format.c.o: ../parse_format.c
@@ -275,4 +279,8 @@ CMakeFiles/printf.dir/parse_format.c.o: ../parse_format.c
 CMakeFiles/printf.dir/pf_format.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/pf_format.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/pf_format.c.o: ../pf_format.c
+
+CMakeFiles/printf.dir/pf_strcpy.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/pf_strcpy.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/pf_strcpy.c.o: ../pf_strcpy.c
 
