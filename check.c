@@ -43,7 +43,7 @@ int is_precision(char **p, t_pf *pf)
 
 int 	is_size(char *p)
 {
-	if (ft_strchr("hl", *p))
+	if (ft_strchr("hlL", *p))
 		return (1);
 	return (0);
 }

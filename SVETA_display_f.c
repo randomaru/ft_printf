@@ -115,7 +115,7 @@ char    *put_in_str(t_pf *pf, unsigned int i, t_float *floatty, long double num)
     char    *res;
 
     if (!(res = ft_memalloc((ft_strlen(floatty->frst)) + ((floatty->scnd == NULL) ? 0 : (ft_strlen(floatty->scnd) + 1))
-							+ (((*pf->flags == '#') && pf->precision == 0) ? -1 : 0) + ((floatty->znak == 1) ? 1 : 0) + 1))) /// мб неверно выделяеся память
+							+ (((*pf->flags == '#') && pf->precision == 0) ? -1 : 0) /*+ ((floatty->znak == 1) ? 1 : 0)*/ + 1))) /// мб неверно выделяеся память
         return (NULL);
     if (pf->precision == 0) // прописать вывод когда без дробной части с округлением!
     {
@@ -123,11 +123,12 @@ char    *put_in_str(t_pf *pf, unsigned int i, t_float *floatty, long double num)
             (((floatty->first) % 2 == 0) ? 0 : ((floatty->first += 1) && (floatty->frst = pf_itoa(floatty->first))));
         else
             ((*(floatty->scnd) > 52) ? (floatty->first += 1) && (floatty->frst = pf_itoa(floatty->first)) : 0);
-        ((floatty->znak == 1) ? *res = '-' : 0);
+////        ((floatty->znak == 1) ? *res = '-' : 0);
+		i = 0;
         while (*(floatty->frst) != '\0') {
             *(res + i++) = *(floatty->frst++);///
         }
-        ((*pf->flags == '#') ? (*(res + i) = '.') && (i += 1) : 0);
+       // ((*pf->flags == '#') ? (*(res + i) = '.') && (i += 1) : 0);
     }
     else
     {
@@ -137,12 +138,15 @@ char    *put_in_str(t_pf *pf, unsigned int i, t_float *floatty, long double num)
             fill_char_from_int(floatty->first, floatty->frst);
             floatty->scnd = add_null(pf, floatty, 0);
         }
-        ((floatty->znak == 1) ? *res = '-' : 0);
+//        ((floatty->znak == 1) ? *res = '-' : 0);
+		int j = 0;
+        i = 0;
         while (*(floatty->frst) != '\0')
             *(res + i++) = *(floatty->frst++);
         *(res + i) = '.';
         i++;
-        while (*(floatty->scnd) != '\0')
+
+        while (floatty->scnd[j] != '\0')
             *(res + i++) = *(floatty->scnd++);
     }
     *(res + i) = '\0';
@@ -161,7 +165,7 @@ int    display_f(t_pf *pf)
         num = (long double)pf->num.ld;
     else*/
 
-	    num = (long double)pf->num.d;
+	    num = pf->num.ld;
 
     /*if ((1.0 / 0.0) == num || (-1.0 / 0.0) == num)
     {
@@ -172,15 +176,17 @@ int    display_f(t_pf *pf)
     else {*/
         if (!(floatty = new_t_float()))
             return (0);
-        floatty->znak = (num < 0 ? 1 : 0);
-        ((floatty->znak == 1) ? ((num = -num) && (i = 1)) : 0);
+//        floatty->znak = (num < 0 ? 1 : 0);
+//        ((floatty->znak == 1) ? ((num = -num) && (i = 1)) : 0);
+		pf->minus = (num < 0 ? 1 : 0);
+		((pf->minus == 1) ? ((num = -num) && (i = 1)) : 0);
         ((pf->precision == -1) ? (pf->precision = 6) : 0);
         floatty->frst = get_integer(num, floatty);
         floatty->scnd = get_decimal(num, pf, floatty);
         if (floatty->scnd != NULL)
             (((int) ft_strlen(floatty->scnd) < pf->precision) ? (floatty->scnd = add_null(pf, floatty, 1)) : 0); // случай когда дробная часть меньше чем точность. Пример ("%.4f", 12.2);
         res = put_in_str(pf, i, floatty, num);
-        //ft_putstr(res);
-        pf->str = res;
+//        ft_putstr(res);
+        pf->tmp_oxfs = res;
     return (i - 1);
 }

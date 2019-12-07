@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:58:21 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 19:39:40 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/07 20:53:43 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,14 +42,17 @@ static char		*find_tmp(t_pf *pf)
 {
 	char *tmp;
 	tmp = NULL;
-	if (pf->type == 'f')
+	if (pf->type == 's')
 	{
-		tmp = ft_strdup(pf->str);
-		free(pf->str);
-		pf->str = NULL;
+		if (pf->precision <= 0 && pf->dot)
+			tmp = NULL;
+		else
+			tmp = ft_strdup(pf->tmp_oxfs);
 	}
+	if (pf->type == 'f')
+		tmp = ft_strdup(pf->tmp_oxfs);
 	if (ft_strchr("oxX", pf->type))
-		tmp = ft_strdup(pf->tmp_ox);
+		tmp = ft_strdup(pf->tmp_oxfs);
 	if (ft_strchr("di", pf->type))
 		if (!(tmp = ft_lltoa(pf->num.lli)))
 			return (NULL);
@@ -75,6 +78,7 @@ int		fill_final_str(t_pf *pf)
 	k = 0;
 	i = 0;
 	c = 't';
+
 	if (!(pf->str = ft_memalloc(pf->str_len + 1)))
 		return (-1);
 	if (pf->symbol == 1)
@@ -86,7 +90,7 @@ int		fill_final_str(t_pf *pf)
 	if (ft_strchr("dif", pf->type) && (pf->plus || pf->minus))
 		(pf->minus) ? (fill_sign(pf, &i, '-')) : (fill_sign(pf, &i, '+'));
 	if (pf->space && !pf->minus && !pf->plus)
-		fill_sign(pf, &i, ' ');
+			fill_sign(pf, &i, ' ');
 	if (ft_strchr("oxX", pf->type) && pf->sharp)
 		fill_with_sharp(pf, &i);
 	if (pf->symbol == 1)
@@ -94,7 +98,16 @@ int		fill_final_str(t_pf *pf)
 	tmp = find_tmp(pf);
 	if (pf->prec_width > 0)
 		fill_with_symb(pf, &i, '0', pf->prec_width);
-	if (tmp)
+	if (pf->type == 's' && tmp)
+	{
+		while (k < pf->num_len)
+		{
+			pf->str[i] = tmp[k];
+			k++;
+			i++;
+		}
+	}
+	if (tmp && pf->type != 's')
 	{
 		while (tmp[k] != '\0')
 		{
@@ -103,6 +116,8 @@ int		fill_final_str(t_pf *pf)
 			i++;
 		}
 	}
+	if (pf->float_dot)
+		fill_sign(pf, &i, '.');
 	if (pf->symbol == 3)
 		fill_with_symb(pf, &i, c, pf->str_len - i);
 	if (tmp)

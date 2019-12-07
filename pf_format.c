@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 21:43:18 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/07 20:56:45 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 			!(ft_strcmp(pf->size, "h")) ? (pf->num.ulli = (unsigned long long)((unsigned short int)va_arg(ap, int))) //////
 										 : (pf->num.ulli = (unsigned long long)va_arg(ap, unsigned long int));
 	}
+	else if (pf->size && !ft_strcmp(pf->size, "L"))
+		pf->num.ld = va_arg(ap, long double);
 	else
 	{
 		if (p == 'd' || p == 'i')
@@ -71,15 +73,20 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		number_size(pf, **p, ap);
 		*p += 1;
 	}
-/*	if (ft_strchr("scp", **p))
+	if (**p == 's')
 	{
-		pf->type = **p;
-		char_size(pf, **p, ap);
+		pf->type = 's';
+		pf->tmp_oxfs = ft_strdup(va_arg(ap, char*));
+		if (pf->tmp_oxfs == NULL)
+		{
+			free(pf->tmp_oxfs);
+			pf->tmp_oxfs = ft_strdup("(null)");
+		}
 		*p += 1;
-	}*/ ///scp
+	}
 	if (pf->type != 'f')
 	{
-		save_format(pf);
+		parse_format(pf);
 		if (find_str_size(pf) == -1)
 			return (-1);
 		if (fill_final_str(pf) == -1)
@@ -88,10 +95,8 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 	}
 	if (pf->type == 'f')
 	{
-		pf->type = **p;
 		display_f(pf);
-		*p += 1;
-		save_format(pf);
+		parse_format(pf);
 		if (find_str_size(pf) == -1)
 			return (-1);
 		if (fill_final_str(pf) == -1)
@@ -99,6 +104,7 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		ft_putstr(pf->str);
 
 	}
+
 	pf->counter += ft_strlen(pf->str);
 	return(1);
 }

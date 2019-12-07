@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 15:57:49 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/07 19:18:25 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	set_null(t_pf *pf)
 	pf->plus = 0;
 	pf->minus = 0;
 	pf->space = 0;
-
+	pf->float_dot = 0;
 }
 
 t_pf	*new_t_pf(void)
@@ -59,7 +59,7 @@ t_pf	*new_t_pf(void)
 	pf->percent = 0;
 	pf->counter = 0;
 	pf->num.i = 0;
-	pf->tmp_ox = NULL;
+	pf->tmp_oxfs = NULL;
 	pf->symbol = -1;
 	pf->symb_width = 0;
 	pf->sign = -1;
@@ -69,6 +69,7 @@ t_pf	*new_t_pf(void)
 	pf->plus = 0;
 	pf->minus = 0;
 	pf->space = 0;
+	pf->float_dot = 0;
 
 	return (pf);
 }
@@ -80,9 +81,9 @@ void	free_t_pf(t_pf *pf)
 	if (pf->size)
 		free(pf->size);
 	pf->size = NULL;
-	if (pf->tmp_ox)
-		free(pf->tmp_ox);
-	pf->tmp_ox = NULL;
+	if (pf->tmp_oxfs)
+		free(pf->tmp_oxfs);
+	pf->tmp_oxfs = NULL;
 	if (pf->str)
 		free(pf->str);
 	if (pf->sharp)
@@ -96,7 +97,7 @@ void	free_t_pf(t_pf *pf)
 	pf->percent = 0;
 	pf->counter = 0;
 	pf->num.i = 0;
-	pf->tmp_ox = NULL;
+	pf->tmp_oxfs = NULL;
 	pf->symbol = -1;
 	pf->symb_width = 0;
 	pf->sign = -1;
@@ -106,6 +107,7 @@ void	free_t_pf(t_pf *pf)
 	pf->plus = 0;
 	pf->minus = 0;
 	pf->space = 0;
+	pf->float_dot = 0;
 	free(pf);
 }
 

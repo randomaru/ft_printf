@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:35:41 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 20:38:26 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/07 21:39:54 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,12 @@ static void	find_symb_prec_width(t_pf *pf, int sharp_len)
 	if (pf->type == 'f')
 	{
 		if ((pf->symb_width = pf->width - pf->str_len ) > 0)
+			pf->str_len += pf->symb_width;
+	}
+	else if (pf->type == 's')
+	{
+		pf->prec_width = 0;
+		if ((pf->symb_width = pf->width - pf->str_len) > 0)
 			pf->str_len += pf->symb_width;
 	}
 	else
@@ -41,15 +47,15 @@ int		find_str_size(t_pf *pf)
 		if (((pf->precision <= 0 && pf->dot) || pf->sharp) && pf->num.ulli == 0)
 		{
 			pf->num_len = 0;
-			pf->tmp_ox = NULL;
+			pf->tmp_oxfs = NULL;
 		}
 		else
 		{
-			pf->type == 'o' ? (pf->tmp_ox = ulltoa_base(pf->num.ulli, 8)) :
-			(pf->tmp_ox = ulltoa_base(pf->num.ulli, 16));
+			pf->type == 'o' ? (pf->tmp_oxfs = ulltoa_base(pf->num.ulli, 8)) :
+			(pf->tmp_oxfs = ulltoa_base(pf->num.ulli, 16));
 			if (pf->type == 'X')
-				pf->tmp_ox = to_uppercase(pf->tmp_ox);
-			pf->num_len = ft_strlen(pf->tmp_ox);
+				pf->tmp_oxfs = to_uppercase(pf->tmp_oxfs);
+			pf->num_len = ft_strlen(pf->tmp_oxfs);
 			pf->str_len += pf->num_len;
 		}
 		if (pf->sharp )
@@ -77,17 +83,23 @@ int		find_str_size(t_pf *pf)
 	}
 	if (pf->type == 'f')
 	{
-		pf->num_len = ft_strlen(pf->str);
+//		if (pf->space && !ft_strchr(pf->tmp_oxfs, '-') && !pf->plus)
+		if (pf->precision == 0 && pf->flags && ft_strchr(pf->flags, '#'))
+			pf->float_dot = 1;
+		if (pf->space && !pf->minus && !pf->plus)
+			pf->str_len += 1;
+		pf->num_len = (int)ft_strlen(pf->tmp_oxfs);
+		pf->str_len += pf->num_len + pf->plus + pf->minus + pf->float_dot;
+	}
+	if (pf->type == 's')
+	{
+		pf->num_len = ft_strlen(pf->tmp_oxfs);
+		if (pf->precision > 0 && pf->precision < pf->num_len)
+			pf->num_len = pf->precision;
+		if (pf->width > 0 && pf->dot && pf->precision <= 0 && !(ft_strcmp("(null)", pf->tmp_oxfs)))
+			pf->num_len = 0;
 		pf->str_len += pf->num_len;
 	}
-/*	if (pf->type == 's')
-	{
-		if (pf->num.lli == 0 && pf->precision <= 0 && pf->dot)
-			pf->num_len = 0;
-		else
-			pf->num_len = ft_strlen(pf->num.str);
-		pf->str_len += pf->num_len;
-	}*/ ///scp
 	if (pf->symbol > 0 || pf->precision > 0)
 		find_symb_prec_width(pf, sharp_len);
 	return (1);

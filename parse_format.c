@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:33:00 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/06 17:33:00 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/07 16:47:30 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,12 @@ static void	find_sign(t_pf *pf)
 	{
 		if (ft_strchr(pf->flags, '+') && pf->num.ld >= 0)
 			pf->plus = 1;
-		if (pf->num.ld < 0)
-		{
-			pf->num.ld *= -1;
-			pf->minus = 1;
-		}
 	}
 	else
 	{
 		if (ft_strchr(pf->flags, '+') && ft_strchr("di", pf->type) && pf->num.lli >= 0)
 			pf->plus = 1;
-		if (ft_strchr("dif", pf->type) && pf->num.lli < 0)
+		if (ft_strchr("di", pf->type) && pf->num.lli < 0)
 		{
 			pf->num.lli *= -1;
 			pf->minus = 1;
@@ -47,7 +42,7 @@ static void	save_sharp(t_pf *pf)
 
 }
 
-int		save_format(t_pf *pf)
+int		parse_format(t_pf *pf)
 {
 	int i;
 
@@ -69,7 +64,7 @@ int		save_format(t_pf *pf)
 			save_sharp(pf);
 		i++;
 	}
-	if (pf->precision > 0 && pf->width > 0)
+	if (pf->precision > 0 && pf->width > 0 && pf->type != 'f')
 		(ft_strchr(pf->flags, '-')) ? (pf->symbol = 3) : (pf->symbol = 2);
 	if (pf->symbol == -1  && pf->width > 0)
 		pf->symbol = 2;
