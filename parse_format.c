@@ -6,11 +6,26 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:33:00 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/07 16:47:30 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/10 21:25:37 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+int		ft_isnan(long double num)
+{
+	return (num != num);
+}
+
+int		ft_isinf(long double num)
+{
+	return (num == (1.0 / 0.0) || num == (-1.0 / 0.0));
+}
+
+int		ft_is_minus_inf(long double num)
+{
+	return (num == (-1.0 / 0.0));
+}
 
 static void	find_sign(t_pf *pf)
 {
@@ -25,7 +40,15 @@ static void	find_sign(t_pf *pf)
 			pf->plus = 1;
 		if (ft_strchr("di", pf->type) && pf->num.lli < 0)
 		{
-			pf->num.lli *= -1;
+			//pf->num.lli *= -1;
+			if (pf->num.lli == LONG_MIN)
+			{
+				pf->type = 'u';
+				pf->minus = 1;
+			}
+
+			else
+				pf->num.lli = -pf->num.lli;
 			pf->minus = 1;
 		}
 	}
@@ -33,7 +56,7 @@ static void	find_sign(t_pf *pf)
 
 static void	save_sharp(t_pf *pf)
 {
-	if (pf->type == 'o' )//&& pf->num.ulli != 0)
+	if (pf->type == 'o' )
 		pf->sharp = ft_strdup("0");
 	else if (pf->type == 'x' && pf->num.i != 0)
 		pf->sharp = ft_strdup("0x");
@@ -48,17 +71,30 @@ int		parse_format(t_pf *pf)
 
 	i = 0;
 	find_sign(pf);
-	while (pf->flags[i] != '\0')
+	if (pf->type != 's' && pf->precision > pf->width)
+		pf->width = 0;
+	if (pf->flags)
 	{
-		if (((pf->flags[i] == '0' || pf->flags[i] == ' ')
+		if (((ft_strchr(pf->flags,'0') || ft_strchr(pf->flags,' '))
 			 && (pf->width > 0 && !(ft_strchr(pf->flags, '-'))))
 			|| (pf->width > 0 && !(ft_strchr(pf->flags, '-'))))
 		{
-			(pf->flags[i] == '0') ? (pf->symbol = 1) : (pf->symbol = 2);
+			if (ft_strchr("fF", pf->type))
+			{
+				if (ft_strchr(pf->flags,'0') && (ft_isinf(pf->num.ld) || ft_isnan(pf->num.ld)))
+					pf->symbol = 2;
+				else
+					(ft_strchr(pf->flags,'0')) ? (pf->symbol = 1) : (pf->symbol = 2);
+			}
+			else
+				(ft_strchr(pf->flags,'0')) ? (pf->symbol = 1) : (pf->symbol = 2);
 		}
+	}
+	while (pf->flags[i] != '\0')
+	{
 		if (pf->flags[i] == '-' && pf->width > 0)
 			pf->symbol = 3;
-		if (pf->flags[i] == ' ')
+		if (pf->flags[i] == ' ' && !ft_isnan(pf->num.ld) && !ft_is_minus_inf(pf->num.ld) && pf->type != 'u')
 			pf->space = 1;
 		if (pf->flags[i] == '#' && ft_strchr("oxX", pf->type))
 			save_sharp(pf);

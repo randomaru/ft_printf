@@ -6,11 +6,30 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/07 21:41:52 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/10 21:35:38 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#define DBL_INF    0x7FF0000000000000
+#define DBL_NINF   0xFFF0000000000000
+#define DBL_NAN    0x7FF0000000100000
+#define DBL_PZERO  0x0000000000000000
+#define DBL_NZERO  0x8000000000000000
+
+#define LDBL_INF   0x7FFF0000000000000000L
+#define LDBL_NINF  0xFFFF0000000000000000L
+#define LDBL_NAN   0x7FFF0000000001000000L
+#define LDBL_PZERO 0x00000000000000000000L
+#define LDBL_NZERO 0x80000000000000000000L
+
+# define FTBF_MBITS_F 23
+# define FTBF_MBITS_D 52
+# define FTBF_MBITS_LD 64
+
+# define FTBF_BIAS_F 127
+# define FTBF_BIAS_D 1023
+# define FTBF_BIAS_LD 16382
 
 
 int 	main(void)
@@ -23,6 +42,9 @@ int 	main(void)
 	static unsigned long long 	ullmax = 9223372036854775807;
 	static unsigned long  		ulmax = 9223372036854775807;
 
+	double special;
+	*((unsigned long *)(&special)) = DBL_INF;
+	static char *s_hidden = "hi low\0don't print me lol\0";
 
 /*    ft_printf("%%%"); /// -> %0
 	printf("\n");
@@ -32,50 +54,19 @@ int 	main(void)
 	printf("\n");
 	printf("% u", 5); /// ' ' undefined behaviour with u*/
 
-	ft_printf("%9.1s", NULL);
-	printf("\n");
-	printf("%9.1s", NULL);
+////	ft_printf("%lld", -522337203685470ll);
+////	printf("\n");
+////	printf("%lld", -522337203685470ll);
 
-/*	ft_printf("%hhu", 100);
+/*    ft_printf("{%f}{%lf}{%Lf}", 1.42, 1.42, 1.42l);
 	printf("\n");
-	printf("%hhu", (unsigned char)100);
-	printf("\n");
-
-
-	ft_printf("%-3o", 15);
-	printf("\n");
-	printf("%-3o", 15);
-	printf("\n");
-
-	ft_printf("%llu %hhu %llo", ull_pos_1, uch_pos_1, ull_pos_1);
-	printf("\n");
-	printf("%llu %hhu %llo", ull_pos_1, uch_pos_1, ull_pos_1);
-	printf("\n");
-
-	ft_printf("%-3o", 0);
-	printf("\n");
-	printf("%-3o", 0);
-	printf("\n");
-
-	ft_printf("%hhu", 100);
-	printf("\n");
-	printf("%hhu", (unsigned char)100);
-	printf("\n");
-
-	ft_printf("%-3o", 0);
-	printf("\n");
-	printf("%-3o", 0);
-	printf("\n");
-
-	ft_printf("%.5o", 21);
-	printf("\n");
-	printf("%.5o", 21);*/
+	printf("{%f}{%lf}{%Lf}", 1.42, 1.42, 1.42l);*/
 
 
-/*
-	ft_printf("this %.6i number", -267);
+	ft_printf("% u", 4294967294);
 	printf("\n");
-	printf("this %.6i number", -267);*/
+	printf("% u", 4294967294);
+
 
 	return(0);
 }

@@ -21,7 +21,7 @@ int 	is_flags(char *p)
 
 int 	is_width(char *p)
 {
-	if (*p > '0' && *p < '9')
+	if (*p > '0' && *p <= '9')
 		return (1);
 	return (0);
 }

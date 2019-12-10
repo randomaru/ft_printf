@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:35:41 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/07 21:39:54 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/10 21:05:24 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static void	find_symb_prec_width(t_pf *pf, int sharp_len)
 	else
 	{
 		if ((pf->prec_width = pf->precision - pf->num_len - sharp_len) > 0 &&
-			(pf->symb_width = pf->width - pf->str_len - pf->prec_width) > 0)
+			(pf->symb_width = pf->width - pf->str_len - pf->prec_width) >= 0)
 			pf->str_len += pf->symb_width + pf->prec_width;
 		else if ((pf->symb_width = pf->width - pf->str_len) > 0)
 			pf->str_len += pf->symb_width;
@@ -78,12 +78,11 @@ int		find_str_size(t_pf *pf)
 		else
 		{
 			pf->num_len = number_len_ull(pf->num.ulli);
-			pf->str_len += pf->num_len;
+			pf->str_len += pf->num_len + pf->minus;
 		}
 	}
 	if (pf->type == 'f')
 	{
-//		if (pf->space && !ft_strchr(pf->tmp_oxfs, '-') && !pf->plus)
 		if (pf->precision == 0 && pf->flags && ft_strchr(pf->flags, '#'))
 			pf->float_dot = 1;
 		if (pf->space && !pf->minus && !pf->plus)
@@ -96,7 +95,7 @@ int		find_str_size(t_pf *pf)
 		pf->num_len = ft_strlen(pf->tmp_oxfs);
 		if (pf->precision > 0 && pf->precision < pf->num_len)
 			pf->num_len = pf->precision;
-		if (pf->width > 0 && pf->dot && pf->precision <= 0 && !(ft_strcmp("(null)", pf->tmp_oxfs)))
+		else if (pf->width > 0 && pf->dot && pf->precision <= 0)
 			pf->num_len = 0;
 		pf->str_len += pf->num_len;
 	}

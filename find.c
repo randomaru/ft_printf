@@ -48,7 +48,7 @@ void	find_precision(t_pf *pf, char **p)
 //		*p += 1;
 	pf->precision = ft_atoi(*p);
 //	*p += number_len(pf->precision);
-	while (!(ft_strchr("LlhdifouxXscp", **p)))
+	while (!(ft_strchr("LlhdifFouxXscp", **p)))
 		*p += 1;
 }
 

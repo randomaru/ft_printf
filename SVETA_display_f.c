@@ -164,7 +164,7 @@ char    *put_in_str(t_pf *pf, UI i, t_float *floatty, LD num)
     return (res);
 }
 
-int   handle_inf_nan(LD num, t_pf *pf, int what, char **res)
+/*int   handle_inf_nan(LD num, t_pf *pf, int what, char **res)
 {
     if (what == 1 || what == 3 || what == 2)
     {
@@ -182,6 +182,26 @@ int   handle_inf_nan(LD num, t_pf *pf, int what, char **res)
         }
     }
     return (1);
+}*/
+
+int   handle_inf_nan(LD num, t_pf *pf, int what, char **res)
+{
+	if (what == 1 || what == 3 || what == 2)
+	{
+		if (!(*res = malloc(sizeof(char) * 4)))
+			return (0);
+		if (what == 1)
+			*res = (pf->type == 'F' ? "INF\0" : "inf\0");
+		else if (what == 3)
+			*res = (pf->type == 'F' ? "NAN\0" : "nan\0");
+		else
+		{
+			if (!(*res = malloc(sizeof(char) * 5)))
+				return (0);
+			*res = (pf->type == 'F' ? "-INF\0" : "-inf\0");
+		}
+	}
+	return (1);
 }
 
 int    display_f(t_pf *pf)

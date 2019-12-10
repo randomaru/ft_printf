@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/07 19:18:25 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/10 17:10:06 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,8 @@ void	free_t_pf(t_pf *pf)
 	if (pf->size)
 		free(pf->size);
 	pf->size = NULL;
-	if (pf->tmp_oxfs)
-		free(pf->tmp_oxfs);
+/*	if (pf->tmp_oxfs)
+		free(pf->tmp_oxfs);*/
 	pf->tmp_oxfs = NULL;
 	if (pf->str)
 		free(pf->str);

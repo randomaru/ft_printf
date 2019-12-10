@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/09 19:57:58 by fboggs           ###   ########.fr       */
+/*   Updated: 2019/12/10 17:09:52 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,15 @@
 # include <stdarg.h>
 # include "libft/libft.h"
 # include <limits.h>
+# include <math.h>
 
-typedef struct 			s_float
+typedef struct			s_float
 {
-    long long int      first;
-    long long int     second;
-	char              *scnd;
-	char                    *frst;
-}							t_float;
+	unsigned long long	first;
+	unsigned long long	second;
+	char				*scnd;
+	char				*frst;
+}						t_float;
 
 union					number
 {

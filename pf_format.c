@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/07 20:56:45 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/10 19:38:55 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,16 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 	{
 		if (p == 'd' || p == 'i')
 			!(ft_strcmp(pf->size, "h")) ? (pf->num.lli = (long long int)((short int)va_arg(ap, int))) /////
-										 : (pf->num.li = va_arg(ap, long int));
-		else if (p == 'f')
-			pf->num.ld = va_arg(ap, long double);
+										 //: (pf->num.li = va_arg(ap, long int));
+										: (pf->num.lli = (long long int)va_arg(ap, long int));
+		else if (p == 'f' && !ft_strcmp(pf->size, "l"))
+			pf->num.ld = (long double)va_arg(ap, long double);
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
 			!(ft_strcmp(pf->size, "h")) ? (pf->num.ulli = (unsigned long long)((unsigned short int)va_arg(ap, int))) //////
 										 : (pf->num.ulli = (unsigned long long)va_arg(ap, unsigned long int));
 	}
 	else if (pf->size && !ft_strcmp(pf->size, "L"))
-		pf->num.ld = va_arg(ap, long double);
+		pf->num.ld = (long double)va_arg(ap, long double);
 	else
 	{
 		if (p == 'd' || p == 'i')

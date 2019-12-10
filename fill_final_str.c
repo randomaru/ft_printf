@@ -87,7 +87,7 @@ int		fill_final_str(t_pf *pf)
 		c = ' ';
 	if (pf->symbol == 2)
 		fill_with_symb(pf, &i, c, pf->symb_width);
-	if (ft_strchr("dif", pf->type) && (pf->plus || pf->minus))
+	if (ft_strchr("difu", pf->type) && (pf->plus || pf->minus))
 		(pf->minus) ? (fill_sign(pf, &i, '-')) : (fill_sign(pf, &i, '+'));
 	if (pf->space && !pf->minus && !pf->plus)
 			fill_sign(pf, &i, ' ');
