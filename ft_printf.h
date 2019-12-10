@@ -6,12 +6,17 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/07 19:18:25 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/09 19:57:58 by fboggs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
+
+/// Sveta
+# define ULL unsigned long long
+# define LD long double
+# define UI unsigned int
 
 # include <stdio.h>
 # include <stdarg.h>
@@ -20,11 +25,10 @@
 
 typedef struct 			s_float
 {
-	unsigned long long      first;
-	unsigned long long      second;
-	char                    *scnd;
+    long long int      first;
+    long long int     second;
+	char              *scnd;
 	char                    *frst;
-	int                     znak;
 }							t_float;
 
 union					number
@@ -100,7 +104,8 @@ int					fill_final_str(t_pf *pf);
 int    				display_f(t_pf *pf);
 char				*pf_itoa(unsigned long long n);
 unsigned long long	ft_len_of_number(unsigned long long n);
-
+int   handle_inf_nan(long double num, t_pf *pf, int what, char **res);
 char				*pf_strcpy(char *dst, const char *src, int j);
+long double ft_pow_double(long double n, unsigned long long pow);
 
 #endif
