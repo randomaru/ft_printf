@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/10 17:09:52 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/11 16:46:58 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # define ULL unsigned long long
 # define LD long double
 # define UI unsigned int
+
+# define BUFF_SIZE 60
 
 # include <stdio.h>
 # include <stdarg.h>
@@ -79,7 +81,8 @@ typedef struct		s_pf
 	int						space;
 	int						float_dot;
 
-	char 					buff[60];
+	char 					buff[BUFF_SIZE];
+	int 					buf_len;
 }							t_pf;
 
 
@@ -99,7 +102,7 @@ void				find_size(t_pf *pf, char **p);
 
 int					parse_format(t_pf *pf);
 int					find_str_size(t_pf *pf);
-int					fill_final_str(t_pf *pf);
+int fill_final_str(t_pf *pf);
 
 
 ///SVETA

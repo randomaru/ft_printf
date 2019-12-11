@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/11 15:41:36 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/11 17:27:12 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 			pf->num.ulli = (unsigned long long)va_arg(ap, unsigned int);
 		else if (p == 'f')
 			pf->num.ld = (long double)va_arg(ap, double);
+		else if (p == 'p')
+			pf->num.ulli = va_arg(ap, unsigned long long);
 	}
 }
 
@@ -90,6 +92,12 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 	{
 		pf->type = 'c';
 		pf->num.c = (char)va_arg(ap, int);
+		*p += 1;
+	}
+	if (**p == 'p')
+	{
+		pf->type = 'p';
+		number_size(pf, **p, ap);
 		*p += 1;
 	}
 	if (pf->type != 'f')

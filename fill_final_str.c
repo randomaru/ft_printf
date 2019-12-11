@@ -6,11 +6,20 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:58:21 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/07 20:53:43 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/11 18:06:13 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+/*static void	check_buf(t_pf *pf)
+{
+	if (pf->str_len + pf->buf_len >= BUFF_SIZE)
+	{
+		fill_final_str(pf);
+	}
+
+}*/
 
 static void		fill_with_symb(t_pf *pf, int *i, char c, int len)
 {
@@ -51,7 +60,7 @@ static char		*find_tmp(t_pf *pf)
 	}
 	if (pf->type == 'f')
 		tmp = ft_strdup(pf->tmp_oxfs);
-	if (ft_strchr("oxX", pf->type))
+	if (ft_strchr("poxX", pf->type))
 		tmp = ft_strdup(pf->tmp_oxfs);
 	if (ft_strchr("di", pf->type))
 		if (!(tmp = ft_lltoa(pf->num.lli)))
@@ -67,6 +76,71 @@ static char		*find_tmp(t_pf *pf)
 	}
 	return (tmp);
 }
+
+/*
+int fill_final_str(t_pf *pf, char *str, int t)
+{
+	char c;
+	char *tmp = NULL; ////отредачить str_join
+	int i;
+	int k;
+
+	k = 0;
+	i = 0;
+	c = 't';
+
+	if (t == 1)
+	{
+		if (!(pf->str = ft_memalloc(pf->str_len + 1)))
+			return (-1);
+	}
+	if (pf->symbol == 1)
+		c = '0';
+	if (pf->symbol == 2 || pf->symbol == 3)
+		c = ' ';
+	if (pf->symbol == 2)
+		fill_with_symb(pf, &i, c, pf->symb_width);
+	if (ft_strchr("difu", pf->type) && (pf->plus || pf->minus))
+		(pf->minus) ? (fill_sign(pf, &i, '-')) : (fill_sign(pf, &i, '+'));
+	if (pf->space && !pf->minus && !pf->plus)
+		fill_sign(pf, &i, ' ');
+	if (ft_strchr("poxX", pf->type) && pf->sharp)
+		fill_with_sharp(pf, &i);
+	if (pf->symbol == 1)
+		fill_with_symb(pf, &i, c, pf->symb_width);
+	tmp = find_tmp(pf);
+	if (pf->prec_width > 0)
+		fill_with_symb(pf, &i, '0', pf->prec_width);
+	if (pf->type == 's' && tmp)
+	{
+		while (k < pf->num_len)
+		{
+			str[i] = tmp[k];
+			k++;
+			i++;
+		}
+	}
+	else if (pf->type == 'c')
+		fill_with_symb(pf, &i, pf->num.c, 1);
+	else if (tmp && pf->type != 's' && pf->type != 'c')
+	{
+		while (tmp[k] != '\0')
+		{
+			str[i] = tmp[k];
+			k++;
+			i++;
+		}
+	}
+	if (pf->float_dot)
+		fill_sign(pf, &i, '.');
+	if (pf->symbol == 3)
+		fill_with_symb(pf, &i, c, pf->str_len - i);
+	if (tmp)
+		free(tmp);
+	return (pf->str_len);
+}
+*/
+
 
 int		fill_final_str(t_pf *pf)
 {
@@ -91,7 +165,7 @@ int		fill_final_str(t_pf *pf)
 		(pf->minus) ? (fill_sign(pf, &i, '-')) : (fill_sign(pf, &i, '+'));
 	if (pf->space && !pf->minus && !pf->plus)
 			fill_sign(pf, &i, ' ');
-	if (ft_strchr("oxX", pf->type) && pf->sharp)
+	if (ft_strchr("poxX", pf->type) && pf->sharp)
 		fill_with_sharp(pf, &i);
 	if (pf->symbol == 1)
 		fill_with_symb(pf, &i, c, pf->symb_width);
