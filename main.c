@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/10 21:35:38 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/11 16:12:56 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,9 @@ int 	main(void)
 	*((unsigned long *)(&special)) = DBL_INF;
 	static char *s_hidden = "hi low\0don't print me lol\0";
 
+	int c = 10;
+	int *p = &c;
+
 /*    ft_printf("%%%"); /// -> %0
 	printf("\n");
 	printf("%%%"); /// -> %*/
@@ -63,9 +66,10 @@ int 	main(void)
 	printf("{%f}{%lf}{%Lf}", 1.42, 1.42, 1.42l);*/
 
 
-	ft_printf("% u", 4294967294);
+	int a = ft_printf("%#x", (void *)p);
 	printf("\n");
-	printf("% u", 4294967294);
+	int b = printf("%p", p);
+	printf("\nmoii=%i\norig=%i", a, b);
 
 
 	return(0);

@@ -107,7 +107,9 @@ int		fill_final_str(t_pf *pf)
 			i++;
 		}
 	}
-	if (tmp && pf->type != 's')
+	else if (pf->type == 'c')
+		fill_with_symb(pf, &i, pf->num.c, 1);
+	else if (tmp && pf->type != 's' && pf->type != 'c')
 	{
 		while (tmp[k] != '\0')
 		{

@@ -78,6 +78,8 @@ typedef struct		s_pf
 	int 					minus;
 	int						space;
 	int						float_dot;
+
+	char 					buff[60];
 }							t_pf;
 
 

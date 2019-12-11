@@ -94,7 +94,7 @@ int		parse_format(t_pf *pf)
 	{
 		if (pf->flags[i] == '-' && pf->width > 0)
 			pf->symbol = 3;
-		if (pf->flags[i] == ' ' && !ft_isnan(pf->num.ld) && !ft_is_minus_inf(pf->num.ld) && pf->type != 'u')
+		if (pf->flags[i] == ' ' && !ft_isnan(pf->num.ld) && !ft_is_minus_inf(pf->num.ld) && pf->type != 'u' && pf->type != 'c')
 			pf->space = 1;
 		if (pf->flags[i] == '#' && ft_strchr("oxX", pf->type))
 			save_sharp(pf);

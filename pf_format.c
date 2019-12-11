@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/10 19:38:55 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/11 15:41:36 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ static void		char_size(t_pf *pf, char p, va_list ap)
 
 int				pf_format(t_pf *pf, char **p, va_list ap)
 {
+	int i = 0;
 	*p += 1;
 	if (is_flags(*p))
 		find_flags(pf, &*p);
@@ -85,6 +86,12 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		}
 		*p += 1;
 	}
+	if (**p == 'c')
+	{
+		pf->type = 'c';
+		pf->num.c = (char)va_arg(ap, int);
+		*p += 1;
+	}
 	if (pf->type != 'f')
 	{
 		parse_format(pf);
@@ -92,7 +99,14 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 			return (-1);
 		if (fill_final_str(pf) == -1)
 			return (-1);
-		ft_putstr(pf->str);
+		if (pf->type == 'c')
+			while(i < pf->str_len)
+			{
+				ft_putchar(pf->str[i]);
+				i++;
+			}
+		else
+			ft_putstr(pf->str);
 	}
 	if (pf->type == 'f')
 	{
@@ -106,6 +120,7 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 
 	}
 
-	pf->counter += ft_strlen(pf->str);
+	//pf->counter += ft_strlen(pf->str);
+	pf->counter += pf->str_len;
 	return(1);
 }

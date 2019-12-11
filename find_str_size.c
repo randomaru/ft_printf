@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:35:41 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/10 21:05:24 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/11 15:30:17 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	find_symb_prec_width(t_pf *pf, int sharp_len)
 		if ((pf->symb_width = pf->width - pf->str_len ) > 0)
 			pf->str_len += pf->symb_width;
 	}
-	else if (pf->type == 's')
+	else if (pf->type == 's' || pf->type == 'c')
 	{
 		pf->prec_width = 0;
 		if ((pf->symb_width = pf->width - pf->str_len) > 0)
@@ -98,6 +98,11 @@ int		find_str_size(t_pf *pf)
 		else if (pf->width > 0 && pf->dot && pf->precision <= 0)
 			pf->num_len = 0;
 		pf->str_len += pf->num_len;
+	}
+	if (pf->type == 'c')
+	{
+		pf->num_len = 1;
+		pf->str_len = 1;
 	}
 	if (pf->symbol > 0 || pf->precision > 0)
 		find_symb_prec_width(pf, sharp_len);
