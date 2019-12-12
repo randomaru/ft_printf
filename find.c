@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 18:09:48 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/07 21:13:20 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 20:10:02 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,13 +42,9 @@ void	find_width(t_pf *pf, char **p)
 
 void	find_precision(t_pf *pf, char **p)
 {
-	int zero;
 	++(*p);
-//	if (**p == '0')
-//		*p += 1;
 	pf->precision = ft_atoi(*p);
-//	*p += number_len(pf->precision);
-	while (!(ft_strchr("LlhdifFouxXscp", **p)))
+	while (!(ft_strchr("LlhdifFouxXscp%", **p)))
 		*p += 1;
 }
 

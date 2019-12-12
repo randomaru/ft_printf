@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:35:41 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 18:36:55 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 19:10:25 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	find_symb_prec_width(t_pf *pf, int sharp_len)
 		if ((pf->symb_width = pf->width - pf->str_len ) > 0)
 			pf->str_len += pf->symb_width;
 	}
-	else if (pf->type == 's' || pf->type == 'c' ) //|| pf->type == 'p')
+	else if (pf->type == 's' || pf->type == 'c')
 	{
 		pf->prec_width = 0;
 		if ((pf->symb_width = pf->width - pf->str_len) > 0)

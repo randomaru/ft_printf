@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 19:48:58 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 20:01:20 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,22 +18,21 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 	if (pf->size && (!(ft_strcmp(pf->size, "ll")) || !(ft_strcmp(pf->size, "hh"))))
 	{
 		if (p == 'd' || p == 'i')
-			!(ft_strcmp(pf->size, "hh")) ? (pf->num.lli = (long long int)((signed char)va_arg(ap, int))) ////
+			!(ft_strcmp(pf->size, "hh")) ? (pf->num.lli = (long long int)((signed char)va_arg(ap, int)))
 										: (pf->num.lli = va_arg(ap, long long int));
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
-			!(ft_strcmp(pf->size, "hh")) ? (pf->num.ulli = (unsigned long long)((unsigned char)va_arg(ap, int))) //////
+			!(ft_strcmp(pf->size, "hh")) ? (pf->num.ulli = (unsigned long long)((unsigned char)va_arg(ap, int)))
 									  : (pf->num.ulli = va_arg(ap, unsigned long long));
 	}
 	else if (pf->size && (!(ft_strcmp(pf->size, "l")) || !(ft_strcmp(pf->size, "h"))))
 	{
 		if (p == 'd' || p == 'i')
-			!(ft_strcmp(pf->size, "h")) ? (pf->num.lli = (long long int)((short int)va_arg(ap, int))) /////
-										 //: (pf->num.li = va_arg(ap, long int));
+			!(ft_strcmp(pf->size, "h")) ? (pf->num.lli = (long long int)((short int)va_arg(ap, int)))
 										: (pf->num.lli = (long long int)va_arg(ap, long int));
 		else if (p == 'f' && !ft_strcmp(pf->size, "l"))
-			pf->num.ld = (long double)va_arg(ap, long double);
+			pf->num.ld = (long double)va_arg(ap, double);
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
-			!(ft_strcmp(pf->size, "h")) ? (pf->num.ulli = (unsigned long long)((unsigned short int)va_arg(ap, int))) //////
+			!(ft_strcmp(pf->size, "h")) ? (pf->num.ulli = (unsigned long long)((unsigned short int)va_arg(ap, int)))
 										 : (pf->num.ulli = (unsigned long long)va_arg(ap, unsigned long int));
 	}
 	else if (pf->size && !ft_strcmp(pf->size, "L"))
@@ -51,14 +50,6 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 	}
 }
 
-static void		char_size(t_pf *pf, char p, va_list ap)
-{
-	if (p == 's')
-		pf->num.str = va_arg(ap, char*);
-	else if (p == 'c')
-		pf->num.c = (char)va_arg(ap, int);
-}
-
 int				pf_format(t_pf *pf, char **p, va_list ap)
 {
 	int i = 0;
@@ -72,7 +63,7 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 	if (is_size(*p))
 		find_size(pf, &*p);
 	if (**p == '\0')
-		return (-1); //incomlete format specifier
+		return (-1); ///incomlete format specifier
 	if (ft_strchr("fdiouxX", **p))
 	{
 		pf->type = **p;
@@ -105,6 +96,7 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 	else if (**p == '%')
 	{
 		pf->type = '%';
+		pf->num.c = '%';
 		*p += 1;
 	}
 	if (pf->type != 'f')
@@ -113,16 +105,6 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		if (find_str_size(pf) == -1)
 			return (-1);
 		check_buf(pf, &*p);
-		/*if (fill_final_str(pf) == -1)
-			return (-1);
-		if (pf->type == 'c')
-			while(i < pf->str_len)
-			{
-				ft_putchar(pf->str[i]);
-				i++;
-			}
-		else
-			ft_putstr(pf->str);*/
 	}
 	else if (pf->type == 'f')
 	{
@@ -131,13 +113,7 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		if (find_str_size(pf) == -1)
 			return (-1);
 		check_buf(pf, &*p);
-	/*	if (fill_final_str(pf) == -1)
-			return (-1);
-		ft_putstr(pf->str);
-*/
 	}
-
-	//pf->counter += ft_strlen(pf->str);
 	pf->counter += pf->str_len;
 	return(1);
 }

@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:58:21 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 19:42:00 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 19:56:05 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,8 +103,8 @@ static char		*find_tmp(t_pf *pf)
 {
 	char *tmp;
 	tmp = NULL;
-	if (pf->type == '%')
-		pf->num.c = '%';
+/*	if (pf->type == '%')
+		pf->num.c = '%';*/
 	if (pf->type == 's')
 	{
 		if (pf->precision <= 0 && pf->dot)
@@ -241,7 +241,7 @@ int		fill_buff(t_pf *pf)
 		fill_with_symb_buff(pf, &i, c, pf->symb_width);
 	if (ft_strchr("difu", pf->type) && (pf->plus || pf->minus))
 		(pf->minus) ? (fill_sign_buff(pf, &i, '-')) : (fill_sign_buff(pf, &i, '+'));
-	if (pf->space && !pf->minus && !pf->plus)
+	if (pf->space && !pf->minus && !pf->plus && pf->type != '%')
 		fill_sign_buff(pf, &i, ' ');
 	if (ft_strchr("poxX", pf->type) && pf->sharp)
 		fill_with_sharp_buff(pf, &i);

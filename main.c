@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 19:46:30 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 20:08:06 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,9 +65,9 @@ int 	main(void)
 	int c = 10;
 	int *p = &c;
 
-	int a = ft_printf("%-05");
+	int a = ft_printf("%.0%");
 	printf("\n");
-	int b = printf("%-05");
+	int b = printf("%.0%");
 	printf("\nmoii=%i\norig=%i", a, b);
 
 
