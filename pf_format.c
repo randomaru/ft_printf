@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/11 17:27:12 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 19:48:58 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,13 +71,15 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		find_precision(pf, &*p);
 	if (is_size(*p))
 		find_size(pf, &*p);
+	if (**p == '\0')
+		return (-1); //incomlete format specifier
 	if (ft_strchr("fdiouxX", **p))
 	{
 		pf->type = **p;
 		number_size(pf, **p, ap);
 		*p += 1;
 	}
-	if (**p == 's')
+	else if (**p == 's')
 	{
 		pf->type = 's';
 		pf->tmp_oxfs = ft_strdup(va_arg(ap, char*));
@@ -88,16 +90,21 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		}
 		*p += 1;
 	}
-	if (**p == 'c')
+	else if (**p == 'c')
 	{
 		pf->type = 'c';
 		pf->num.c = (char)va_arg(ap, int);
 		*p += 1;
 	}
-	if (**p == 'p')
+	else if (**p == 'p')
 	{
 		pf->type = 'p';
 		number_size(pf, **p, ap);
+		*p += 1;
+	}
+	else if (**p == '%')
+	{
+		pf->type = '%';
 		*p += 1;
 	}
 	if (pf->type != 'f')
@@ -105,7 +112,8 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 		parse_format(pf);
 		if (find_str_size(pf) == -1)
 			return (-1);
-		if (fill_final_str(pf) == -1)
+		check_buf(pf, &*p);
+		/*if (fill_final_str(pf) == -1)
 			return (-1);
 		if (pf->type == 'c')
 			while(i < pf->str_len)
@@ -114,18 +122,19 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 				i++;
 			}
 		else
-			ft_putstr(pf->str);
+			ft_putstr(pf->str);*/
 	}
-	if (pf->type == 'f')
+	else if (pf->type == 'f')
 	{
 		display_f(pf);
 		parse_format(pf);
 		if (find_str_size(pf) == -1)
 			return (-1);
-		if (fill_final_str(pf) == -1)
+		check_buf(pf, &*p);
+	/*	if (fill_final_str(pf) == -1)
 			return (-1);
 		ft_putstr(pf->str);
-
+*/
 	}
 
 	//pf->counter += ft_strlen(pf->str);

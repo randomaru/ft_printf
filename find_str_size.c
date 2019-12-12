@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:35:41 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/11 17:37:00 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 18:36:55 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	find_symb_prec_width(t_pf *pf, int sharp_len)
 		if ((pf->symb_width = pf->width - pf->str_len ) > 0)
 			pf->str_len += pf->symb_width;
 	}
-	else if (pf->type == 's' || pf->type == 'c' || pf->type == 'p')
+	else if (pf->type == 's' || pf->type == 'c' ) //|| pf->type == 'p')
 	{
 		pf->prec_width = 0;
 		if ((pf->symb_width = pf->width - pf->str_len) > 0)
@@ -63,8 +63,16 @@ int		find_str_size(t_pf *pf)
 	}
 	if (pf->type == 'p')
 	{
-		pf->tmp_oxfs = ulltoa_base(pf->num.ulli, 16);
-		pf->num_len = ft_strlen(pf->tmp_oxfs);
+		if (pf->precision <= 0 && pf->dot && pf->num.ulli == 0)
+		{
+			pf->num_len = 0;
+			pf->tmp_oxfs = NULL;
+		}
+		else
+		{
+			pf->tmp_oxfs = ulltoa_base(pf->num.ulli, 16);
+			pf->num_len = ft_strlen(pf->tmp_oxfs);
+		}
 		pf->str_len += pf->num_len + 2;
 	}
 	if (ft_strchr("di", pf->type))
@@ -99,13 +107,15 @@ int		find_str_size(t_pf *pf)
 	if (pf->type == 's')
 	{
 		pf->num_len = ft_strlen(pf->tmp_oxfs);
-		if (pf->precision > 0 && pf->precision < pf->num_len)
+		if (pf->precision <= 0 && pf->dot)
+			pf->num_len = 0;
+		else if (pf->precision > 0 && pf->precision < pf->num_len)
 			pf->num_len = pf->precision;
 		else if (pf->width > 0 && pf->dot && pf->precision <= 0)
 			pf->num_len = 0;
 		pf->str_len += pf->num_len;
 	}
-	if (pf->type == 'c')
+	if (pf->type == 'c' || pf->type == '%')
 	{
 		pf->num_len = 1;
 		pf->str_len = 1;

@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/11 17:31:26 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 19:50:59 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	set_null(t_pf *pf)
 	pf->minus = 0;
 	pf->space = 0;
 	pf->float_dot = 0;
-	pf->buf_len = 0;
+	//pf->buf_len = 0;
 
 }
 
@@ -133,10 +133,11 @@ int 	ft_printf(char *format, ...)
 		{
 			if (pf_format(pf, &p, ap) == -1)
 			{
+				//check_buf(pf, 0);
 				free_t_pf(pf);
 //				free(pf);
 				va_end(ap);
-				return (-1);
+				return (0);
 			}
 			set_null(pf);
 		}

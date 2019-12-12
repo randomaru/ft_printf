@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/11 16:46:58 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 16:56:12 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,12 @@ void				find_size(t_pf *pf, char **p);
 
 int					parse_format(t_pf *pf);
 int					find_str_size(t_pf *pf);
-int fill_final_str(t_pf *pf);
+int 				fill_final_str(t_pf *pf);
+
+void print_res(char *str, int len, int n);
+
+void	fill_str_buff(t_pf *pf, char **p);
+void	fill_str_str(t_pf *pf, char **p);
 
 
 ///SVETA
@@ -113,5 +118,8 @@ unsigned long long	ft_len_of_number(unsigned long long n);
 int   handle_inf_nan(long double num, t_pf *pf, int what, char **res);
 char				*pf_strcpy(char *dst, const char *src, int j);
 long double ft_pow_double(long double n, unsigned long long pow);
+
+int		fill_buff(t_pf *pf);
+void check_buf(t_pf *pf, char **p);
 
 #endif
