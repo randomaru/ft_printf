@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/SVETA_display_f.c">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/NEW_display_f.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c">

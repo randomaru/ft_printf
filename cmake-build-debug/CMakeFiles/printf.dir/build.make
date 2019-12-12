@@ -1214,18 +1214,18 @@ CMakeFiles/printf.dir/SVETA_pf_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/SVETA_pf_itoa.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c -o CMakeFiles/printf.dir/SVETA_pf_itoa.c.s
 
-CMakeFiles/printf.dir/SVETA_display_f.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/SVETA_display_f.c.o: ../SVETA_display_f.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/printf.dir/SVETA_display_f.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/SVETA_display_f.c.o   -c /Users/tamarant/Desktop/projects/printf/SVETA_display_f.c
+CMakeFiles/printf.dir/NEW_display_f.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/NEW_display_f.c.o: ../NEW_display_f.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/printf.dir/NEW_display_f.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/NEW_display_f.c.o   -c /Users/tamarant/Desktop/projects/printf/NEW_display_f.c
 
-CMakeFiles/printf.dir/SVETA_display_f.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/SVETA_display_f.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/SVETA_display_f.c > CMakeFiles/printf.dir/SVETA_display_f.c.i
+CMakeFiles/printf.dir/NEW_display_f.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/NEW_display_f.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tamarant/Desktop/projects/printf/NEW_display_f.c > CMakeFiles/printf.dir/NEW_display_f.c.i
 
-CMakeFiles/printf.dir/SVETA_display_f.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/SVETA_display_f.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/SVETA_display_f.c -o CMakeFiles/printf.dir/SVETA_display_f.c.s
+CMakeFiles/printf.dir/NEW_display_f.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/NEW_display_f.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tamarant/Desktop/projects/printf/NEW_display_f.c -o CMakeFiles/printf.dir/NEW_display_f.c.s
 
 # Object files for target printf
 printf_OBJECTS = \
@@ -1318,7 +1318,7 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/find_str_size.c.o" \
 "CMakeFiles/printf.dir/parse_char.c.o" \
 "CMakeFiles/printf.dir/SVETA_pf_itoa.c.o" \
-"CMakeFiles/printf.dir/SVETA_display_f.c.o"
+"CMakeFiles/printf.dir/NEW_display_f.c.o"
 
 # External object files for target printf
 printf_EXTERNAL_OBJECTS =
@@ -1412,7 +1412,7 @@ printf: CMakeFiles/printf.dir/parse_format.c.o
 printf: CMakeFiles/printf.dir/find_str_size.c.o
 printf: CMakeFiles/printf.dir/parse_char.c.o
 printf: CMakeFiles/printf.dir/SVETA_pf_itoa.c.o
-printf: CMakeFiles/printf.dir/SVETA_display_f.c.o
+printf: CMakeFiles/printf.dir/NEW_display_f.c.o
 printf: CMakeFiles/printf.dir/build.make
 printf: CMakeFiles/printf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Linking C executable printf"

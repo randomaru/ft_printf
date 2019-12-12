@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 20:08:06 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 20:48:24 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int 	main(void)
 	static unsigned long  		ulmax = 9223372036854775807;
 
 	double special;
-	*((unsigned long *)(&special)) = DBL_INF;
+	*((unsigned long *)(&special)) = DBL_NZERO;
 	static char *s_hidden = "hi low\0don't print me lol\0";
 
 
@@ -62,12 +62,9 @@ int 	main(void)
 /*    ft_printf("{%f}{%lf}{%Lf}", 1.42, 1.42, 1.42l);
 	printf("\n");
 	printf("{%f}{%lf}{%Lf}", 1.42, 1.42, 1.42l);*/
-	int c = 10;
-	int *p = &c;
-
-	int a = ft_printf("%.0%");
+	int a = ft_printf("%+6f", special);
 	printf("\n");
-	int b = printf("%.0%");
+	int b = printf("%+6f", special);
 	printf("\nmoii=%i\norig=%i", a, b);
 
 

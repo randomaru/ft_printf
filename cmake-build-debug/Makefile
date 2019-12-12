@@ -123,32 +123,32 @@ printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
-SVETA_display_f.o: SVETA_display_f.c.o
+NEW_display_f.o: NEW_display_f.c.o
 
-.PHONY : SVETA_display_f.o
+.PHONY : NEW_display_f.o
 
 # target to build an object file
-SVETA_display_f.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_display_f.c.o
-.PHONY : SVETA_display_f.c.o
+NEW_display_f.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/NEW_display_f.c.o
+.PHONY : NEW_display_f.c.o
 
-SVETA_display_f.i: SVETA_display_f.c.i
+NEW_display_f.i: NEW_display_f.c.i
 
-.PHONY : SVETA_display_f.i
+.PHONY : NEW_display_f.i
 
 # target to preprocess a source file
-SVETA_display_f.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_display_f.c.i
-.PHONY : SVETA_display_f.c.i
+NEW_display_f.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/NEW_display_f.c.i
+.PHONY : NEW_display_f.c.i
 
-SVETA_display_f.s: SVETA_display_f.c.s
+NEW_display_f.s: NEW_display_f.c.s
 
-.PHONY : SVETA_display_f.s
+.PHONY : NEW_display_f.s
 
 # target to generate assembly for a file
-SVETA_display_f.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_display_f.c.s
-.PHONY : SVETA_display_f.c.s
+NEW_display_f.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/NEW_display_f.c.s
+.PHONY : NEW_display_f.c.s
 
 SVETA_pf_itoa.o: SVETA_pf_itoa.c.o
 
@@ -2562,9 +2562,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
-	@echo "... SVETA_display_f.o"
-	@echo "... SVETA_display_f.i"
-	@echo "... SVETA_display_f.s"
+	@echo "... NEW_display_f.o"
+	@echo "... NEW_display_f.i"
+	@echo "... NEW_display_f.s"
 	@echo "... SVETA_pf_itoa.o"
 	@echo "... SVETA_pf_itoa.i"
 	@echo "... SVETA_pf_itoa.s"

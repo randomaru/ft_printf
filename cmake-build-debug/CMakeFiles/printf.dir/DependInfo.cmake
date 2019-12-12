@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/tamarant/Desktop/projects/printf/SVETA_display_f.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/SVETA_display_f.c.o"
+  "/Users/tamarant/Desktop/projects/printf/NEW_display_f.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/NEW_display_f.c.o"
   "/Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
   "/Users/tamarant/Desktop/projects/printf/check.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/check.c.o"
   "/Users/tamarant/Desktop/projects/printf/fill_final_str.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/fill_final_str.c.o"

@@ -1,3 +1,4 @@
+/*
 #include "ft_printf.h"
 
 void	free_t_float(t_float *floatty)
@@ -114,10 +115,12 @@ char    *get_decimal(LD num, t_pf *pf, t_float *floatty)
                 return (floatty->scnd);
             ch = ft_memalloc(ft_len_of_number(floatty->second) + 1); // для \0
                 fill_char_from_int(floatty->second, ch);
-           /* if (ft_strlen(floatty->scnd) + 1 == pf->precision && ft_len_of_number(floatty->second) > 1)
+           */
+/* if (ft_strlen(floatty->scnd) + 1 == pf->precision && ft_len_of_number(floatty->second) > 1)
                 floatty->scnd = pf_strcpy(floatty->scnd, ch, (UI)(ft_strlen(floatty->scnd) - ft_len_of_number(floatty->second) + 1)); /////мы добавили тут приведение к инту
             else if (ft_strlen(floatty->scnd) == pf->precision)
-                *(floatty->scnd + ft_strlen(floatty->scnd) - 1) = *ft_strcpy((floatty->scnd + ft_strlen(floatty->scnd) - 1), ch);*/
+                *(floatty->scnd + ft_strlen(floatty->scnd) - 1) = *ft_strcpy((floatty->scnd + ft_strlen(floatty->scnd) - 1), ch);*//*
+
             //else
                 floatty->scnd = pf_strcpy(floatty->scnd, ch, ft_strlen(floatty->scnd));
             free(ch);
@@ -164,6 +167,7 @@ char    *put_in_str(t_pf *pf, UI i, t_float *floatty, LD num)
     return (res);
 }
 
+*/
 /*int   handle_inf_nan(LD num, t_pf *pf, int what, char **res)
 {
     if (what == 1 || what == 3 || what == 2)
@@ -182,7 +186,8 @@ char    *put_in_str(t_pf *pf, UI i, t_float *floatty, LD num)
         }
     }
     return (1);
-}*/
+}*//*
+
 
 int   handle_inf_nan(LD num, t_pf *pf, int what, char **res)
 {
@@ -239,6 +244,7 @@ int    display_f(t_pf *pf)
     pf->tmp_oxfs = res;
     return (1);
 }
+*/
 
 // одно из особых состояний числа с плавающей запятой.
 // Используется во многих математических библиотеках и математических сопроцессорах.

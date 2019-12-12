@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:33:00 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/11 17:22:37 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 20:55:51 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static void	find_sign(t_pf *pf)
 {
 	if (pf->type == 'f')
 	{
-		if (ft_strchr(pf->flags, '+') && pf->num.ld >= 0)
+		if (ft_strchr(pf->flags, '+') && pf->num.ld >= 0 && !pf->minus)
 			pf->plus = 1;
 	}
 	else
@@ -40,7 +40,6 @@ static void	find_sign(t_pf *pf)
 			pf->plus = 1;
 		if (ft_strchr("di", pf->type) && pf->num.lli < 0)
 		{
-			//pf->num.lli *= -1;
 			if (pf->num.lli == LONG_MIN)
 			{
 				pf->type = 'u';

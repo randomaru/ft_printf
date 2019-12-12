@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 19:44:44 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/12 17:43:11 by fboggs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@
 # define ULL unsigned long long
 # define LD long double
 # define UI unsigned int
-
-# define BUFF_SIZE 60
 
 # include <stdio.h>
 # include <stdarg.h>
@@ -33,10 +31,10 @@ typedef struct			s_float
 	char				*scnd;
 	char				*frst;
 	unsigned long long  i;
-	unsigned long long  pos;
-	char                *tmp;
-	char                *res;
-	int                 not_f;
+    unsigned long long  pos;
+    char                *tmp;
+    char                *res;
+    int                 not_f;
 }						t_float;
 
 union					number
@@ -85,9 +83,6 @@ typedef struct		s_pf
 	int 					minus;
 	int						space;
 	int						float_dot;
-
-	char 					buff[BUFF_SIZE];
-	int 					buf_len;
 }							t_pf;
 
 
@@ -107,13 +102,7 @@ void				find_size(t_pf *pf, char **p);
 
 int					parse_format(t_pf *pf);
 int					find_str_size(t_pf *pf);
-int 				fill_final_str(t_pf *pf);
-
-void 				print_res(char *str, int len, int n);
-void				fill_str_buff(t_pf *pf, char **p);
-void				fill_str_str(t_pf *pf, char **p);
-int					fill_buff(t_pf *pf);
-void 				check_buf(t_pf *pf, char **p);
+int					fill_final_str(t_pf *pf);
 
 
 ///SVETA
@@ -122,14 +111,13 @@ int    				display_f(t_pf *pf);
 char				*pf_itoa(unsigned long long n);
 unsigned long long	ft_len_of_number(unsigned long long n);
 char				*pf_strcpy(char *dst, const char *src, int j);
-long double 		ft_pow_double(long double n, unsigned long long pow);
-int   				handle_inf_nan(LD num, t_pf *pf, t_float *fl);
-void    			real_okrugl(t_float *fl, t_pf *pf, LD num);
-void				free_t_float(t_float *fl);
-int   				 work_with_parts(t_float *fl, LD num, t_pf *pf);
-void   				 put_if_precision_null(t_float *fl, t_pf *pf, LD num);
-void   				 put_if_precision_not_null(t_float *fl, t_pf *pf, LD num);
-char 				*make_decimal(t_float *fl, t_pf *pf);
-
+long double ft_pow_double(long double n, unsigned long long pow);
+int   handle_inf_nan(LD num, t_pf *pf, t_float *fl);
+void    real_okrugl(t_float *fl, t_pf *pf, LD num);
+void	free_t_float(t_float *fl);
+int    work_with_parts(t_float *fl, LD num, t_pf *pf);
+void    put_if_precision_null(t_float *fl, t_pf *pf, LD num);
+void    put_if_precision_not_null(t_float *fl, t_pf *pf, LD num);
+char *make_decimal(t_float *fl, t_pf *pf);
 
 #endif

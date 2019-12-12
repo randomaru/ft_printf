@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/tamarant/Desktop/projects/printf/find.c
-ft_printf.h
-/Users/tamarant/Desktop/projects/printf/ft_printf.h
-
 /Users/tamarant/Desktop/projects/printf/ft_printf.h
 stdio.h
 -
@@ -34,11 +30,7 @@ fcntl.h
 limits.h
 -
 
-/Users/tamarant/Desktop/projects/printf/new_str.c
-ft_printf.h
-/Users/tamarant/Desktop/projects/printf/ft_printf.h
-
-/Users/tamarant/Desktop/projects/printf/pf_format.c
+/Users/tamarant/Desktop/projects/printf/parse_format.c
 ft_printf.h
 /Users/tamarant/Desktop/projects/printf/ft_printf.h
 

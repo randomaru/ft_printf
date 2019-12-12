@@ -106,5 +106,6 @@ add_executable(printf
 
 #        SVETA_float.c
         SVETA_pf_itoa.c
-        SVETA_display_f.c
+#        SVETA_display_f.c
+        NEW_display_f.c
         )

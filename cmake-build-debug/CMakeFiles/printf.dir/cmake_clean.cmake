@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/printf.dir/SVETA_display_f.c.o"
+  "CMakeFiles/printf.dir/NEW_display_f.c.o"
   "CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
   "CMakeFiles/printf.dir/check.c.o"
   "CMakeFiles/printf.dir/fill_final_str.c.o"
