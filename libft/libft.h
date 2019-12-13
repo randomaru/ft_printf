@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 21:44:24 by tamarant          #+#    #+#             */
-/*   Updated: 2019/11/28 21:09:43 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/13 21:49:23 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,4 +106,7 @@ char				*itoa_base(int value, int base);
 char 				*to_uppercase(char *str);
 void    			ft_putnbr_max(long long int nb);
 char				*ft_ulltoa(unsigned long long int n);
+int					ft_isnan(long double num);
+int					ft_isinf(long double num);
+int					ft_is_minus_inf(long double num);
 #endif

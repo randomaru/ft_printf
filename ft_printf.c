@@ -116,6 +116,12 @@ void	free_t_pf(t_pf *pf)
 	free(pf);
 }
 
+void	ft_printf_end(t_pf *pf, va_list ap)
+{
+	free_t_pf(pf);
+	va_end(ap);
+}
+
 int 	ft_printf(char *format, ...)
 {
 	va_list ap;
@@ -133,9 +139,7 @@ int 	ft_printf(char *format, ...)
 		{
 			if (pf_format(pf, &p, ap) == -1)
 			{
-				free_t_pf(pf);
-//				free(pf);
-				va_end(ap);
+				ft_printf_end(pf, ap);
 				return (0);
 			}
 			set_null(pf);
@@ -147,8 +151,6 @@ int 	ft_printf(char *format, ...)
 		}
 	}
 	sum = pf->counter;
-	free_t_pf(pf);
-	pf = NULL;
-	va_end(ap);
+	ft_printf_end(pf, ap);
 	return (sum);
 }

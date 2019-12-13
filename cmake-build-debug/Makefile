@@ -474,6 +474,33 @@ libft/ft_free.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_free.c.s
 .PHONY : libft/ft_free.c.s
 
+libft/ft_is_minus_inf.o: libft/ft_is_minus_inf.c.o
+
+.PHONY : libft/ft_is_minus_inf.o
+
+# target to build an object file
+libft/ft_is_minus_inf.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_is_minus_inf.c.o
+.PHONY : libft/ft_is_minus_inf.c.o
+
+libft/ft_is_minus_inf.i: libft/ft_is_minus_inf.c.i
+
+.PHONY : libft/ft_is_minus_inf.i
+
+# target to preprocess a source file
+libft/ft_is_minus_inf.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_is_minus_inf.c.i
+.PHONY : libft/ft_is_minus_inf.c.i
+
+libft/ft_is_minus_inf.s: libft/ft_is_minus_inf.c.s
+
+.PHONY : libft/ft_is_minus_inf.s
+
+# target to generate assembly for a file
+libft/ft_is_minus_inf.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_is_minus_inf.c.s
+.PHONY : libft/ft_is_minus_inf.c.s
+
 libft/ft_isalnum.o: libft/ft_isalnum.c.o
 
 .PHONY : libft/ft_isalnum.o
@@ -581,6 +608,60 @@ libft/ft_isdigit.s: libft/ft_isdigit.c.s
 libft/ft_isdigit.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_isdigit.c.s
 .PHONY : libft/ft_isdigit.c.s
+
+libft/ft_isinf.o: libft/ft_isinf.c.o
+
+.PHONY : libft/ft_isinf.o
+
+# target to build an object file
+libft/ft_isinf.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_isinf.c.o
+.PHONY : libft/ft_isinf.c.o
+
+libft/ft_isinf.i: libft/ft_isinf.c.i
+
+.PHONY : libft/ft_isinf.i
+
+# target to preprocess a source file
+libft/ft_isinf.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_isinf.c.i
+.PHONY : libft/ft_isinf.c.i
+
+libft/ft_isinf.s: libft/ft_isinf.c.s
+
+.PHONY : libft/ft_isinf.s
+
+# target to generate assembly for a file
+libft/ft_isinf.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_isinf.c.s
+.PHONY : libft/ft_isinf.c.s
+
+libft/ft_isnan.o: libft/ft_isnan.c.o
+
+.PHONY : libft/ft_isnan.o
+
+# target to build an object file
+libft/ft_isnan.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_isnan.c.o
+.PHONY : libft/ft_isnan.c.o
+
+libft/ft_isnan.i: libft/ft_isnan.c.i
+
+.PHONY : libft/ft_isnan.i
+
+# target to preprocess a source file
+libft/ft_isnan.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_isnan.c.i
+.PHONY : libft/ft_isnan.c.i
+
+libft/ft_isnan.s: libft/ft_isnan.c.s
+
+.PHONY : libft/ft_isnan.s
+
+# target to generate assembly for a file
+libft/ft_isnan.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_isnan.c.s
+.PHONY : libft/ft_isnan.c.s
 
 libft/ft_isprint.o: libft/ft_isprint.c.o
 
@@ -2601,6 +2682,9 @@ help:
 	@echo "... libft/ft_free.o"
 	@echo "... libft/ft_free.i"
 	@echo "... libft/ft_free.s"
+	@echo "... libft/ft_is_minus_inf.o"
+	@echo "... libft/ft_is_minus_inf.i"
+	@echo "... libft/ft_is_minus_inf.s"
 	@echo "... libft/ft_isalnum.o"
 	@echo "... libft/ft_isalnum.i"
 	@echo "... libft/ft_isalnum.s"
@@ -2613,6 +2697,12 @@ help:
 	@echo "... libft/ft_isdigit.o"
 	@echo "... libft/ft_isdigit.i"
 	@echo "... libft/ft_isdigit.s"
+	@echo "... libft/ft_isinf.o"
+	@echo "... libft/ft_isinf.i"
+	@echo "... libft/ft_isinf.s"
+	@echo "... libft/ft_isnan.o"
+	@echo "... libft/ft_isnan.i"
+	@echo "... libft/ft_isnan.s"
 	@echo "... libft/ft_isprint.o"
 	@echo "... libft/ft_isprint.i"
 	@echo "... libft/ft_isprint.s"

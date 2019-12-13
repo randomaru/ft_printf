@@ -47,6 +47,9 @@ CMakeFiles/printf.dir/libft/ft_countwords.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/ft_free.c.o: ../libft/ft_free.c
 CMakeFiles/printf.dir/libft/ft_free.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/libft/ft_is_minus_inf.c.o: ../libft/ft_is_minus_inf.c
+CMakeFiles/printf.dir/libft/ft_is_minus_inf.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/libft/ft_isalnum.c.o: ../libft/ft_isalnum.c
 CMakeFiles/printf.dir/libft/ft_isalnum.c.o: ../libft/libft.h
 
@@ -58,6 +61,12 @@ CMakeFiles/printf.dir/libft/ft_isascii.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
 CMakeFiles/printf.dir/libft/ft_isdigit.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/libft/ft_isinf.c.o: ../libft/ft_isinf.c
+CMakeFiles/printf.dir/libft/ft_isinf.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/libft/ft_isnan.c.o: ../libft/ft_isnan.c
+CMakeFiles/printf.dir/libft/ft_isnan.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_isprint.c.o: ../libft/ft_isprint.c
 CMakeFiles/printf.dir/libft/ft_isprint.c.o: ../libft/libft.h

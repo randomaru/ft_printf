@@ -132,6 +132,9 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_free.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_is_minus_inf.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_isalnum.c">
 			<Option target="printf"/>
 		</Unit>
@@ -142,6 +145,12 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_isdigit.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_isinf.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_isnan.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_isprint.c">

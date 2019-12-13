@@ -47,6 +47,9 @@ CMakeFiles/printf.dir/libft/ft_countwords.c.o
 CMakeFiles/printf.dir/libft/ft_free.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_free.c
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_is_minus_inf.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/ft_is_minus_inf.c
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_isalnum.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_isalnum.c
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
@@ -58,6 +61,12 @@ CMakeFiles/printf.dir/libft/ft_isascii.c.o
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_isdigit.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_isdigit.c
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_isinf.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/ft_isinf.c
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_isnan.c.o
+ /Users/tamarant/Desktop/projects/printf/libft/ft_isnan.c
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_isprint.c.o
  /Users/tamarant/Desktop/projects/printf/libft/ft_isprint.c

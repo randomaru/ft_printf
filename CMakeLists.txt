@@ -81,6 +81,9 @@ add_executable(printf
         libft/ft_lltoa.c
         libft/ulltoa_base.c
         libft/ft_ulltoa.c
+        libft/ft_isnan.c
+        libft/ft_isinf.c
+        libft/ft_is_minus_inf.c
         pf_strcpy.c
         libft/libft.h
         libft/Makefile
