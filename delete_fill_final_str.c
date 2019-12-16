@@ -6,21 +6,25 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:58:21 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 18:10:25 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/16 21:11:59 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+/*
 void print_res(char *str, int len, int n)
 {
-	if (n == 1 && *str)
+	if ((n == 1 && *str) || n == 2)
 		write(1, str, len);
-	else if (n == 2)
-		write(1, str, len);
-}
+*/
+/*	else if (n == 2)
+		write(1, str, len);*//*
 
-void check_buf(t_pf *pf, char **p)
+}
+*/
+
+/*void check_buf(t_pf *pf, char **p)
 {
 	if (pf->type)
 	{
@@ -86,7 +90,8 @@ void check_buf(t_pf *pf, char **p)
 		}
 	}
 
-}
+}*/
+/*
 
 static void		fill_with_symb(t_pf *pf, int *i, char c, int len)
 {
@@ -117,12 +122,13 @@ static void		fill_with_sharp(t_pf *pf, int *i)
 	}
 }
 
-static char		*find_tmp(t_pf *pf)
+char		*find_tmp(t_pf *pf)
 {
 	char *tmp;
 	tmp = NULL;
-/*	if (pf->type == '%')
-		pf->num.c = '%';*/
+	if (pf->type == '%')
+		pf->num.c = '%';
+
 	if (pf->type == 's')
 	{
 		if (pf->precision <= 0 && pf->dot)
@@ -301,3 +307,4 @@ int		fill_buff(t_pf *pf)
 	pf->buf_len += pf->str_len;
 	return (pf->buf_len);
 }
+*/

@@ -177,32 +177,59 @@ check.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.s
 .PHONY : check.c.s
 
-fill_final_str.o: fill_final_str.c.o
+delete_fill_final_str.o: delete_fill_final_str.c.o
 
-.PHONY : fill_final_str.o
+.PHONY : delete_fill_final_str.o
 
 # target to build an object file
-fill_final_str.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final_str.c.o
-.PHONY : fill_final_str.c.o
+delete_fill_final_str.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/delete_fill_final_str.c.o
+.PHONY : delete_fill_final_str.c.o
 
-fill_final_str.i: fill_final_str.c.i
+delete_fill_final_str.i: delete_fill_final_str.c.i
 
-.PHONY : fill_final_str.i
+.PHONY : delete_fill_final_str.i
 
 # target to preprocess a source file
-fill_final_str.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final_str.c.i
-.PHONY : fill_final_str.c.i
+delete_fill_final_str.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/delete_fill_final_str.c.i
+.PHONY : delete_fill_final_str.c.i
 
-fill_final_str.s: fill_final_str.c.s
+delete_fill_final_str.s: delete_fill_final_str.c.s
 
-.PHONY : fill_final_str.s
+.PHONY : delete_fill_final_str.s
 
 # target to generate assembly for a file
-fill_final_str.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final_str.c.s
-.PHONY : fill_final_str.c.s
+delete_fill_final_str.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/delete_fill_final_str.c.s
+.PHONY : delete_fill_final_str.c.s
+
+fill_final.o: fill_final.c.o
+
+.PHONY : fill_final.o
+
+# target to build an object file
+fill_final.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final.c.o
+.PHONY : fill_final.c.o
+
+fill_final.i: fill_final.c.i
+
+.PHONY : fill_final.i
+
+# target to preprocess a source file
+fill_final.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final.c.i
+.PHONY : fill_final.c.i
+
+fill_final.s: fill_final.c.s
+
+.PHONY : fill_final.s
+
+# target to generate assembly for a file
+fill_final.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final.c.s
+.PHONY : fill_final.c.s
 
 find.o: find.c.o
 
@@ -2607,6 +2634,33 @@ pf_format.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.s
 .PHONY : pf_format.c.s
 
+pf_free.o: pf_free.c.o
+
+.PHONY : pf_free.o
+
+# target to build an object file
+pf_free.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_free.c.o
+.PHONY : pf_free.c.o
+
+pf_free.i: pf_free.c.i
+
+.PHONY : pf_free.i
+
+# target to preprocess a source file
+pf_free.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_free.c.i
+.PHONY : pf_free.c.i
+
+pf_free.s: pf_free.c.s
+
+.PHONY : pf_free.s
+
+# target to generate assembly for a file
+pf_free.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_free.c.s
+.PHONY : pf_free.c.s
+
 pf_strcpy.o: pf_strcpy.c.o
 
 .PHONY : pf_strcpy.o
@@ -2634,6 +2688,33 @@ pf_strcpy.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_strcpy.c.s
 .PHONY : pf_strcpy.c.s
 
+print_check.o: print_check.c.o
+
+.PHONY : print_check.o
+
+# target to build an object file
+print_check.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_check.c.o
+.PHONY : print_check.c.o
+
+print_check.i: print_check.c.i
+
+.PHONY : print_check.i
+
+# target to preprocess a source file
+print_check.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_check.c.i
+.PHONY : print_check.c.i
+
+print_check.s: print_check.c.s
+
+.PHONY : print_check.s
+
+# target to generate assembly for a file
+print_check.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_check.c.s
+.PHONY : print_check.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2649,9 +2730,12 @@ help:
 	@echo "... check.o"
 	@echo "... check.i"
 	@echo "... check.s"
-	@echo "... fill_final_str.o"
-	@echo "... fill_final_str.i"
-	@echo "... fill_final_str.s"
+	@echo "... delete_fill_final_str.o"
+	@echo "... delete_fill_final_str.i"
+	@echo "... delete_fill_final_str.s"
+	@echo "... fill_final.o"
+	@echo "... fill_final.i"
+	@echo "... fill_final.s"
 	@echo "... find.o"
 	@echo "... find.i"
 	@echo "... find.s"
@@ -2919,9 +3003,15 @@ help:
 	@echo "... pf_format.o"
 	@echo "... pf_format.i"
 	@echo "... pf_format.s"
+	@echo "... pf_free.o"
+	@echo "... pf_free.i"
+	@echo "... pf_free.s"
 	@echo "... pf_strcpy.o"
 	@echo "... pf_strcpy.i"
 	@echo "... pf_strcpy.s"
+	@echo "... print_check.o"
+	@echo "... print_check.i"
+	@echo "... print_check.s"
 .PHONY : help
 
 

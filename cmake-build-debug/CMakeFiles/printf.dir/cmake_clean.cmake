@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
   "CMakeFiles/printf.dir/check.c.o"
-  "CMakeFiles/printf.dir/fill_final_str.c.o"
+  "CMakeFiles/printf.dir/delete_fill_final_str.c.o"
+  "CMakeFiles/printf.dir/fill_final.c.o"
   "CMakeFiles/printf.dir/find.c.o"
   "CMakeFiles/printf.dir/find_str_size.c.o"
   "CMakeFiles/printf.dir/floats.c.o"
@@ -91,7 +92,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/parse_char.c.o"
   "CMakeFiles/printf.dir/parse_format.c.o"
   "CMakeFiles/printf.dir/pf_format.c.o"
+  "CMakeFiles/printf.dir/pf_free.c.o"
   "CMakeFiles/printf.dir/pf_strcpy.c.o"
+  "CMakeFiles/printf.dir/print_check.c.o"
   "printf"
   "printf.pdb"
 )

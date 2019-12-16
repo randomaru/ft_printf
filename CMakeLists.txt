@@ -89,10 +89,10 @@ add_executable(printf
         libft/to_uppercase.c
         libft/ulltoa_base.c
         check.c
-        fill_final_str.c
+        delete_fill_final_str.c
         find.c
         find_str_size.c
-        ft_printf.c
+#     ft_printf.c
         ft_printf.h
         main.c
 #        NEW_display_f.c
@@ -102,4 +102,11 @@ add_executable(printf
         parse_format.c
         pf_format.c
         pf_strcpy.c
-        SVETA_pf_itoa.c)
+        SVETA_pf_itoa.c
+
+
+        ft_printf.c
+        fill_final.c
+        pf_free.c
+        print_check.c
+        )

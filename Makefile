@@ -8,8 +8,8 @@ LIBFT_DIR = ./libft/
 
 FLAGS = -Wall -Wextra -Werror -g
 
-SRC_C = ft_printf.c pf_format.c check.c find.c fill_final_str.c floats.c SVETA_pf_itoa.c \
-new_str.c parse_format.c find_str_size.c pf_strcpy.c
+SRC_C = ft_printf.c pf_format.c check.c find.c floats.c SVETA_pf_itoa.c \
+new_str.c parse_format.c find_str_size.c pf_strcpy.c fill_final.c pf_free.c print_check.c
 
 SRC_O = $(SRC_C:.c=.o)
 

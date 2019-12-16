@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:26:18 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 17:14:08 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/16 21:15:09 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ void	fill_str_buff(t_pf *pf, char **p)
 	}
 	pf->buf_len += pf->str_len;
 }
+
 void	fill_str_str(t_pf *pf, char **p)
 {
 	int i = 0;

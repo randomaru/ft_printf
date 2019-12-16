@@ -9,8 +9,12 @@ CMakeFiles/printf.dir/check.c.o
  /Users/tamarant/Desktop/projects/printf/check.c
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
-CMakeFiles/printf.dir/fill_final_str.c.o
- /Users/tamarant/Desktop/projects/printf/fill_final_str.c
+CMakeFiles/printf.dir/delete_fill_final_str.c.o
+ /Users/tamarant/Desktop/projects/printf/delete_fill_final_str.c
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+CMakeFiles/printf.dir/fill_final.c.o
+ /Users/tamarant/Desktop/projects/printf/fill_final.c
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
 CMakeFiles/printf.dir/find.c.o
@@ -289,7 +293,15 @@ CMakeFiles/printf.dir/pf_format.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/pf_format.c
+CMakeFiles/printf.dir/pf_free.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/pf_free.c
 CMakeFiles/printf.dir/pf_strcpy.c.o
  /Users/tamarant/Desktop/projects/printf/ft_printf.h
  /Users/tamarant/Desktop/projects/printf/libft/libft.h
  /Users/tamarant/Desktop/projects/printf/pf_strcpy.c
+CMakeFiles/printf.dir/print_check.c.o
+ /Users/tamarant/Desktop/projects/printf/ft_printf.h
+ /Users/tamarant/Desktop/projects/printf/libft/libft.h
+ /Users/tamarant/Desktop/projects/printf/print_check.c

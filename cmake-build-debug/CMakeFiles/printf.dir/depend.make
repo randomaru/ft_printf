@@ -9,9 +9,13 @@ CMakeFiles/printf.dir/check.c.o: ../check.c
 CMakeFiles/printf.dir/check.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/check.c.o: ../libft/libft.h
 
-CMakeFiles/printf.dir/fill_final_str.c.o: ../fill_final_str.c
-CMakeFiles/printf.dir/fill_final_str.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/fill_final_str.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/delete_fill_final_str.c.o: ../delete_fill_final_str.c
+CMakeFiles/printf.dir/delete_fill_final_str.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/delete_fill_final_str.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/fill_final.c.o: ../fill_final.c
+CMakeFiles/printf.dir/fill_final.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/fill_final.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/find.c.o: ../find.c
 CMakeFiles/printf.dir/find.c.o: ../ft_printf.h
@@ -289,7 +293,15 @@ CMakeFiles/printf.dir/pf_format.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/pf_format.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/pf_format.c.o: ../pf_format.c
 
+CMakeFiles/printf.dir/pf_free.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/pf_free.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/pf_free.c.o: ../pf_free.c
+
 CMakeFiles/printf.dir/pf_strcpy.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/pf_strcpy.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/pf_strcpy.c.o: ../pf_strcpy.c
+
+CMakeFiles/printf.dir/print_check.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/print_check.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/print_check.c.o: ../print_check.c
 

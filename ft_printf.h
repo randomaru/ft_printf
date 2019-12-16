@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:54 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 18:41:24 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/16 20:34:57 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,8 @@ void				fill_str_buff(t_pf *pf, char **p);
 void				fill_str_str(t_pf *pf, char **p);
 int					fill_buff(t_pf *pf);
 void 				check_buf(t_pf *pf, char **p);
-
+char				*find_tmp(t_pf *pf);
+int 	fill_final(t_pf *pf, char *str, int n, int len);
 int    				display_f(t_pf *pf);
 char				*pf_itoa(unsigned long long n);
 unsigned long long	ft_len_of_number(unsigned long long n);
@@ -112,6 +113,7 @@ void   				 put_if_precision_not_null(t_float *fl, t_pf *pf, LD num);
 char 				*make_decimal(t_float *fl, t_pf *pf, LD num);
 void				fill_char_from_int(ULL what, char *where);
 char				*videl_memory_for_decimal(t_pf *pf, t_float *fl);
-
-
+void	free_t_pf(t_pf *pf, int n);
+void	free_chars(t_pf *pf);
+void	dop_free_end(t_pf *pf, int n);
 #endif

@@ -6,7 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
   "/Users/tamarant/Desktop/projects/printf/check.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/check.c.o"
-  "/Users/tamarant/Desktop/projects/printf/fill_final_str.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/fill_final_str.c.o"
+  "/Users/tamarant/Desktop/projects/printf/delete_fill_final_str.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/delete_fill_final_str.c.o"
+  "/Users/tamarant/Desktop/projects/printf/fill_final.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/fill_final.c.o"
   "/Users/tamarant/Desktop/projects/printf/find.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/find.c.o"
   "/Users/tamarant/Desktop/projects/printf/find_str_size.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/find_str_size.c.o"
   "/Users/tamarant/Desktop/projects/printf/floats.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/floats.c.o"
@@ -96,7 +97,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/projects/printf/parse_char.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/parse_char.c.o"
   "/Users/tamarant/Desktop/projects/printf/parse_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/parse_format.c.o"
   "/Users/tamarant/Desktop/projects/printf/pf_format.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/pf_format.c.o"
+  "/Users/tamarant/Desktop/projects/printf/pf_free.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/pf_free.c.o"
   "/Users/tamarant/Desktop/projects/printf/pf_strcpy.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/pf_strcpy.c.o"
+  "/Users/tamarant/Desktop/projects/printf/print_check.c" "/Users/tamarant/Desktop/projects/printf/cmake-build-debug/CMakeFiles/printf.dir/print_check.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

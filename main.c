@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 18:47:41 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/16 21:11:49 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,20 +35,6 @@
 int 	main(void)
 {
 
-int special;
-
-/*    ft_printf("%%%"); /// -> %0
-	printf("\n");
-	printf("%%%"); /// -> %*/
-
-/*	ft_printf("% u", 5);
-	printf("\n");
-	printf("% u", 5); /// ' ' undefined behaviour with u*/
-
-	ft_printf("%f%f", 56.784, 567.98);
-	printf("\n");
-	printf("%f%f", 56.784, 567.98);
-/*
 	static char	a01;
 	static unsigned char a02;
 	static short a03;
@@ -60,7 +46,20 @@ int special;
 	static long long a09;
 	static unsigned long long a10;
 	static char *a11;
-	static void *a12;*/
+	static void *a12;
+int special;
+
+/*    ft_printf("%%%"); /// -> %0
+	printf("\n");
+	printf("%%%"); /// -> %*/
+
+/*	ft_printf("% u", 5);
+	printf("\n");
+	printf("% u", 5); /// ' ' undefined behaviour with u*/
+
+	ft_printf("hello, %s.", "gavin");
+	printf("\n");
+	printf("hello, %s.", "gavin");
 
 
 	return(0);
