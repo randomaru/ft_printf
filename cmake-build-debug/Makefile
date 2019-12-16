@@ -123,33 +123,6 @@ printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
-NEW_display_f.o: NEW_display_f.c.o
-
-.PHONY : NEW_display_f.o
-
-# target to build an object file
-NEW_display_f.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/NEW_display_f.c.o
-.PHONY : NEW_display_f.c.o
-
-NEW_display_f.i: NEW_display_f.c.i
-
-.PHONY : NEW_display_f.i
-
-# target to preprocess a source file
-NEW_display_f.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/NEW_display_f.c.i
-.PHONY : NEW_display_f.c.i
-
-NEW_display_f.s: NEW_display_f.c.s
-
-.PHONY : NEW_display_f.s
-
-# target to generate assembly for a file
-NEW_display_f.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/NEW_display_f.c.s
-.PHONY : NEW_display_f.c.s
-
 SVETA_pf_itoa.o: SVETA_pf_itoa.c.o
 
 .PHONY : SVETA_pf_itoa.o
@@ -284,6 +257,33 @@ find_str_size.s: find_str_size.c.s
 find_str_size.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find_str_size.c.s
 .PHONY : find_str_size.c.s
+
+floats.o: floats.c.o
+
+.PHONY : floats.o
+
+# target to build an object file
+floats.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/floats.c.o
+.PHONY : floats.c.o
+
+floats.i: floats.c.i
+
+.PHONY : floats.i
+
+# target to preprocess a source file
+floats.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/floats.c.i
+.PHONY : floats.c.i
+
+floats.s: floats.c.s
+
+.PHONY : floats.s
+
+# target to generate assembly for a file
+floats.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/floats.c.s
+.PHONY : floats.c.s
 
 ft_printf.o: ft_printf.c.o
 
@@ -2643,9 +2643,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
-	@echo "... NEW_display_f.o"
-	@echo "... NEW_display_f.i"
-	@echo "... NEW_display_f.s"
 	@echo "... SVETA_pf_itoa.o"
 	@echo "... SVETA_pf_itoa.i"
 	@echo "... SVETA_pf_itoa.s"
@@ -2661,6 +2658,9 @@ help:
 	@echo "... find_str_size.o"
 	@echo "... find_str_size.i"
 	@echo "... find_str_size.s"
+	@echo "... floats.o"
+	@echo "... floats.i"
+	@echo "... floats.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"

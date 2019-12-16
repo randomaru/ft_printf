@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 20:14:04 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/16 18:34:05 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,12 @@ void	set_null(t_pf *pf)
 	ft_bzero(pf->flags, 6);
 	if (pf->size)
 		free(pf->size);
+	if (pf->tmp_oxfs)
+		free(pf->tmp_oxfs);
+	if (pf->str)
+		free(pf->str);
+	pf->str = NULL;
+	pf->tmp_oxfs = NULL;
 	pf->size = NULL;
 	pf->width = 0;
 	pf->precision = -1; ////
@@ -27,21 +33,17 @@ void	set_null(t_pf *pf)
 	pf->percent = 0;
 	pf->num_len = 0;
 	pf->num.i = 0;
-
 	pf->symbol = -1;
 	pf->symb_width = 0;
-	pf->sign = -1;
+	if (pf->sharp)
+		free(pf->sharp);
 	pf->sharp = NULL;
-	//pf->num.i = 0;
-
 	pf->prec_width = 0;
 	pf->dot = 0;
 	pf->plus = 0;
 	pf->minus = 0;
 	pf->space = 0;
 	pf->float_dot = 0;
-	//pf->buf_len = 0;
-
 }
 
 t_pf	*new_t_pf(void)
@@ -64,7 +66,6 @@ t_pf	*new_t_pf(void)
 	pf->tmp_oxfs = NULL;
 	pf->symbol = -1;
 	pf->symb_width = 0;
-	pf->sign = -1;
 	pf->sharp = NULL;
 	pf->prec_width = 0;
 	pf->dot = 0;
@@ -73,12 +74,10 @@ t_pf	*new_t_pf(void)
 	pf->space = 0;
 	pf->float_dot = 0;
 	pf->buf_len = 0;
-
-
 	return (pf);
 }
 
-void	free_t_pf(t_pf *pf)
+void	free_t_pf(t_pf *pf, int n)
 {
 	free(pf->flags);
 	pf->flags = NULL;
@@ -92,6 +91,7 @@ void	free_t_pf(t_pf *pf)
 		free(pf->str);
 	if (pf->sharp)
 		free(pf->sharp);
+	pf->sharp = NULL;
 	pf->size = NULL;
 	pf->width = 0;
 	pf->precision = -1; ////
@@ -104,8 +104,6 @@ void	free_t_pf(t_pf *pf)
 	pf->tmp_oxfs = NULL;
 	pf->symbol = -1;
 	pf->symb_width = 0;
-	pf->sign = -1;
-	pf->sharp = NULL;
 	pf->prec_width = 0;
 	pf->dot = 0;
 	pf->plus = 0;

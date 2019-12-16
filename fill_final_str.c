@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:58:21 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 19:56:05 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/16 18:10:25 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,22 +24,30 @@ void check_buf(t_pf *pf, char **p)
 {
 	if (pf->type)
 	{
-		if (pf->str_len + pf->buf_len <= BUFF_SIZE)
+		if (pf->str_len + pf->buf_len < BU_SIZE)
 		{
 			fill_buff(pf);
-			if (pf->str_len + pf->buf_len == BUFF_SIZE)
+			if (pf->str_len + pf->buf_len == BU_SIZE - 1)
 			{
 				print_res(pf->buff, pf->buf_len, 2);
 				pf->buf_len = 0;
 			}
 
 		}
-		else if (pf->str_len + pf->buf_len > BUFF_SIZE)
+		else if (pf->str_len + pf->buf_len >= BU_SIZE)
 		{
 			if (pf->buf_len > 0)
+			{
 				print_res(pf->buff, pf->buf_len, 2);
-			fill_final_str(pf);
-			print_res(pf->str, pf->str_len, 1);
+				pf->buf_len = 0;
+				fill_buff(pf);
+			}
+			else
+			{
+				fill_final_str(pf);
+				print_res(pf->str, pf->str_len, 1);
+
+			}
 		}
 		if (**p == '\0' && pf->buf_len > 0)
 		{
@@ -48,22 +56,29 @@ void check_buf(t_pf *pf, char **p)
 	}
 	else
 	{
-		if (pf->str_len + pf->buf_len <= BUFF_SIZE)
+		if (pf->str_len + pf->buf_len <= BU_SIZE)
 		{
 			fill_str_buff(pf, &*p);
-			if (pf->str_len + pf->buf_len == BUFF_SIZE)
+			if (pf->str_len + pf->buf_len == BU_SIZE)
 			{
 				print_res(pf->buff, pf->buf_len, 2);
 				pf->buf_len = 0;
 			}
 
 		}
-		else if (pf->str_len + pf->buf_len > BUFF_SIZE)
+		else if (pf->str_len + pf->buf_len > BU_SIZE)
 		{
 			if (pf->buf_len > 0)
+			{
 				print_res(pf->buff, pf->buf_len, 2);
-			fill_str_str(pf, &*p);
-			print_res(pf->str, pf->str_len, 1);
+				pf->buf_len = 0;
+				fill_str_buff(pf, &*p);
+			}
+			else
+			{
+				fill_str_str(pf, &*p);
+				print_res(pf->str, pf->str_len, 1);
+			}
 		}
 		if (**p == '\0' && pf->buf_len > 0)
 		{
@@ -91,10 +106,13 @@ static void		fill_sign(t_pf *pf, int *i, char sign)
 
 static void		fill_with_sharp(t_pf *pf, int *i)
 {
-	while (*pf->sharp)
+	int j;
+
+	j = 0;
+	while (pf->sharp[j] != '\0')
 	{
-		pf->str[*i] = *pf->sharp;
-		pf->sharp += 1;
+		pf->str[*i] = pf->sharp[j];
+		j++;
 		*i += 1;
 	}
 }
@@ -150,7 +168,7 @@ int		fill_final_str(t_pf *pf)
 		c = '0';
 	if (pf->symbol == 2 || pf->symbol == 3)
 		c = ' ';
-	if (pf->symbol == 2)
+	if (pf->symbol == 2 && pf->symb_width > 0)
 		fill_with_symb(pf, &i, c, pf->symb_width);
 	if (ft_strchr("difu", pf->type) && (pf->plus || pf->minus))
 		(pf->minus) ? (fill_sign(pf, &i, '-')) : (fill_sign(pf, &i, '+'));
@@ -158,7 +176,7 @@ int		fill_final_str(t_pf *pf)
 			fill_sign(pf, &i, ' ');
 	if (ft_strchr("poxX", pf->type) && pf->sharp)
 		fill_with_sharp(pf, &i);
-	if (pf->symbol == 1)
+	if (pf->symbol == 1 && pf->symb_width > 0)
 		fill_with_symb(pf, &i, c, pf->symb_width);
 	tmp = find_tmp(pf);
 	if (pf->prec_width > 0)
@@ -185,8 +203,8 @@ int		fill_final_str(t_pf *pf)
 	}
 	if (pf->float_dot)
 		fill_sign(pf, &i, '.');
-	if (pf->symbol == 3)
-		fill_with_symb(pf, &i, c, pf->str_len - i);
+	if (pf->symbol == 3 && pf->symb_width > 0)
+		fill_with_symb(pf, &i, c, pf->str_len); //- i);
 	if (tmp)
 		free(tmp);
 	return (pf->str_len);
@@ -210,10 +228,13 @@ static void		fill_sign_buff(t_pf *pf, int *i, char sign)
 
 static void		fill_with_sharp_buff(t_pf *pf, int *i)
 {
-	while (*pf->sharp)
+	int j;
+
+	j = 0;
+	while (pf->sharp[j] != '\0')
 	{
-		pf->buff[*i] = *pf->sharp;
-		pf->sharp += 1;
+		pf->buff[*i] = pf->sharp[j];
+		j++;
 		*i += 1;
 	}
 }
@@ -237,7 +258,7 @@ int		fill_buff(t_pf *pf)
 		c = '0';
 	if (pf->symbol == 2 || pf->symbol == 3)
 		c = ' ';
-	if (pf->symbol == 2)
+	if (pf->symbol == 2 && pf->symb_width > 0)
 		fill_with_symb_buff(pf, &i, c, pf->symb_width);
 	if (ft_strchr("difu", pf->type) && (pf->plus || pf->minus))
 		(pf->minus) ? (fill_sign_buff(pf, &i, '-')) : (fill_sign_buff(pf, &i, '+'));
@@ -245,7 +266,7 @@ int		fill_buff(t_pf *pf)
 		fill_sign_buff(pf, &i, ' ');
 	if (ft_strchr("poxX", pf->type) && pf->sharp)
 		fill_with_sharp_buff(pf, &i);
-	if (pf->symbol == 1)
+	if (pf->symbol == 1 && pf->symb_width > 0)
 		fill_with_symb_buff(pf, &i, c, pf->symb_width);
 	tmp = find_tmp(pf);
 	if (pf->prec_width > 0)
@@ -273,7 +294,7 @@ int		fill_buff(t_pf *pf)
 	}
 	if (pf->float_dot)
 		fill_sign_buff(pf, &i, '.');
-	if (pf->symbol == 3)
+	if (pf->symbol == 3 && pf->symb_width > 0)
 		fill_with_symb_buff(pf, &i, c, pf->str_len); //pf->str_len - i);
 	if (tmp)
 		free(tmp);

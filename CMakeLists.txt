@@ -1,26 +1,31 @@
-cmake_minimum_required(VERSION 3.14)
-project(printf)
+cmake_minimum_required(VERSION 3.15)
+project(printf C)
 
-set(CMAKE_CXX_STANDARD 14)
-#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Werror -g")
+set(CMAKE_C_STANDARD 11)
+
+include_directories(.)
 include_directories(libft)
 
 add_executable(printf
-        libft/author
         libft/ft_atoi.c
         libft/ft_atoi_base.c
         libft/ft_bzero.c
         libft/ft_clear_table.c
         libft/ft_countwords.c
         libft/ft_free.c
+        libft/ft_is_minus_inf.c
         libft/ft_isalnum.c
         libft/ft_isalpha.c
         libft/ft_isascii.c
         libft/ft_isdigit.c
+        libft/ft_isinf.c
+        libft/ft_isnan.c
         libft/ft_isprint.c
         libft/ft_iterative_factorial.c
         libft/ft_iterative_power.c
         libft/ft_itoa.c
+        libft/ft_lltoa.c
+        libft/ft_llutoa.c
         libft/ft_lstadd.c
         libft/ft_lstdel.c
         libft/ft_lstdelone.c
@@ -41,6 +46,7 @@ add_executable(printf
         libft/ft_putendl_fd.c
         libft/ft_putnbr.c
         libft/ft_putnbr_fd.c
+        libft/ft_putnbr_max.c
         libft/ft_putstr.c
         libft/ft_putstr_fd.c
         libft/ft_sqrt.c
@@ -73,42 +79,27 @@ add_executable(printf
         libft/ft_strtrim.c
         libft/ft_tolower.c
         libft/ft_toupper.c
+        libft/ft_ulltoa.c
         libft/get_next_line.c
+        libft/itoa_base.c
+        libft/libft.h
         libft/number_len.c
         libft/number_len_ll.c
         libft/number_len_ull.c
-        libft/ft_llutoa.c
-        libft/ft_lltoa.c
-        libft/ulltoa_base.c
-        libft/ft_ulltoa.c
-        libft/ft_isnan.c
-        libft/ft_isinf.c
-        libft/ft_is_minus_inf.c
-        pf_strcpy.c
-        libft/libft.h
-        libft/Makefile
-        ft_printf.h
-        libft/ft_putnbr_max.c
-        main.c
-        ft_printf.c
-#        tmp_flags.c
-#        tmp_format.c
-        libft/itoa_base.c
         libft/to_uppercase.c
-
-
+        libft/ulltoa_base.c
         check.c
-        new_str.c
-        pf_format.c
-        find.c
         fill_final_str.c
-        parse_format.c
+        find.c
         find_str_size.c
+        ft_printf.c
+        ft_printf.h
+        main.c
+#        NEW_display_f.c
+        floats.c
+        new_str.c
         parse_char.c
-
-
-#        SVETA_float.c
-        SVETA_pf_itoa.c
-#        SVETA_display_f.c
-        NEW_display_f.c
-        )
+        parse_format.c
+        pf_format.c
+        pf_strcpy.c
+        SVETA_pf_itoa.c)

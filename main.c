@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 15:08:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 20:48:24 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/16 18:47:41 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,18 +34,8 @@
 
 int 	main(void)
 {
-	static unsigned char 		uch_pos_1 = 100;
-	static unsigned long long	ull_pos_1 = 22337203685477;
-	static unsigned int			ui_pos_1 = 878023;
-	static unsigned short		ush_pos_1 = 3047;
-	static unsigned long		ul_pos_1 = 22337203685477;
-	static unsigned long long 	ullmax = 9223372036854775807;
-	static unsigned long  		ulmax = 9223372036854775807;
 
-	double special;
-	*((unsigned long *)(&special)) = DBL_NZERO;
-	static char *s_hidden = "hi low\0don't print me lol\0";
-
+int special;
 
 /*    ft_printf("%%%"); /// -> %0
 	printf("\n");
@@ -55,17 +45,22 @@ int 	main(void)
 	printf("\n");
 	printf("% u", 5); /// ' ' undefined behaviour with u*/
 
-////	ft_printf("%lld", -522337203685470ll);
-////	printf("\n");
-////	printf("%lld", -522337203685470ll);
-
-/*    ft_printf("{%f}{%lf}{%Lf}", 1.42, 1.42, 1.42l);
+	ft_printf("%f%f", 56.784, 567.98);
 	printf("\n");
-	printf("{%f}{%lf}{%Lf}", 1.42, 1.42, 1.42l);*/
-	int a = ft_printf("%+6f", special);
-	printf("\n");
-	int b = printf("%+6f", special);
-	printf("\nmoii=%i\norig=%i", a, b);
+	printf("%f%f", 56.784, 567.98);
+/*
+	static char	a01;
+	static unsigned char a02;
+	static short a03;
+	static unsigned short a04;
+	static int a05;
+	static unsigned int a06;
+	static long a07;
+	static unsigned long a08;
+	static long long a09;
+	static unsigned long long a10;
+	static char *a11;
+	static void *a12;*/
 
 
 	return(0);

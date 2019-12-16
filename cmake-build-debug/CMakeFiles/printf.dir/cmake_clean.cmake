@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/printf.dir/NEW_display_f.c.o"
   "CMakeFiles/printf.dir/SVETA_pf_itoa.c.o"
   "CMakeFiles/printf.dir/check.c.o"
   "CMakeFiles/printf.dir/fill_final_str.c.o"
   "CMakeFiles/printf.dir/find.c.o"
   "CMakeFiles/printf.dir/find_str_size.c.o"
+  "CMakeFiles/printf.dir/floats.c.o"
   "CMakeFiles/printf.dir/ft_printf.c.o"
   "CMakeFiles/printf.dir/libft/ft_atoi.c.o"
   "CMakeFiles/printf.dir/libft/ft_atoi_base.c.o"

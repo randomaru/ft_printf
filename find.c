@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 18:09:48 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/12 20:10:02 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/16 18:32:13 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	find_flags(t_pf *pf, char **p)
 	int i;
 
 	i = 0;
-	while (ft_strchr("-+ #0", **p) )
+	while (ft_strchr("-+ #0", **p))
 	{
 		if (**p == '-')
 			pf->flags[i] = '-';
@@ -52,12 +52,12 @@ void	find_size(t_pf *pf, char **p)
 {
 	if ((**p == 'h' && *(*p + 1) == 'h') || (**p == 'l' && *(*p + 1) == 'l'))
 	{
-		**p == 'h' ? (pf->size = ft_strdup("hh")) : (pf->size = ft_strdup("ll"));
+		pf->size = ft_strdup((**p == 'h') ? "hh" : "ll");
 		*p += 2;
 	}
-	else if (**p == 'h' || **p == 'l' )
+	else if (**p == 'h' || **p == 'l')
 	{
-		**p == 'h' ? (pf->size = ft_strdup("h")) : (pf->size = ft_strdup("l"));
+		pf->size = ft_strdup((**p == 'h') ? "h" : "l");
 		*p += 1;
 	}
 	else if (**p == 'L')
