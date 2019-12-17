@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 void	find_flags(t_pf *pf, char **p)
 {
@@ -44,7 +44,7 @@ void	find_precision(t_pf *pf, char **p)
 {
 	++(*p);
 	pf->precision = ft_atoi(*p);
-	while (!(ft_strchr("LlhdifFouxXscp%", **p)))
+	while (!(ft_strchr("LlhdifFouxXsScCp%", **p)))
 		*p += 1;
 }
 

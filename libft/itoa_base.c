@@ -20,11 +20,11 @@ static int		conv_ex(int nb)
 		return (nb + '0');
 }
 
-char	*itoa_base(int value, int base)
+char			*itoa_base(int value, int base)
 {
-	int					i;
-	char				*str;
-	int				tmp;
+	int		i;
+	char	*str;
+	int		tmp;
 
 	i = 0;
 	tmp = value;

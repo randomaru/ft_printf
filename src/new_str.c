@@ -6,16 +6,18 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:26:18 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 21:15:09 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/17 18:12:54 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 void	fill_str_buff(t_pf *pf, char **p)
 {
-	int i = 0;
+	int i;
 	int len;
+
+	i = 0;
 	i += pf->buf_len;
 	len = pf->str_len + i;
 	while (i < len)
@@ -39,7 +41,9 @@ void	fill_str_buff(t_pf *pf, char **p)
 
 void	fill_str_str(t_pf *pf, char **p)
 {
-	int i = 0;
+	int i;
+
+	i = 0;
 	while (i < pf->str_len)
 	{
 		if (**p == '%')
@@ -59,7 +63,7 @@ void	fill_str_str(t_pf *pf, char **p)
 	pf->str[i] = '\0';
 }
 
-int 	new_str(t_pf *pf, char **p)
+int		new_str(t_pf *pf, char **p)
 {
 	int i;
 

@@ -1,14 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_char.c                                       :+:      :+:    :+:   */
+/*   ft_pow_double.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/06 19:54:14 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 21:11:49 by tamarant         ###   ########.fr       */
+/*   Created: 2019/12/17 17:41:30 by tamarant          #+#    #+#             */
+/*   Updated: 2019/12/17 17:41:52 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
+LD		ft_pow_double(LD n, ULL pow)
+{
+	return (pow ? n * ft_pow_double(n, pow - 1) : 1);
+}

@@ -123,222 +123,6 @@ printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
-SVETA_pf_itoa.o: SVETA_pf_itoa.c.o
-
-.PHONY : SVETA_pf_itoa.o
-
-# target to build an object file
-SVETA_pf_itoa.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_pf_itoa.c.o
-.PHONY : SVETA_pf_itoa.c.o
-
-SVETA_pf_itoa.i: SVETA_pf_itoa.c.i
-
-.PHONY : SVETA_pf_itoa.i
-
-# target to preprocess a source file
-SVETA_pf_itoa.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_pf_itoa.c.i
-.PHONY : SVETA_pf_itoa.c.i
-
-SVETA_pf_itoa.s: SVETA_pf_itoa.c.s
-
-.PHONY : SVETA_pf_itoa.s
-
-# target to generate assembly for a file
-SVETA_pf_itoa.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/SVETA_pf_itoa.c.s
-.PHONY : SVETA_pf_itoa.c.s
-
-check.o: check.c.o
-
-.PHONY : check.o
-
-# target to build an object file
-check.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.o
-.PHONY : check.c.o
-
-check.i: check.c.i
-
-.PHONY : check.i
-
-# target to preprocess a source file
-check.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.i
-.PHONY : check.c.i
-
-check.s: check.c.s
-
-.PHONY : check.s
-
-# target to generate assembly for a file
-check.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.s
-.PHONY : check.c.s
-
-delete_fill_final_str.o: delete_fill_final_str.c.o
-
-.PHONY : delete_fill_final_str.o
-
-# target to build an object file
-delete_fill_final_str.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/delete_fill_final_str.c.o
-.PHONY : delete_fill_final_str.c.o
-
-delete_fill_final_str.i: delete_fill_final_str.c.i
-
-.PHONY : delete_fill_final_str.i
-
-# target to preprocess a source file
-delete_fill_final_str.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/delete_fill_final_str.c.i
-.PHONY : delete_fill_final_str.c.i
-
-delete_fill_final_str.s: delete_fill_final_str.c.s
-
-.PHONY : delete_fill_final_str.s
-
-# target to generate assembly for a file
-delete_fill_final_str.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/delete_fill_final_str.c.s
-.PHONY : delete_fill_final_str.c.s
-
-fill_final.o: fill_final.c.o
-
-.PHONY : fill_final.o
-
-# target to build an object file
-fill_final.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final.c.o
-.PHONY : fill_final.c.o
-
-fill_final.i: fill_final.c.i
-
-.PHONY : fill_final.i
-
-# target to preprocess a source file
-fill_final.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final.c.i
-.PHONY : fill_final.c.i
-
-fill_final.s: fill_final.c.s
-
-.PHONY : fill_final.s
-
-# target to generate assembly for a file
-fill_final.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/fill_final.c.s
-.PHONY : fill_final.c.s
-
-find.o: find.c.o
-
-.PHONY : find.o
-
-# target to build an object file
-find.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find.c.o
-.PHONY : find.c.o
-
-find.i: find.c.i
-
-.PHONY : find.i
-
-# target to preprocess a source file
-find.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find.c.i
-.PHONY : find.c.i
-
-find.s: find.c.s
-
-.PHONY : find.s
-
-# target to generate assembly for a file
-find.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find.c.s
-.PHONY : find.c.s
-
-find_str_size.o: find_str_size.c.o
-
-.PHONY : find_str_size.o
-
-# target to build an object file
-find_str_size.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find_str_size.c.o
-.PHONY : find_str_size.c.o
-
-find_str_size.i: find_str_size.c.i
-
-.PHONY : find_str_size.i
-
-# target to preprocess a source file
-find_str_size.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find_str_size.c.i
-.PHONY : find_str_size.c.i
-
-find_str_size.s: find_str_size.c.s
-
-.PHONY : find_str_size.s
-
-# target to generate assembly for a file
-find_str_size.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/find_str_size.c.s
-.PHONY : find_str_size.c.s
-
-floats.o: floats.c.o
-
-.PHONY : floats.o
-
-# target to build an object file
-floats.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/floats.c.o
-.PHONY : floats.c.o
-
-floats.i: floats.c.i
-
-.PHONY : floats.i
-
-# target to preprocess a source file
-floats.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/floats.c.i
-.PHONY : floats.c.i
-
-floats.s: floats.c.s
-
-.PHONY : floats.s
-
-# target to generate assembly for a file
-floats.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/floats.c.s
-.PHONY : floats.c.s
-
-ft_printf.o: ft_printf.c.o
-
-.PHONY : ft_printf.o
-
-# target to build an object file
-ft_printf.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.o
-.PHONY : ft_printf.c.o
-
-ft_printf.i: ft_printf.c.i
-
-.PHONY : ft_printf.i
-
-# target to preprocess a source file
-ft_printf.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.i
-.PHONY : ft_printf.c.i
-
-ft_printf.s: ft_printf.c.s
-
-.PHONY : ft_printf.s
-
-# target to generate assembly for a file
-ft_printf.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.s
-.PHONY : ft_printf.c.s
-
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -1229,6 +1013,60 @@ libft/ft_memset.s: libft/ft_memset.c.s
 libft/ft_memset.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_memset.c.s
 .PHONY : libft/ft_memset.c.s
+
+libft/ft_pow.o: libft/ft_pow.c.o
+
+.PHONY : libft/ft_pow.o
+
+# target to build an object file
+libft/ft_pow.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_pow.c.o
+.PHONY : libft/ft_pow.c.o
+
+libft/ft_pow.i: libft/ft_pow.c.i
+
+.PHONY : libft/ft_pow.i
+
+# target to preprocess a source file
+libft/ft_pow.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_pow.c.i
+.PHONY : libft/ft_pow.c.i
+
+libft/ft_pow.s: libft/ft_pow.c.s
+
+.PHONY : libft/ft_pow.s
+
+# target to generate assembly for a file
+libft/ft_pow.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_pow.c.s
+.PHONY : libft/ft_pow.c.s
+
+libft/ft_pow_double.o: libft/ft_pow_double.c.o
+
+.PHONY : libft/ft_pow_double.o
+
+# target to build an object file
+libft/ft_pow_double.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_pow_double.c.o
+.PHONY : libft/ft_pow_double.c.o
+
+libft/ft_pow_double.i: libft/ft_pow_double.c.i
+
+.PHONY : libft/ft_pow_double.i
+
+# target to preprocess a source file
+libft/ft_pow_double.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_pow_double.c.i
+.PHONY : libft/ft_pow_double.c.i
+
+libft/ft_pow_double.s: libft/ft_pow_double.c.s
+
+.PHONY : libft/ft_pow_double.s
+
+# target to generate assembly for a file
+libft/ft_pow_double.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_pow_double.c.s
+.PHONY : libft/ft_pow_double.c.s
 
 libft/ft_putchar.o: libft/ft_putchar.c.o
 
@@ -2526,194 +2364,437 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/main.c.s
 .PHONY : main.c.s
 
-new_str.o: new_str.c.o
+src/check.o: src/check.c.o
 
-.PHONY : new_str.o
-
-# target to build an object file
-new_str.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/new_str.c.o
-.PHONY : new_str.c.o
-
-new_str.i: new_str.c.i
-
-.PHONY : new_str.i
-
-# target to preprocess a source file
-new_str.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/new_str.c.i
-.PHONY : new_str.c.i
-
-new_str.s: new_str.c.s
-
-.PHONY : new_str.s
-
-# target to generate assembly for a file
-new_str.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/new_str.c.s
-.PHONY : new_str.c.s
-
-parse_char.o: parse_char.c.o
-
-.PHONY : parse_char.o
+.PHONY : src/check.o
 
 # target to build an object file
-parse_char.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_char.c.o
-.PHONY : parse_char.c.o
+src/check.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/check.c.o
+.PHONY : src/check.c.o
 
-parse_char.i: parse_char.c.i
+src/check.i: src/check.c.i
 
-.PHONY : parse_char.i
+.PHONY : src/check.i
 
 # target to preprocess a source file
-parse_char.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_char.c.i
-.PHONY : parse_char.c.i
+src/check.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/check.c.i
+.PHONY : src/check.c.i
 
-parse_char.s: parse_char.c.s
+src/check.s: src/check.c.s
 
-.PHONY : parse_char.s
+.PHONY : src/check.s
 
 # target to generate assembly for a file
-parse_char.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_char.c.s
-.PHONY : parse_char.c.s
+src/check.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/check.c.s
+.PHONY : src/check.c.s
 
-parse_format.o: parse_format.c.o
+src/fill_final.o: src/fill_final.c.o
 
-.PHONY : parse_format.o
+.PHONY : src/fill_final.o
 
 # target to build an object file
-parse_format.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_format.c.o
-.PHONY : parse_format.c.o
+src/fill_final.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/fill_final.c.o
+.PHONY : src/fill_final.c.o
 
-parse_format.i: parse_format.c.i
+src/fill_final.i: src/fill_final.c.i
 
-.PHONY : parse_format.i
+.PHONY : src/fill_final.i
 
 # target to preprocess a source file
-parse_format.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_format.c.i
-.PHONY : parse_format.c.i
+src/fill_final.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/fill_final.c.i
+.PHONY : src/fill_final.c.i
 
-parse_format.s: parse_format.c.s
+src/fill_final.s: src/fill_final.c.s
 
-.PHONY : parse_format.s
+.PHONY : src/fill_final.s
 
 # target to generate assembly for a file
-parse_format.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse_format.c.s
-.PHONY : parse_format.c.s
+src/fill_final.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/fill_final.c.s
+.PHONY : src/fill_final.c.s
 
-pf_format.o: pf_format.c.o
+src/find.o: src/find.c.o
 
-.PHONY : pf_format.o
+.PHONY : src/find.o
 
 # target to build an object file
-pf_format.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.o
-.PHONY : pf_format.c.o
+src/find.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/find.c.o
+.PHONY : src/find.c.o
 
-pf_format.i: pf_format.c.i
+src/find.i: src/find.c.i
 
-.PHONY : pf_format.i
+.PHONY : src/find.i
 
 # target to preprocess a source file
-pf_format.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.i
-.PHONY : pf_format.c.i
+src/find.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/find.c.i
+.PHONY : src/find.c.i
 
-pf_format.s: pf_format.c.s
+src/find.s: src/find.c.s
 
-.PHONY : pf_format.s
+.PHONY : src/find.s
 
 # target to generate assembly for a file
-pf_format.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_format.c.s
-.PHONY : pf_format.c.s
+src/find.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/find.c.s
+.PHONY : src/find.c.s
 
-pf_free.o: pf_free.c.o
+src/find_str_size.o: src/find_str_size.c.o
 
-.PHONY : pf_free.o
+.PHONY : src/find_str_size.o
 
 # target to build an object file
-pf_free.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_free.c.o
-.PHONY : pf_free.c.o
+src/find_str_size.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/find_str_size.c.o
+.PHONY : src/find_str_size.c.o
 
-pf_free.i: pf_free.c.i
+src/find_str_size.i: src/find_str_size.c.i
 
-.PHONY : pf_free.i
+.PHONY : src/find_str_size.i
 
 # target to preprocess a source file
-pf_free.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_free.c.i
-.PHONY : pf_free.c.i
+src/find_str_size.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/find_str_size.c.i
+.PHONY : src/find_str_size.c.i
 
-pf_free.s: pf_free.c.s
+src/find_str_size.s: src/find_str_size.c.s
 
-.PHONY : pf_free.s
+.PHONY : src/find_str_size.s
 
 # target to generate assembly for a file
-pf_free.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_free.c.s
-.PHONY : pf_free.c.s
+src/find_str_size.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/find_str_size.c.s
+.PHONY : src/find_str_size.c.s
 
-pf_strcpy.o: pf_strcpy.c.o
+src/float_maker.o: src/float_maker.c.o
 
-.PHONY : pf_strcpy.o
+.PHONY : src/float_maker.o
 
 # target to build an object file
-pf_strcpy.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_strcpy.c.o
-.PHONY : pf_strcpy.c.o
+src/float_maker.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/float_maker.c.o
+.PHONY : src/float_maker.c.o
 
-pf_strcpy.i: pf_strcpy.c.i
+src/float_maker.i: src/float_maker.c.i
 
-.PHONY : pf_strcpy.i
+.PHONY : src/float_maker.i
 
 # target to preprocess a source file
-pf_strcpy.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_strcpy.c.i
-.PHONY : pf_strcpy.c.i
+src/float_maker.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/float_maker.c.i
+.PHONY : src/float_maker.c.i
 
-pf_strcpy.s: pf_strcpy.c.s
+src/float_maker.s: src/float_maker.c.s
 
-.PHONY : pf_strcpy.s
+.PHONY : src/float_maker.s
 
 # target to generate assembly for a file
-pf_strcpy.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pf_strcpy.c.s
-.PHONY : pf_strcpy.c.s
+src/float_maker.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/float_maker.c.s
+.PHONY : src/float_maker.c.s
 
-print_check.o: print_check.c.o
+src/float_new_free.o: src/float_new_free.c.o
 
-.PHONY : print_check.o
+.PHONY : src/float_new_free.o
 
 # target to build an object file
-print_check.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_check.c.o
-.PHONY : print_check.c.o
+src/float_new_free.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/float_new_free.c.o
+.PHONY : src/float_new_free.c.o
 
-print_check.i: print_check.c.i
+src/float_new_free.i: src/float_new_free.c.i
 
-.PHONY : print_check.i
+.PHONY : src/float_new_free.i
 
 # target to preprocess a source file
-print_check.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_check.c.i
-.PHONY : print_check.c.i
+src/float_new_free.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/float_new_free.c.i
+.PHONY : src/float_new_free.c.i
 
-print_check.s: print_check.c.s
+src/float_new_free.s: src/float_new_free.c.s
 
-.PHONY : print_check.s
+.PHONY : src/float_new_free.s
 
 # target to generate assembly for a file
-print_check.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_check.c.s
-.PHONY : print_check.c.s
+src/float_new_free.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/float_new_free.c.s
+.PHONY : src/float_new_free.c.s
+
+src/float_put.o: src/float_put.c.o
+
+.PHONY : src/float_put.o
+
+# target to build an object file
+src/float_put.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/float_put.c.o
+.PHONY : src/float_put.c.o
+
+src/float_put.i: src/float_put.c.i
+
+.PHONY : src/float_put.i
+
+# target to preprocess a source file
+src/float_put.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/float_put.c.i
+.PHONY : src/float_put.c.i
+
+src/float_put.s: src/float_put.c.s
+
+.PHONY : src/float_put.s
+
+# target to generate assembly for a file
+src/float_put.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/float_put.c.s
+.PHONY : src/float_put.c.s
+
+src/floats.o: src/floats.c.o
+
+.PHONY : src/floats.o
+
+# target to build an object file
+src/floats.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/floats.c.o
+.PHONY : src/floats.c.o
+
+src/floats.i: src/floats.c.i
+
+.PHONY : src/floats.i
+
+# target to preprocess a source file
+src/floats.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/floats.c.i
+.PHONY : src/floats.c.i
+
+src/floats.s: src/floats.c.s
+
+.PHONY : src/floats.s
+
+# target to generate assembly for a file
+src/floats.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/floats.c.s
+.PHONY : src/floats.c.s
+
+src/ft_printf.o: src/ft_printf.c.o
+
+.PHONY : src/ft_printf.o
+
+# target to build an object file
+src/ft_printf.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/ft_printf.c.o
+.PHONY : src/ft_printf.c.o
+
+src/ft_printf.i: src/ft_printf.c.i
+
+.PHONY : src/ft_printf.i
+
+# target to preprocess a source file
+src/ft_printf.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/ft_printf.c.i
+.PHONY : src/ft_printf.c.i
+
+src/ft_printf.s: src/ft_printf.c.s
+
+.PHONY : src/ft_printf.s
+
+# target to generate assembly for a file
+src/ft_printf.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/ft_printf.c.s
+.PHONY : src/ft_printf.c.s
+
+src/new_str.o: src/new_str.c.o
+
+.PHONY : src/new_str.o
+
+# target to build an object file
+src/new_str.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/new_str.c.o
+.PHONY : src/new_str.c.o
+
+src/new_str.i: src/new_str.c.i
+
+.PHONY : src/new_str.i
+
+# target to preprocess a source file
+src/new_str.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/new_str.c.i
+.PHONY : src/new_str.c.i
+
+src/new_str.s: src/new_str.c.s
+
+.PHONY : src/new_str.s
+
+# target to generate assembly for a file
+src/new_str.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/new_str.c.s
+.PHONY : src/new_str.c.s
+
+src/other.o: src/other.c.o
+
+.PHONY : src/other.o
+
+# target to build an object file
+src/other.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/other.c.o
+.PHONY : src/other.c.o
+
+src/other.i: src/other.c.i
+
+.PHONY : src/other.i
+
+# target to preprocess a source file
+src/other.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/other.c.i
+.PHONY : src/other.c.i
+
+src/other.s: src/other.c.s
+
+.PHONY : src/other.s
+
+# target to generate assembly for a file
+src/other.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/other.c.s
+.PHONY : src/other.c.s
+
+src/parse_format.o: src/parse_format.c.o
+
+.PHONY : src/parse_format.o
+
+# target to build an object file
+src/parse_format.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/parse_format.c.o
+.PHONY : src/parse_format.c.o
+
+src/parse_format.i: src/parse_format.c.i
+
+.PHONY : src/parse_format.i
+
+# target to preprocess a source file
+src/parse_format.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/parse_format.c.i
+.PHONY : src/parse_format.c.i
+
+src/parse_format.s: src/parse_format.c.s
+
+.PHONY : src/parse_format.s
+
+# target to generate assembly for a file
+src/parse_format.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/parse_format.c.s
+.PHONY : src/parse_format.c.s
+
+src/pf_format.o: src/pf_format.c.o
+
+.PHONY : src/pf_format.o
+
+# target to build an object file
+src/pf_format.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/pf_format.c.o
+.PHONY : src/pf_format.c.o
+
+src/pf_format.i: src/pf_format.c.i
+
+.PHONY : src/pf_format.i
+
+# target to preprocess a source file
+src/pf_format.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/pf_format.c.i
+.PHONY : src/pf_format.c.i
+
+src/pf_format.s: src/pf_format.c.s
+
+.PHONY : src/pf_format.s
+
+# target to generate assembly for a file
+src/pf_format.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/pf_format.c.s
+.PHONY : src/pf_format.c.s
+
+src/pf_free.o: src/pf_free.c.o
+
+.PHONY : src/pf_free.o
+
+# target to build an object file
+src/pf_free.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/pf_free.c.o
+.PHONY : src/pf_free.c.o
+
+src/pf_free.i: src/pf_free.c.i
+
+.PHONY : src/pf_free.i
+
+# target to preprocess a source file
+src/pf_free.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/pf_free.c.i
+.PHONY : src/pf_free.c.i
+
+src/pf_free.s: src/pf_free.c.s
+
+.PHONY : src/pf_free.s
+
+# target to generate assembly for a file
+src/pf_free.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/pf_free.c.s
+.PHONY : src/pf_free.c.s
+
+src/pf_lib.o: src/pf_lib.c.o
+
+.PHONY : src/pf_lib.o
+
+# target to build an object file
+src/pf_lib.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/pf_lib.c.o
+.PHONY : src/pf_lib.c.o
+
+src/pf_lib.i: src/pf_lib.c.i
+
+.PHONY : src/pf_lib.i
+
+# target to preprocess a source file
+src/pf_lib.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/pf_lib.c.i
+.PHONY : src/pf_lib.c.i
+
+src/pf_lib.s: src/pf_lib.c.s
+
+.PHONY : src/pf_lib.s
+
+# target to generate assembly for a file
+src/pf_lib.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/pf_lib.c.s
+.PHONY : src/pf_lib.c.s
+
+src/print_check.o: src/print_check.c.o
+
+.PHONY : src/print_check.o
+
+# target to build an object file
+src/print_check.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/print_check.c.o
+.PHONY : src/print_check.c.o
+
+src/print_check.i: src/print_check.c.i
+
+.PHONY : src/print_check.i
+
+# target to preprocess a source file
+src/print_check.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/print_check.c.i
+.PHONY : src/print_check.c.i
+
+src/print_check.s: src/print_check.c.s
+
+.PHONY : src/print_check.s
+
+# target to generate assembly for a file
+src/print_check.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/print_check.c.s
+.PHONY : src/print_check.c.s
 
 # Help Target
 help:
@@ -2724,30 +2805,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
-	@echo "... SVETA_pf_itoa.o"
-	@echo "... SVETA_pf_itoa.i"
-	@echo "... SVETA_pf_itoa.s"
-	@echo "... check.o"
-	@echo "... check.i"
-	@echo "... check.s"
-	@echo "... delete_fill_final_str.o"
-	@echo "... delete_fill_final_str.i"
-	@echo "... delete_fill_final_str.s"
-	@echo "... fill_final.o"
-	@echo "... fill_final.i"
-	@echo "... fill_final.s"
-	@echo "... find.o"
-	@echo "... find.i"
-	@echo "... find.s"
-	@echo "... find_str_size.o"
-	@echo "... find_str_size.i"
-	@echo "... find_str_size.s"
-	@echo "... floats.o"
-	@echo "... floats.i"
-	@echo "... floats.s"
-	@echo "... ft_printf.o"
-	@echo "... ft_printf.i"
-	@echo "... ft_printf.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2847,6 +2904,12 @@ help:
 	@echo "... libft/ft_memset.o"
 	@echo "... libft/ft_memset.i"
 	@echo "... libft/ft_memset.s"
+	@echo "... libft/ft_pow.o"
+	@echo "... libft/ft_pow.i"
+	@echo "... libft/ft_pow.s"
+	@echo "... libft/ft_pow_double.o"
+	@echo "... libft/ft_pow_double.i"
+	@echo "... libft/ft_pow_double.s"
 	@echo "... libft/ft_putchar.o"
 	@echo "... libft/ft_putchar.i"
 	@echo "... libft/ft_putchar.s"
@@ -2991,27 +3054,54 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... new_str.o"
-	@echo "... new_str.i"
-	@echo "... new_str.s"
-	@echo "... parse_char.o"
-	@echo "... parse_char.i"
-	@echo "... parse_char.s"
-	@echo "... parse_format.o"
-	@echo "... parse_format.i"
-	@echo "... parse_format.s"
-	@echo "... pf_format.o"
-	@echo "... pf_format.i"
-	@echo "... pf_format.s"
-	@echo "... pf_free.o"
-	@echo "... pf_free.i"
-	@echo "... pf_free.s"
-	@echo "... pf_strcpy.o"
-	@echo "... pf_strcpy.i"
-	@echo "... pf_strcpy.s"
-	@echo "... print_check.o"
-	@echo "... print_check.i"
-	@echo "... print_check.s"
+	@echo "... src/check.o"
+	@echo "... src/check.i"
+	@echo "... src/check.s"
+	@echo "... src/fill_final.o"
+	@echo "... src/fill_final.i"
+	@echo "... src/fill_final.s"
+	@echo "... src/find.o"
+	@echo "... src/find.i"
+	@echo "... src/find.s"
+	@echo "... src/find_str_size.o"
+	@echo "... src/find_str_size.i"
+	@echo "... src/find_str_size.s"
+	@echo "... src/float_maker.o"
+	@echo "... src/float_maker.i"
+	@echo "... src/float_maker.s"
+	@echo "... src/float_new_free.o"
+	@echo "... src/float_new_free.i"
+	@echo "... src/float_new_free.s"
+	@echo "... src/float_put.o"
+	@echo "... src/float_put.i"
+	@echo "... src/float_put.s"
+	@echo "... src/floats.o"
+	@echo "... src/floats.i"
+	@echo "... src/floats.s"
+	@echo "... src/ft_printf.o"
+	@echo "... src/ft_printf.i"
+	@echo "... src/ft_printf.s"
+	@echo "... src/new_str.o"
+	@echo "... src/new_str.i"
+	@echo "... src/new_str.s"
+	@echo "... src/other.o"
+	@echo "... src/other.i"
+	@echo "... src/other.s"
+	@echo "... src/parse_format.o"
+	@echo "... src/parse_format.i"
+	@echo "... src/parse_format.s"
+	@echo "... src/pf_format.o"
+	@echo "... src/pf_format.i"
+	@echo "... src/pf_format.s"
+	@echo "... src/pf_free.o"
+	@echo "... src/pf_free.i"
+	@echo "... src/pf_free.s"
+	@echo "... src/pf_lib.o"
+	@echo "... src/pf_lib.i"
+	@echo "... src/pf_lib.s"
+	@echo "... src/print_check.o"
+	@echo "... src/print_check.i"
+	@echo "... src/print_check.s"
 .PHONY : help
 
 

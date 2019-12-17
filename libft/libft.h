@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 21:44:24 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 14:58:31 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/17 17:43:10 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,11 @@
 # include <unistd.h>
 # include <string.h>
 # include <fcntl.h>
-#include <limits.h>
+# include <limits.h>
 # define BUFF_SIZE 10000
 # define MAX_FD 12000
+# define ULL unsigned long long
+# define LD long double
 
 typedef struct		s_list
 {
@@ -103,11 +105,13 @@ char				*ft_llutoa(unsigned long long int n);
 char				*ft_lltoa(long long int n);
 char				*ulltoa_base(unsigned long long int value, int base);
 char				*itoa_base(int value, int base);
-char 				*to_uppercase(char *str);
-void    			ft_putnbr_max(long long int nb);
+char				*to_uppercase(char *str);
+void				ft_putnbr_max(long long int nb);
 char				*ft_ulltoa(unsigned long long int n);
 int					ft_isinf(long double num);
 int					ft_isnan(long double num);
 int					ft_is_minus_inf(long double num);
+ULL					ft_pow(ULL n, ULL pow);
+LD					ft_pow_double(LD n, ULL pow);
 
 #endif

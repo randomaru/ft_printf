@@ -6,11 +6,11 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 17:40:11 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 21:11:49 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/17 18:30:50 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 int		is_flags(char *p)
 {

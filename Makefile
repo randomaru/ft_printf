@@ -1,36 +1,67 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/12/17 18:16:44 by tamarant          #+#    #+#              #
+#    Updated: 2019/12/17 20:33:51 by tamarant         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
 NAME = libftprintf.a
 
-H_NAME = printf.h
+FILES = check.c \
+		fill_final.c \
+		find.c \
+		find_str_size.c \
+		float_maker.c \
+		float_new_free.c \
+		float_put.c \
+		floats.c \
+		ft_printf.c \
+		new_str.c \
+		other.c \
+		parse_format.c \
+		pf_format.c \
+		pf_free.c \
+		pf_lib.c \
+		print_check.c \
 
-LIBFT_DIR = ./libft/
+INC = inc/ft_printf.h
 
+SRC = $(addprefix src/,$(FILES))
+
+OBJ = $(addprefix obj/,$(FILES:.c=.o))
+
+LIB = libft/libft.a
+
+LIBFT_DIR = libft/
 
 FLAGS = -Wall -Wextra -Werror -g
-
-SRC_C = ft_printf.c pf_format.c check.c find.c floats.c SVETA_pf_itoa.c \
-new_str.c parse_format.c find_str_size.c pf_strcpy.c fill_final.c pf_free.c print_check.c
-
-SRC_O = $(SRC_C:.c=.o)
 
 all: $(NAME)
 
 check_lib:
 	$(MAKE) -C $(LIBFT_DIR)
 
-*.o: $(SRC_C)
-	gcc -c $(SRC_C) -I $(H_NAME)
+obj/%.o: src/%.c
+	@mkdir -p obj/
+	@gcc $(FLAGS) -I $(INC) -o $@ -c $<
 
-$(NAME): *.o check_lib
-	cp $(LIBFT_DIR)libft.a $(NAME)
-	ar rc $(NAME) $(SRC_O)
+$(NAME): $(OBJ) check_lib
+	cp $(LIB) $(NAME)
+	ar rc $(NAME) $(OBJ)
 
 clean:
 	$(MAKE) -C $(LIBFT_DIR) clean
-	rm -f $(SRC_O)
+	rm -f $(OBJ)
+	rm -rf ./obj
 
 fclean: clean
 	$(MAKE) -C $(LIBFT_DIR) fclean
 	rm -f $(NAME)
+	rm -rf ./obj
 
 re: fclean $(NAME)

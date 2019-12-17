@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 project(printf C)
 
 set(CMAKE_C_STANDARD 11)
-
+set(CMAKE_ASM_FLAGS -Wall -Wextra -Werror -g)
 include_directories(.)
 include_directories(libft)
 
@@ -88,25 +88,28 @@ add_executable(printf
         libft/number_len_ull.c
         libft/to_uppercase.c
         libft/ulltoa_base.c
-        check.c
-        delete_fill_final_str.c
-        find.c
-        find_str_size.c
+        libft/ft_pow.c
+        libft/ft_pow_double.c
+        src/check.c
+        src/find.c
+        src/find_str_size.c
 #     ft_printf.c
-        ft_printf.h
+        inc/ft_printf.h
+        #        NEW_display_f.c
+        src/floats.c
+        src/new_str.c
+        src/parse_format.c
+        src/pf_format.c
+
+
+        src/ft_printf.c
+        src/fill_final.c
+        src/pf_free.c
+        src/print_check.c
+        src/other.c
+        src/pf_lib.c
+        src/float_maker.c
+        src/float_new_free.c
+        src/float_put.c
         main.c
-#        NEW_display_f.c
-        floats.c
-        new_str.c
-        parse_char.c
-        parse_format.c
-        pf_format.c
-        pf_strcpy.c
-        SVETA_pf_itoa.c
-
-
-        ft_printf.c
-        fill_final.c
-        pf_free.c
-        print_check.c
         )

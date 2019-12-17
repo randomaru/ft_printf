@@ -6,15 +6,15 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:33:00 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 21:11:49 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/17 21:30:13 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 static void		find_sign(t_pf *pf)
 {
-	if (pf->type == 'f')
+	if (ft_strchr("fF", pf->type))
 	{
 		if (ft_strchr(pf->flags, '+') && pf->num.ld >= 0 && !pf->minus)
 			pf->plus = 1;
@@ -68,7 +68,8 @@ static void		find_symbol(t_pf *pf)
 		if (pf->flags[i] == '-' && pf->width > 0)
 			pf->symbol = 3;
 		if (pf->flags[i] == ' ' && !ft_isnan(pf->num.ld)
-		&& !ft_is_minus_inf(pf->num.ld) && pf->type != 'u' && pf->type != 'c')
+		&& !ft_is_minus_inf(pf->num.ld) && pf->type != 'u'
+		&& pf->type != 'c' && pf->type != 'C')
 			pf->space = 1;
 		if ((pf->flags[i] == '#' && ft_strchr("oxX", pf->type)))
 			save_sharp(pf);
@@ -79,11 +80,11 @@ static void		find_symbol(t_pf *pf)
 int				parse_format(t_pf *pf)
 {
 	find_sign(pf);
-	if (pf->type != 's' && pf->precision > pf->width)
+	if (pf->type != 's' && pf->type != 'S' && pf->precision > pf->width)
 		pf->width = 0;
 	if (pf->flags)
 		find_symbol(pf);
-	if (pf->precision > 0 && pf->width > 0 && pf->type != 'f')
+	if (pf->precision > 0 && pf->width > 0 && !(ft_strchr("fF", pf->type)))
 		pf->symbol = (ft_strchr(pf->flags, '-')) ? 3 : 2;
 	if (pf->type == 'p')
 		save_sharp(pf);

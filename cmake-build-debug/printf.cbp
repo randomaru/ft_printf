@@ -84,31 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/SVETA_pf_itoa.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/check.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/delete_fill_final_str.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/fill_final.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/find.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/find_str_size.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/floats.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_printf.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/ft_printf.h">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/inc/ft_printf.h">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_atoi.c">
@@ -208,6 +184,12 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_memset.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_pow.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_pow_double.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/libft/ft_putchar.c">
@@ -357,25 +339,52 @@
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/main.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/new_str.c">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/check.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/parse_char.c">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/fill_final.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/parse_format.c">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/find.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/pf_format.c">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/find_str_size.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/pf_free.c">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/float_maker.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/pf_strcpy.c">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/float_new_free.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/tamarant/Desktop/projects/printf/print_check.c">
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/float_put.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/floats.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/ft_printf.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/new_str.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/other.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/parse_format.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/pf_format.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/pf_free.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/pf_lib.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/projects/printf/src/print_check.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/projects/printf/CMakeLists.txt">

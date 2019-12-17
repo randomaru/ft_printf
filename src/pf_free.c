@@ -6,11 +6,11 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/16 21:17:19 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 21:17:19 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/17 21:53:27 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 void	dop_free_end(t_pf *pf, int n)
 {
@@ -20,7 +20,6 @@ void	dop_free_end(t_pf *pf, int n)
 		pf->flags = NULL;
 		pf->counter = 0;
 		pf->buf_len = 0;
-		free(pf);
 	}
 	else if (n == 1)
 		ft_bzero(pf->flags, 6);
@@ -68,4 +67,6 @@ void	free_t_pf(t_pf *pf, int n)
 	pf->space = 0;
 	pf->float_dot = 0;
 	dop_free_end(pf, n);
+	if (n == 0)
+		free(pf);
 }

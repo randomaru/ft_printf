@@ -6,11 +6,11 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/06 17:35:41 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 21:11:49 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/17 21:27:12 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 static void		find_sp_width_s(t_pf *pf)
 {
@@ -26,12 +26,12 @@ static void		find_symb_prec_width(t_pf *pf)
 	sharp_len = 0;
 	if (pf->type == 'o' && pf->sharp)
 		sharp_len = 1;
-	if (pf->type == 'f')
+	if (ft_strchr("fF", pf->type))
 	{
 		if ((pf->symb_width = pf->width - pf->str_len) > 0)
 			pf->str_len += pf->symb_width;
 	}
-	else if (pf->type == 's' || pf->type == 'c')
+	else if (ft_strchr("sScC", pf->type))
 		find_sp_width_s(pf);
 	else
 	{
@@ -101,7 +101,7 @@ int				find_str_size(t_pf *pf)
 		pox_size(pf);
 	if (ft_strchr("diu", pf->type))
 		dius_size(pf, 1);
-	if (pf->type == 'f')
+	if (ft_strchr("fF", pf->type))
 	{
 		if (pf->precision == 0 && pf->flags && ft_strchr(pf->flags, '#'))
 			pf->float_dot = 1;
@@ -110,9 +110,9 @@ int				find_str_size(t_pf *pf)
 		pf->num_len = (int)ft_strlen(pf->tmp_oxfs);
 		pf->str_len += pf->num_len + pf->plus + pf->minus + pf->float_dot;
 	}
-	if (pf->type == 's')
+	if (pf->type == 's' || pf->type == 'S')
 		dius_size(pf, 2);
-	if (pf->type == 'c' || pf->type == '%')
+	if (pf->type == 'c' || pf->type == 'C' || pf->type == '%')
 	{
 		pf->num_len = 1;
 		pf->str_len = 1;

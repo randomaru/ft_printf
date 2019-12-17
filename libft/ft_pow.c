@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pf_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_pow.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/06 20:10:09 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 21:11:49 by tamarant         ###   ########.fr       */
+/*   Created: 2019/12/17 17:39:33 by tamarant          #+#    #+#             */
+/*   Updated: 2019/12/17 17:39:33 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-char	*pf_strcpy(char *dst, const char *src, int j)
+ULL			ft_pow(ULL n, ULL pow)
 {
-    int i;
-
-    i = 0;
-    while (src[i] != '\0')
-    {
-        dst[j] = src[i];
-        i++;
-        j++;
-    }
-    dst[j] = '\0';
-    return (dst);
+	return (pow ? n * ft_pow(n, pow - 1) : 1);
 }

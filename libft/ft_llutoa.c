@@ -25,16 +25,6 @@ static int		nbr_len(unsigned long long int n)
 	return (len);
 }
 
-//static char		ft_str_int(char *s, unsigned long long int n, int len)
-//{
-//	while (len--)
-//	{
-//		s[len] = (n % 10) + 48;
-//		n = n / 10;
-//	}
-//	return ((char)s);
-//}
-
 char			*ft_llutoa(unsigned long long int n)
 {
 	int		len;
@@ -45,7 +35,6 @@ char			*ft_llutoa(unsigned long long int n)
 		len = nbr_len(n);
 		if (!(res = ft_memalloc(len + 1)))
 			return (NULL);
-//		ft_str_int(res, n, len);
 		while (--len > -1)
 		{
 			res[len] = (n % 10) + 48;

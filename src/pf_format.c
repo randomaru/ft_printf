@@ -6,11 +6,11 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:53:59 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 21:11:49 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/17 21:51:15 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 static void		size_lh(t_pf *pf, char p, va_list ap, int n)
 {
@@ -32,7 +32,7 @@ static void		size_lh(t_pf *pf, char p, va_list ap, int n)
 			!(ft_strcmp(pf->size, "h")) ?
 			(pf->num.lli = (long long int)((short int)va_arg(ap, int)))
 			: (pf->num.lli = (long long int)va_arg(ap, long int));
-		else if (p == 'f' && !ft_strcmp(pf->size, "l"))
+		else if (ft_strchr("fF", p) && !ft_strcmp(pf->size, "l"))
 			pf->num.ld = (long double)va_arg(ap, double);
 		else if (p == 'u' || p == 'o' || p == 'x' || p == 'X')
 			!(ft_strcmp(pf->size, "h")) ?
@@ -57,7 +57,7 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 			pf->num.lli = (long long int)va_arg(ap, int);
 		else if (p == 'u' || p == 'x' || p == 'X' || p == 'o')
 			pf->num.ulli = (unsigned long long)va_arg(ap, unsigned int);
-		else if (p == 'f')
+		else if (ft_strchr("fF", p))
 			pf->num.ld = (long double)va_arg(ap, double);
 		else if (p == 'p')
 			pf->num.ulli = va_arg(ap, unsigned long long);
@@ -66,12 +66,12 @@ static void		number_size(t_pf *pf, char p, va_list ap)
 
 static void		sc_percent_size(t_pf *pf, char p, va_list ap)
 {
-	if (p == 's')
+	if (p == 's' || p == 'S')
 	{
 		if (!(pf->tmp_oxfs = ft_strdup(va_arg(ap, char*))))
 			pf->tmp_oxfs = ft_strdup("(null)");
 	}
-	else if (p == 'c')
+	else if (p == 'c' || p == 'C')
 		pf->num.c = (char)va_arg(ap, int);
 	else if (p == '%')
 		pf->num.c = '%';
@@ -95,16 +95,18 @@ int				pf_format(t_pf *pf, char **p, va_list ap)
 	find_format(pf, p);
 	if (**p == '\0')
 		return (-1);
-	if (ft_strchr("%scpfdiouxX", **p))
+	if (!ft_strchr("%sScCpfFdiouxX", **p))
+		return (-1);
+	if (ft_strchr("%sScCpfFdiouxX", **p))
 	{
 		pf->type = **p;
-		if (ft_strchr("pfdiouxX", pf->type))
+		if (ft_strchr("pfFdiouxX", pf->type))
 			number_size(pf, **p, ap);
 		else
 			sc_percent_size(pf, **p, ap);
 		*p += 1;
 	}
-	if (pf->type == 'f')
+	if (ft_strchr("fF", pf->type))
 		display_f(pf);
 	parse_format(pf);
 	if (find_str_size(pf) == -1)

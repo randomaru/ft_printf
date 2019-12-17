@@ -20,7 +20,8 @@ static unsigned long long int		conv_ex(unsigned long long int nb)
 		return (nb + '0');
 }
 
-char								*ulltoa_base(unsigned long long int value, int base)
+char								*ulltoa_base(unsigned long long int value,
+												int base)
 {
 	int						i;
 	char					*str;

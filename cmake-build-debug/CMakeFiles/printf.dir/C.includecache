@@ -6,16 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/Users/tamarant/Desktop/projects/printf/fill_final.c
-ft_printf.h
-/Users/tamarant/Desktop/projects/printf/ft_printf.h
-
-/Users/tamarant/Desktop/projects/printf/ft_printf.h
+/Users/tamarant/Desktop/projects/printf/inc/ft_printf.h
 stdio.h
 -
 stdarg.h
 -
-libft/libft.h
+../libft/libft.h
 /Users/tamarant/Desktop/projects/printf/libft/libft.h
 limits.h
 -
@@ -33,4 +29,8 @@ fcntl.h
 -
 limits.h
 -
+
+/Users/tamarant/Desktop/projects/printf/main.c
+inc/ft_printf.h
+/Users/tamarant/Desktop/projects/printf/inc/ft_printf.h
 

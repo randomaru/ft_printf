@@ -6,11 +6,11 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:36:23 by tamarant          #+#    #+#             */
-/*   Updated: 2019/12/16 21:17:00 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/12/17 21:53:41 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 void	new_chars(t_pf *pf)
 {
@@ -71,7 +71,7 @@ int		work_part(char *p, t_pf *pf, va_list ap)
 	return (1);
 }
 
-int		ft_printf(char *format, ...)
+int		ft_printf(const char *format, ...)
 {
 	va_list ap;
 	char	*p;
@@ -79,11 +79,14 @@ int		ft_printf(char *format, ...)
 	int		sum;
 
 	va_start(ap, format);
-	p = format;
+	p = (char*)format;
 	if (!(pf = new_t_pf()))
 		return (0);
 	if (work_part(p, pf, ap) == 0)
-		return (-1);
+	{
+		va_end(ap);
+		return (0);
+	}
 	sum = pf->counter;
 	free_t_pf(pf, 0);
 	va_end(ap);
