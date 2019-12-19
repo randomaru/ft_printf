@@ -18,6 +18,28 @@
 # define UI unsigned int
 # define BU_SIZE 60
 
+# define RED "\x1B[31m"
+# define GRN "\x1b[32m"
+# define YEL "\x1b[33m"
+# define BLU "\x1b[34m"
+# define PPL "\x1b[35m"
+# define LBL "\x1b[36m"
+# define GRA "\x1b[37m"
+# define RST "\x1b[0m"
+
+# define BOLD "\x1b[1m"
+# define UNDER "\x1b[4m"
+# define INVERT "\x1b[7m"
+
+# define B_BLK "\x1b[40m"
+# define B_RED "\x1b[41m"
+# define B_GRN "\x1b[42m"
+# define B_YEL "\x1b[43m"
+# define B_BLU "\x1b[44m"
+# define B_PPL "\x1b[45m"
+# define B_LBL "\x1B[46m"
+# define B_GRA "\x1B[47m"
+
 # include <stdio.h>
 # include <stdarg.h>
 # include "../libft/libft.h"
