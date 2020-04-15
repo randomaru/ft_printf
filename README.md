@@ -12,4 +12,4 @@ The goal of this project is to recreate part of libc function printf. Why? Becau
 Allowed functions are `write`, `malloc`, `free`, `exit` and the functions of man 3 stdarg. Everything else is forbidden.
 
 # Test!
-Run `make && make clean`, this will compile libftprintf.a. Include `inc/ft_printf.h`  to ypur project and use just like printf. <br>Also you can run `./printf.test` for quik view.
+Run `make && make clean`, this will compile libftprintf.a. Include `inc/ft_printf.h`  to your project and use just like printf. <br>Also you can run `./printf.test` for quik view.
